@@ -1,0 +1,14 @@
+nav {
+    background-color: #DEF2F1;
+    size: 300px;
+}
+
+
+div {
+    display: inline;
+    margin-right: 20%;
+}
+
+.firstDiv {
+    margin-left: 23%;
+}
