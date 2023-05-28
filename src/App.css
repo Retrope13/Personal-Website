@@ -24,6 +24,11 @@
   color: #61dafb;
 }
 
+.NavDiv {
+  height: 20%;
+  background-color: #DEF2F1;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
