@@ -1,7 +1,5 @@
-import * as React from 'react';
 import {motion} from 'framer-motion';
 import { MenuItem } from './MenuItem';
-import { isNotEmittedStatement } from 'typescript';
 
 const variants = {
   open: {

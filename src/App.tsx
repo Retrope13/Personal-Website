@@ -31,23 +31,21 @@ const sidebar ={
 function App() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
-  const dimensions = useDimensions(containerRef);
+  const height = useDimensions(containerRef).current.height;
+
   return (
     <div className="App">
-      <Router>
-      <Navigation></Navigation>
-      </Router>
       <body>
         <div className="LeftShoulder">
           <motion.nav
           initial={false}
           animate={isOpen ? "open" : "closed"}
-          custom={dimensions.current.height}
+          custom={height}
           ref={containerRef}
           >
             <motion.div className="background" variants={sidebar}/>
             <Navigation/>
-            <MenuToggle toggle={false}/>
+            <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
         </div>
         <div className="image-container">

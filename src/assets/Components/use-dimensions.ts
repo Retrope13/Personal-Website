@@ -1,4 +1,4 @@
-import {ReactElement, useEffect, useRef, MutableRefObject} from 'react';
+import {useEffect, useRef, MutableRefObject} from 'react';
 
 
 export const useDimensions = <T extends HTMLElement>(
