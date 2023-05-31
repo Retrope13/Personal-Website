@@ -3,6 +3,12 @@ nav {
     height: 100%;
 }
 
+a {
+    color: #17252A;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+
 
 div {
     display: inline;
