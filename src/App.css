@@ -4,6 +4,10 @@
   pointer-events: none;
 }
 
+.App {
+  background-color: #DEF2F1;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -54,18 +58,30 @@ li {
 }
 
 .icon-placeholder {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  flex: 40px 0;
-  margin-right: 20px;
+  width: 20%;
+  height: 18%;
+  flex: 100px 0;
+  margin-right: 4%;
 }
 
 .text-placeholder {
   border-radius: 5px;
-  width: 200px;
-  height: 200px;
   flex: 1;
+  font-size:x-large;
+  text-decoration: none;
+  color: #DEF2F1;
+
+}
+
+.content {
+  background-color: #2B7A78;
+  min-width: 80vw;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .background {
@@ -74,14 +90,14 @@ li {
   bottom: 0;
   left: 0;
   width: 300px;
-  background-color: #DEF2F1;
+  background-color: #3AAFA9;
 }
 
 .App-header {
   background-color: #2B7A78;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #2B7A78;
 }
 
 .image-container {
@@ -91,8 +107,8 @@ li {
   align-items: center;
   background-color: #DEF2F1;
   border-radius: 5px;
-  height: 200px;
-  width: 300px;
+  height: 30%;
+  width: 40%;
 }
 
 .LeftShoulder {
