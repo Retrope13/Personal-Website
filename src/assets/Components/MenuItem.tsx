@@ -10,7 +10,7 @@ const variants = {
         y: 0,
         opacity: 1, 
         transition: {
-            y: {stiffness: 1000, velocity: -1000}
+            y: {stiffness: 1000, velocity: -100}
         }
     },
 
@@ -24,10 +24,8 @@ const variants = {
 
 };
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
-
 export const MenuItem: React.FC<MenuItemProps> = ({ i }) => {
-    const style = { border: `2px solid ${colors[i]}`};
+    const style = { border: `2px solid #3AAFA9`};
     return (
         <motion.li 
         variants = {variants}
