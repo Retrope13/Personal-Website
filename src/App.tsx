@@ -1,12 +1,12 @@
-import * as React from 'react';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom'
-import temp from './assets/images.jpg';
+import temp from './assets/imgs/images.jpg';
 import {motion, sync, useCycle} from 'framer-motion';
 import {useRef} from 'react';
 import {Navigation} from './assets/Components/Navigation';
 import { useDimensions} from "./assets/Components/use-dimensions";
 import { MenuToggle } from './assets/Components/MenuToggle';
+import React, {useContext} from 'react';
 
 const sidebar ={
   open: (height = 1000) => ({
@@ -36,7 +36,6 @@ function App() {
   return (
     <div className="App">
       <body>
-        <div className="LeftShoulder">
           <motion.nav
           initial={false}
           animate={isOpen ? "open" : "closed"}
@@ -44,10 +43,12 @@ function App() {
           ref={containerRef}
           >
             <motion.div className="background" variants={sidebar}/>
+            <Router>
             <Navigation/>
+            </Router>
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
-        </div>
+        <div className="content">
         <div className="image-container">
       <img src={temp} alt="temporary photo"/>
         </div>
@@ -56,7 +57,7 @@ function App() {
           Edit <code>App.tsx</code> and save to reload.
         </p>
         </div>
-        <div></div>
+        </div>
       </body>
     </div>
   );

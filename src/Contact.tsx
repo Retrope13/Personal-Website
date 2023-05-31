@@ -1,16 +1,13 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Navigation } from './assets/Components/Navigation';
 import { BrowserRouter as Router } from 'react-router-dom'
+import React, {useContext} from 'react';
 
 
 function Contact() {
   return (
     <div className="App">
-      <Router>
-      <Navigation></Navigation>
-      </Router>
       <header className="App-header">
         <p>
           Contact Me
