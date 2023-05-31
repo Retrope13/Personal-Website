@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useContext} from 'react';
 import {useRef} from 'react';
 import {motion, sync, useCycle} from 'framer-motion';
 import {MenuToggle} from "./assets/Components/MenuToggle";
@@ -10,9 +10,6 @@ import { BrowserRouter as Router } from 'react-router-dom'
 function Projects() {
   return (
     <div className="App">
-      <Router>
-      <Navigation></Navigation>
-      </Router>
       <header className="App-header">
         <p>
           Projects
