@@ -4,6 +4,7 @@ import {AnimationProps, motion} from 'framer-motion';
 
 interface ToggleProps {
     toggle: boolean;
+    onClick: () => void;
 }
 
 interface PathProps extends AnimationProps {
@@ -21,10 +22,10 @@ const Path: React.FC<PathProps> = ({pathData, ...props}) => (
     />
 );
 
-export const MenuToggle: React.FC<ToggleProps> = ({ toggle }) => {
+export const MenuToggle: React.FC<ToggleProps> = ({ onClick }) => {
 
 return (
-    <button onClick={() => !(toggle)}>
+    <button onClick={onClick}>
         <svg width="23" height="23" viewBox="0 0 23 23">
             <Path
             pathData=""
