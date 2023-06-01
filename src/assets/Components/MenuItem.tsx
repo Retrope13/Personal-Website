@@ -26,18 +26,19 @@ const variants = {
 
 };
 
-const pages = ["/", "/Projects", "/Contact"]
+const pages = ["../../", "../../Projects", "../../Contact"]
 const titles = ["Home", "Projects", "Contact Me"]
 
 export const MenuItem: React.FC<MenuItemProps> = ({ i }) => {
-    const style = { border: `2px solid #3AAFA9`, decoration: "none"};
     return (
+        //if I move the img into the link it makes the icon part of the link, but it resizes the image
         <motion.li 
         variants = {variants}
         whileHover={{scale: 1.1}}
-        whileTap = {{scale: 0.95}} >
-        <img src={Home} className="icon-placeholder" style={style}/>
-        <Link to={pages[i]} className='text-placeholder' style={style}> {titles[i]} </Link>
+        whileTap = {{scale: 1}} >
+        <img src={Home} className="icon-placeholder"/> 
+        <Link to={pages[i]} className='text-placeholder'> 
+        {titles[i]} </Link>
         </motion.li>
     );
 };
