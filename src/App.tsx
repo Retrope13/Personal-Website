@@ -74,7 +74,10 @@ function App() {
           >
             <motion.div className="background" variants={sidebar}/>
             <Router>
-            <Navigation/>
+              {/*This preserves the animation while also preventing users from clicking on links when the nav is closed*/}
+              <div style={{pointerEvents: isOpen ? 'all' : 'none'}}> 
+              <Navigation/>
+              </div>
             </Router>
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
