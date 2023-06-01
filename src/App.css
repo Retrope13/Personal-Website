@@ -1,4 +1,25 @@
 
+
+@font-face {
+  font-family: "Bavista";
+  src: url("./assets/fonts/Bavista_Soulare.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Alexandria";
+  src: url('./assets/fonts/AlexandriaFLF-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "AlexandriaItalics";
+  src: url('./assets/fonts/AlexandriaFLF-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Albas';
+  src: url('./assets/fonts/ALBAS___.TTF') format('truetype');
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -8,18 +29,13 @@
   background-color: #DEF2F1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 nav {
   position: absolute;
   top:0;
   left:0;
   bottom: 0;
   width: 300px;
+  height: 100vh;
 }
 
 button {
@@ -36,6 +52,11 @@ button {
 
 }
 
+.top {
+  height: 9vh;
+  background-color: #B64228;
+}
+
 ul,
 li {
   margin: 0;
@@ -43,25 +64,25 @@ li {
 }
 
 ul {
-  padding: 25px;
+  padding: 1.25vw;
   position: absolute;
-  top: 100px;
-  width: 230px;
+  top: 7vh;
+  width: 13vw;
 }
 
 li {
   list-style: none;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
 .icon-placeholder {
-  width: 20%;
-  height: 18%;
-  flex: 100px 0;
+  width: 14%;
+  height: 12%;
+  flex: 70px 0;
   margin-right: 4%;
+  margin-left: -7%;
 }
 
 .text-placeholder {
@@ -69,19 +90,19 @@ li {
   flex: 1;
   font-size:x-large;
   text-decoration: none;
-  color: #DEF2F1;
+  color: #FFFFFF;
+  font-weight: 100px;
 
 }
 
 .content {
-  background-color: #2B7A78;
-  min-width: 80vw;
-  width: 80%;
+  background-color: #27374D;
+  min-width: 70vw;
+  width: 85vw;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   min-height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 17vw;
 }
 
 .background {
@@ -89,40 +110,45 @@ li {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 300px;
-  background-color: #3AAFA9;
+  width: 15vw;
+  height: 100vh;
+  background-color: #00000000; /*I could change this to #002A2B2A for like a shadow effect but I'm not sure how to feel about it */
+  border-radius: 2px;
 }
 
 .App-header {
-  background-color: #2B7A78;
+  background-color: #2A2B2A;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
-  color: #2B7A78;
+  color: #3AAFA9;
 }
 
 .image-container {
-  display: flex;
-  margin-top: 5%;
-  justify-content: space-around;
+  display: inline-flex;
+  justify-content:space-around;
   align-items: center;
-  background-color: #DEF2F1;
+  background-color: #2D8274;
   border-radius: 5px;
-  height: 30%;
-  width: 40%;
-}
-
-.LeftShoulder {
-  display: flex;
-  width: 20%;
-  height: 100%;
+  height: 25vh;
+  margin-right: 3vw;
+  width: 20vw;
 }
 
 img {
   border-radius: 5px;
 }
 
-.text-container {
-  display: inline-block;
+.bio-heading {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: -15vh;
+  font-size: small;
+}
+
+.bio-container {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: -10vh;
 }
 
 .App-link {
@@ -130,14 +156,5 @@ img {
 }
 
 body {
-  background-color: #2B7A78;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #27374D
 }

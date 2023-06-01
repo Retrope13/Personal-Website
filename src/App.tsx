@@ -7,6 +7,35 @@ import {Navigation} from './assets/Components/Navigation';
 import { useDimensions} from "./assets/Components/use-dimensions";
 import { MenuToggle } from './assets/Components/MenuToggle';
 import React, {useContext} from 'react';
+import styled from 'styled-components';
+
+
+const Head = styled.h1`
+  color: #FFFFFF;
+  margin-top: 0vh;
+  font-family: Bavista;
+  font-size: 10vh;
+  background-color: #27374D;
+  border-radius: 5px;
+  `
+
+const BioHead = styled.h1`
+  color: #FFFFFF;
+  margin-top: -15vh;
+  font-family: Bavista;
+  font-size: 8vh;
+  background-color: #27374D;
+  border-radius: 5px;
+`
+
+const Para = styled.p`
+  font-family: Alexandria;
+  font-size: 3vh;
+  color: #FFFFFF;
+  display: flex;
+  align-items: flex-start;
+  margin-top: -10vh;
+`
 
 const sidebar ={
   open: (height = 1000) => ({
@@ -36,6 +65,7 @@ function App() {
   return (
     <div className="App">
       <body>
+        <div className='top'>
           <motion.nav
           initial={false}
           animate={isOpen ? "open" : "closed"}
@@ -44,18 +74,26 @@ function App() {
           >
             <motion.div className="background" variants={sidebar}/>
             <Router>
-            <Navigation/>
+              {/*This preserves the animation while also preventing users from clicking on links when the nav is closed*/}
+              <div style={{pointerEvents: isOpen ? 'all' : 'none'}}> 
+              <Navigation/>
+              </div>
             </Router>
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
+          </div>
         <div className="content">
+          <Head>Chez McKay</Head>
         <div className="image-container">
       <img src={temp} alt="temporary photo"/>
         </div>
-        <div className="text-container">
-        <p>
-          Edit <code>App.tsx</code> and save to reload.
-        </p>
+        <div>
+          <BioHead className='bio-heading'>A bit about me</BioHead>
+        </div>
+        <div className="bio-container">
+        <Para>
+          Edit App.tsx and save to reload.
+        </Para>
         </div>
         </div>
       </body>
