@@ -55,6 +55,7 @@ button {
 .top {
   height: 9vh;
   background-color: #B64228;
+  width: 100vw;
 }
 
 ul,
@@ -64,7 +65,7 @@ li {
 }
 
 ul {
-  padding: 1.25vw;
+  padding: 2vw;
   position: absolute;
   top: 7vh;
   width: 13vw;
@@ -72,6 +73,7 @@ ul {
 
 li {
   list-style: none;
+  margin-bottom: 5vh;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -79,7 +81,7 @@ li {
 
 .icon-placeholder {
   width: 14%;
-  height: 12%;
+  height: 15%;
   flex: 70px 0;
   margin-right: 4%;
   margin-left: -7%;
@@ -98,7 +100,7 @@ li {
 .content {
   background-color: #27374D;
   min-width: 70vw;
-  width: 85vw;
+  width: 80vw;
   align-items: center;
   justify-content: right;
   min-height: 100vh;
@@ -145,6 +147,20 @@ img {
   font-size: small;
 }
 
+.CSU-heading {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: 23vh;
+  font-size: small;
+}
+
+.CSU-container {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: -13vh;
+  font-size: small;
+}
+
 .bio-container {
   display: flex;
   margin-left: 25vw;
@@ -157,4 +173,8 @@ img {
 
 body {
   background-color: #27374D
+}
+
+body.scroll-up {
+  background-color: #B64228;
 }
