@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom'
 import temp from './assets/imgs/images.jpg';
 import {motion, sync, useCycle} from 'framer-motion';
-import {useRef} from 'react';
+import {useEffect, useRef} from 'react';
 import {Navigation} from './assets/Components/Navigation';
 import { useDimensions} from "./assets/Components/use-dimensions";
 import { MenuToggle } from './assets/Components/MenuToggle';
@@ -17,6 +17,7 @@ const Head = styled.h1`
   font-size: 10vh;
   background-color: #27374D;
   border-radius: 5px;
+  height: auto;
   `
 
 const BioHead = styled.h1`
@@ -59,6 +60,9 @@ const Para = styled.p`
   height: 20vh
 `
 
+const Achievements = styled.h1`
+`
+
 const sidebar ={
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
@@ -83,6 +87,7 @@ function App() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const height = useDimensions(containerRef).current.height;
+  const [isLoaded, toggleLoaded] = useCycle(false, true);
 
   return (
     <div className="App">
@@ -104,8 +109,16 @@ function App() {
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
           </div>
-        <div className="content">
+        <motion.div 
+        transition={{duration: 1}} 
+        animate={{x: isOpen ? 100 : -100}} 
+        className="content">
           <Head>Chez McKay</Head>
+          </motion.div>
+        <motion.div
+        transition={{duration: 1}} 
+        animate={{x: isOpen ? 100 : -100}} 
+        className='content'>
         <div className="image-container">
       <img src={temp} alt="temporary photo"/>
       {/*I had the idea that when the page loads you could have the text slide in from the right side of the screen and land into a div with a dark background and a white border. This might be pretty hard though */}
@@ -129,7 +142,7 @@ function App() {
             {/*It might be a good idea to make the languages and concepts two styled unordered lists sitting shoulder to shoulder. It would probably look cleaner*/}
           </Para>
        </div>
-        </div>
+        </motion.div>
       </body>
     </div>
   );
