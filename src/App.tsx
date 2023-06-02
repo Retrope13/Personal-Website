@@ -21,20 +21,42 @@ const Head = styled.h1`
 
 const BioHead = styled.h1`
   color: #FFFFFF;
-  margin-top: -15vh;
+  margin-top: -28vh;
   font-family: Bavista;
   font-size: 8vh;
   background-color: #27374D;
   border-radius: 5px;
+  height: 10vh;
+`
+
+const CSUHead = styled.h1`
+  color: #FFFFFF;
+  margin-top: -20vh;
+  font-family: Bavista;
+  font-size: 8vh;
+  background-color: #1b2636;
+  height: 10vh;
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+`
+
+const TextDiv = styled.div`
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  height: 40vh;
+  background-color: #1b2636;
+  justify-content: space-around;
+  align-items: center;
 `
 
 const Para = styled.p`
   font-family: Alexandria;
-  font-size: 3vh;
+  font-size: 2.5vh;
   color: #FFFFFF;
   display: flex;
   align-items: flex-start;
-  margin-top: -10vh;
+  width: 53vw;
+  height: 20vh
 `
 
 const sidebar ={
@@ -86,15 +108,27 @@ function App() {
           <Head>Chez McKay</Head>
         <div className="image-container">
       <img src={temp} alt="temporary photo"/>
+      {/*I had the idea that when the page loads you could have the text slide in from the right side of the screen and land into a div with a dark background and a white border. This might be pretty hard though */}
         </div>
-        <div>
           <BioHead className='bio-heading'>A bit about me</BioHead>
-        </div>
-        <div className="bio-container">
+        <div className='bio-container'>
         <Para>
-          Edit App.tsx and save to reload.
+        Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
+        I love user experience/user interface design, and website development focused on disability-driven development, so this website was a way to sharpen my tool set.
+        I pursued a degree in computer science because of the potential it has proven to have as a tool to help people and the creative liberties that it affords developers.
         </Para>
-        </div>
+          </div>
+       <div className="CSU-heading">
+          <CSUHead>My time at CSU</CSUHead>
+       </div>
+
+       <div className='CSU-container'>
+          <Para>While enrolled at CSU I had the opportunity to work on several incredible projects which you can see some of on the projects page of this website.
+            Throughout these projects I learned several programming languages such as Javascript, Java, C, C++, Python, HTML, PHP, Typescript, and R. I also became well-versed in concepts such 
+            as Agile CMMI, test-driven development, Object-Oriented design, VR development, game design, machine learning, team management, time management, and, most importantly, the process of learning a new programming language.
+            {/*It might be a good idea to make the languages and concepts two styled unordered lists sitting shoulder to shoulder. It would probably look cleaner*/}
+          </Para>
+       </div>
         </div>
       </body>
     </div>
