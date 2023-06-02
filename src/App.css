@@ -490,13 +490,17 @@ li {
   align-items: center;
   background-color: #2D8274;
   border-radius: 5px;
-  height: 25vh;
+  height: auto;
   margin-right: 3vw;
-  width: 20vw;
+  width: auto;
+  margin-top: -5vh;
+  border: .2vw solid #FFFFFF
 }
 
 img {
   border-radius: 5px;
+  height: 58vh;
+  width: 23vw;
 }
 
 .bio-text-div {
@@ -524,7 +528,8 @@ img {
 
 .bio-container {
   display: flex;
-  margin-top: -10vh;
+  margin-top: 5vh;
+  margin-left: -27.7vw;
 }
 
 .App-link {
