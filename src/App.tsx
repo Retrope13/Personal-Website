@@ -15,7 +15,7 @@ const Head = styled.h1`
   margin-top: 0vh;
   font-family: Bavista;
   font-size: 10vh;
-  background-color: #27374D;
+  background-color: #00000000;
   border-radius: 5px;
   height: auto;
   `
@@ -25,39 +25,43 @@ const BioHead = styled.h1`
   margin-top: -28vh;
   font-family: Bavista;
   font-size: 8vh;
-  background-color: #27374D;
+  background-color: #00000000;
   border-radius: 5px;
   height: 10vh;
+  margin-bottom: 8vh;
 `
 
 const CSUHead = styled.h1`
   color: #FFFFFF;
-  margin-top: -20vh;
+  margin-top: -22vh;
   font-family: Bavista;
   font-size: 8vh;
-  background-color: #1b2636;
+  background-color: #00000000;
   height: 10vh;
-  border-radius: 5px;
-  border: 2px solid #FFFFFF;
+
 `
 
 const TextDiv = styled.div`
-  border: 2px solid #FFFFFF;
-  border-radius: 5px;
-  height: 40vh;
+  border: .15vw solid #FFFFFF;
+  border-radius: 2vw;
+  height: auto;
   background-color: #1b2636;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  width: 55vw;
+  padding-left: 2vw;
+  margin-left: 25vw;
+  margin-bottom: 3vh;
 `
 
 const Para = styled.p`
   font-family: Alexandria;
-  font-size: 2.5vh;
+  font-size: 2.2vh;
   color: #FFFFFF;
   display: flex;
   align-items: flex-start;
-  width: 53vw;
-  height: 20vh
+  width: 55vw;
+  height: 19vh
 `
 
 const Achievements = styled.h1`
@@ -114,23 +118,20 @@ function App() {
         animate={{x: isOpen ? 100 : -100}} 
         className="content">
           <Head>Chez McKay</Head>
-          </motion.div>
-        <motion.div
-        transition={{duration: 1}} 
-        animate={{x: isOpen ? 100 : -100}} 
-        className='content'>
-        <div className="image-container">
-      <img src={temp} alt="temporary photo"/>
-      {/*I had the idea that when the page loads you could have the text slide in from the right side of the screen and land into a div with a dark background and a white border. This might be pretty hard though */}
-        </div>
+      <img src={temp} alt="temporary photo"/> {/*You can put a div behind the image to give it some depth*/}
+        <div>
           <BioHead className='bio-heading'>A bit about me</BioHead>
+          </div>
         <div className='bio-container'>
+      <TextDiv>      
         <Para>
         Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
         I love user experience/user interface design, and website development focused on disability-driven development, so this website was a way to sharpen my tool set.
         I pursued a degree in computer science because of the potential it has proven to have as a tool to help people and the creative liberties that it affords developers.
         </Para>
+          </TextDiv>
           </div>
+        <TextDiv>
        <div className="CSU-heading">
           <CSUHead>My time at CSU</CSUHead>
        </div>
@@ -142,6 +143,7 @@ function App() {
             {/*It might be a good idea to make the languages and concepts two styled unordered lists sitting shoulder to shoulder. It would probably look cleaner*/}
           </Para>
        </div>
+          </TextDiv>
         </motion.div>
       </body>
     </div>
