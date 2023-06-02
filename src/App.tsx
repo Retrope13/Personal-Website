@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom'
-import temp from './assets/imgs/images.jpg';
+import MyPhoto from './assets/imgs/SamMcKayPic.jpg';
 import {motion, sync, useCycle} from 'framer-motion';
 import {useEffect, useRef} from 'react';
 import {Navigation} from './assets/Components/Navigation';
@@ -22,13 +22,16 @@ const Head = styled.h1`
 
 const BioHead = styled.h1`
   color: #FFFFFF;
-  margin-top: -28vh;
   font-family: Bavista;
   font-size: 8vh;
   background-color: #00000000;
   border-radius: 5px;
-  height: 10vh;
+  height: 1vh;
+  width: auto;
   margin-bottom: 8vh;
+  white-space: nowrap;
+  margin-top: -2vh;
+  margin-left: 0vw;
 `
 
 const CSUHead = styled.h1`
@@ -54,11 +57,26 @@ const TextDiv = styled.div`
   margin-bottom: 3vh;
 `
 
+const BioTextDiv = styled.div`
+  border: .15vw solid #FFFFFF;
+  border-radius: 2vw;
+  height: 25vh;
+  background-color: #1b2636;
+  justify-content: center;
+  width: 55vw;
+  padding-left: 2vw;
+  margin-left: 25vw;
+  margin-bottom: 3vh;
+  margin-top: -59vh;
+  padding-top: 3vh;
+  display: flex;
+`
+
 const Para = styled.p`
   font-family: Alexandria;
   font-size: 2.2vh;
   color: #FFFFFF;
-  display: flex;
+  display: flex-box;
   align-items: flex-start;
   width: 55vw;
   height: 19vh
@@ -118,19 +136,19 @@ function App() {
         animate={{x: isOpen ? 100 : -100}} 
         className="content">
           <Head>Chez McKay</Head>
-      <img src={temp} alt="temporary photo"/> {/*You can put a div behind the image to give it some depth*/}
-        <div>
-          <BioHead className='bio-heading'>A bit about me</BioHead>
+          <div className='image-container'>
+           <img src={MyPhoto} alt="temporary photo"/> {/*You can put a div behind the image to give it some depth*/}
           </div>
+      <BioTextDiv>      
+          <BioHead className='bio-heading'>A bit about me</BioHead>
         <div className='bio-container'>
-      <TextDiv>      
         <Para>
         Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
         I love user experience/user interface design, and website development focused on disability-driven development, so this website was a way to sharpen my tool set.
         I pursued a degree in computer science because of the potential it has proven to have as a tool to help people and the creative liberties that it affords developers.
         </Para>
-          </TextDiv>
           </div>
+          </BioTextDiv>
         <TextDiv>
        <div className="CSU-heading">
           <CSUHead>My time at CSU</CSUHead>
