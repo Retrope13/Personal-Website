@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import MyPhoto from './assets/imgs/SamMcKayPic.jpg';
 import {motion, sync, useCycle} from 'framer-motion';
 import {useEffect, useRef} from 'react';
@@ -20,28 +20,12 @@ const Head = styled.h1`
   height: auto;
   `
 
-const BioHead = styled.h1`
+const TextHead = styled.h1`
   color: #FFFFFF;
-  font-family: Bavista;
-  font-size: 8vh;
-  background-color: #00000000;
-  border-radius: 5px;
-  height: 1vh;
-  width: auto;
-  margin-bottom: 8vh;
-  white-space: nowrap;
-  margin-top: -2vh;
-  margin-left: 0vw;
-`
-
-const CSUHead = styled.h1`
-  color: #FFFFFF;
-  margin-top: -22vh;
   font-family: Bavista;
   font-size: 8vh;
   background-color: #00000000;
   height: 10vh;
-
 `
 
 const TextDiv = styled.div`
@@ -60,7 +44,6 @@ const TextDiv = styled.div`
 const BioTextDiv = styled.div`
   border: .15vw solid #FFFFFF;
   border-radius: 2vw;
-  height: 25vh;
   background-color: #1b2636;
   justify-content: center;
   width: 55vw;
@@ -82,7 +65,13 @@ const Para = styled.p`
   height: 19vh
 `
 
-const Achievements = styled.h1`
+const AchievementsHead = styled.h1`
+  color: #FFFFFF;
+  margin-top: -22vh;
+  font-family: Bavista;
+  font-size: 8vh;
+  background-color: #00000000;
+  height: 10vh;
 `
 
 const sidebar ={
@@ -113,6 +102,7 @@ function App() {
 
   return (
     <div className="App">
+      <title>Home</title>
       <body>
         <div className='top'>
           <motion.nav
@@ -122,12 +112,12 @@ function App() {
           ref={containerRef}
           >
             <motion.div className="background" variants={sidebar}/>
-            <Router>
               {/*This preserves the animation while also preventing users from clicking on links when the nav is closed*/}
               <div style={{pointerEvents: isOpen ? 'all' : 'none'}}> 
+              <Router>
               <Navigation/>
+              </Router>
               </div>
-            </Router>
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
           </div>
@@ -139,8 +129,8 @@ function App() {
           <div className='image-container'>
            <img src={MyPhoto} alt="temporary photo"/> {/*You can put a div behind the image to give it some depth*/}
           </div>
-      <BioTextDiv>      
-          <BioHead className='bio-heading'>A bit about me</BioHead>
+      <TextDiv style={{ marginTop: '-59vh', paddingTop: '3vh', display: 'flex'}}>      
+          <TextHead style={{marginBottom: '8vh', whiteSpace: 'nowrap', marginTop: '-17vh', marginLeft: '0vw'}} className='bio-heading'>A bit about me</TextHead>
         <div className='bio-container'>
         <Para>
         Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
@@ -148,10 +138,10 @@ function App() {
         I pursued a degree in computer science because of the potential it has proven to have as a tool to help people and the creative liberties that it affords developers.
         </Para>
           </div>
-          </BioTextDiv>
+          </TextDiv>
         <TextDiv>
        <div className="CSU-heading">
-          <CSUHead>My time at CSU</CSUHead>
+          <TextHead style={{marginTop: '-22vh'}}>My time at CSU</TextHead>
        </div>
 
        <div className='CSU-container'>
