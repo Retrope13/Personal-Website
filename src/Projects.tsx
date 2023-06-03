@@ -8,6 +8,7 @@ import { useDimensions} from "./assets/Components/use-dimensions";
 import { MenuToggle } from './assets/Components/MenuToggle';
 import React, {useContext} from 'react';
 import styled from 'styled-components';
+import { CardList } from './CardList';
 
 
 const Head = styled.h1`
@@ -94,7 +95,7 @@ const sidebar ={
   }
 };
 
-function App() {
+function Projects() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const height = useDimensions(containerRef).current.height;
@@ -126,11 +127,11 @@ function App() {
         animate={{x: isOpen ? 100 : -100}} 
         className="content">
 
-          
+          <CardList/>
         </motion.div>
       </body>
     </div>
   );
 }
 
-export default App;
+export default Projects;
