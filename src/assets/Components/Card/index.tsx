@@ -37,8 +37,14 @@ export const Card = memo(
         const cardRef = useRef(null);
         const constraints = useScrollConstraints(cardRef, isSelected);
 
+        function handleClick() {
+            window.location.href = "/projects";
+        }
+
         function checkSwipeToDismiss() {
-            y.get() > dismissDistance && history.push("/");
+            if (y.get() > dismissDistance ) {
+                window.location.href = "http://localhost:3000/projects";
+            }
         }
 
         function checkZIndex(latest: {scaleX: number}) {
@@ -70,6 +76,7 @@ export const Card = memo(
                         drag={isSelected ? "y": false}
                         dragConstraints={constraints}
                         onDrag={checkSwipeToDismiss}
+                        onClick={handleClick}
                         onUpdate={checkZIndex}>
                             <Title title={title} category={category} isSelected={isSelected}/>
                             <CardContent/>
