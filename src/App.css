@@ -20,6 +20,16 @@
   src: url('./assets/fonts/ALBAS___.TTF') format('truetype');
 }
 
+
+
+/*Phone mode*/
+
+
+
+@media (max-width: 767px) {
+  /* CSS styles for screens smaller than 768px */
+  
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -55,6 +65,7 @@ button {
 .top {
   height: 9vh;
   background-color: #B64228;
+  width: 100vw;
 }
 
 ul,
@@ -64,7 +75,7 @@ li {
 }
 
 ul {
-  padding: 1.25vw;
+  padding: 2vw;
   position: absolute;
   top: 7vh;
   width: 13vw;
@@ -72,6 +83,7 @@ ul {
 
 li {
   list-style: none;
+  margin-bottom: 5vh;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -79,7 +91,7 @@ li {
 
 .icon-placeholder {
   width: 14%;
-  height: 12%;
+  height: 15%;
   flex: 70px 0;
   margin-right: 4%;
   margin-left: -7%;
@@ -96,13 +108,13 @@ li {
 }
 
 .content {
-  background-color: #27374D;
+  background-color: #00000000;
   min-width: 70vw;
-  width: 85vw;
+  width: 80vw;
   align-items: center;
   justify-content: right;
-  min-height: 100vh;
-  margin-left: 17vw;
+  min-height: auto;
+  margin-left: 10vw;
 }
 
 .background {
@@ -145,6 +157,20 @@ img {
   font-size: small;
 }
 
+.CSU-heading {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: 23vh;
+  font-size: small;
+}
+
+.CSU-container {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: -13vh;
+  font-size: small;
+}
+
 .bio-container {
   display: flex;
   margin-left: 25vw;
@@ -157,4 +183,365 @@ img {
 
 body {
   background-color: #27374D
+}
+
+body.scroll-up {
+  background-color: #B64228;
+}
+
+}
+
+
+
+
+/*Dev mode*/
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* CSS styles for screens between 768px and 1023px */
+  
+  /* CSS styles for screens larger than 1024px */
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App {
+  background-color: #DEF2F1;
+}
+
+nav {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  width: 300px;
+  height: 100vh;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+
+}
+
+.top {
+  height: 9vh;
+  background-color: #B64228;
+  width: 100vw;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 2vw;
+  position: absolute;
+  top: 7vh;
+  width: 13vw;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-placeholder {
+  width: 14%;
+  height: 15%;
+  flex: 70px 0;
+  margin-right: 4%;
+  margin-left: -7%;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  flex: 1;
+  font-size:x-large;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 100px;
+
+}
+
+.content {
+  background-color: #00000000;
+  min-width: 70vw;
+  width: 80vw;
+  align-items: center;
+  justify-content: right;
+  min-height: auto;
+  margin-left: 10vw;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15vw;
+  height: 100vh;
+  background-color: #00000000; /*I could change this to #002A2B2A for like a shadow effect but I'm not sure how to feel about it */
+  border-radius: 2px;
+}
+
+.App-header {
+  background-color: #2A2B2A;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: #3AAFA9;
+}
+
+.image-container {
+  display: inline-flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: #2D8274;
+  border-radius: 5px;
+  height: 25vh;
+  margin-right: 3vw;
+  width: 20vw;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.bio-heading {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: -15vh;
+  font-size: small;
+}
+
+.CSU-heading {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: 23vh;
+  font-size: small;
+}
+
+.CSU-container {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: -13vh;
+  font-size: small;
+}
+
+.bio-container {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: -10vh;
+}
+
+.App-link {
+  color: #DEF2F1;
+}
+
+body {
+  background-color: #27374D
+}
+
+body.scroll-up {
+  background-color: #B64228;
+}
+
+}
+
+
+
+
+
+/*Full mode*/
+
+
+
+
+@media (min-width: 1024px) {
+  /* CSS styles for screens larger than 1024px */
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App {
+  background-color: #DEF2F1;
+}
+
+nav {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  width: 300px;
+  height: 100vh;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+
+}
+
+.top {
+  height: 9vh;
+  background-color: #B64228;
+  width: 100vw;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 2vw;
+  position: absolute;
+  top: 7vh;
+  width: 13vw;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-placeholder {
+  width: 14%;
+  height: 15%;
+  flex: 70px 0;
+  margin-right: 4%;
+  margin-left: -7%;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  flex: 1;
+  font-size:x-large;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 100px;
+
+}
+
+.content {
+  background-color: #00000000;
+  min-width: 70vw;
+  width: 80vw;
+  align-items: center;
+  justify-content: right;
+  min-height: auto;
+  margin-left: 10vw;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15vw;
+  height: 100vh;
+  background-color: #00000000; /*I could change this to #002A2B2A for like a shadow effect but I'm not sure how to feel about it */
+  border-radius: 2px;
+}
+
+.App-header {
+  background-color: #2A2B2A;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: #3AAFA9;
+}
+
+.image-container {
+  display: inline-flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: #00000000;
+  border-radius: 5px;
+  height: auto;
+  margin-right: 3vw;
+  width: auto;
+  margin-top: -5vh;
+  border: .2vw solid #FFFFFF
+}
+
+img {
+  border-radius: 5px;
+  height: 58vh;
+  width: 23vw;
+}
+
+.bio-text-div {
+  height: 40vh;
+}
+
+.bio-heading {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: -15vh;
+  font-size: small;
+}
+
+.CSU-heading {
+  display: flex;
+  margin-top: 23vh;
+  font-size: small;
+}
+
+.CSU-container {
+  display: flex;
+  margin-top: -13vh;
+  font-size: small;
+}
+
+.bio-container {
+  display: flex;
+  margin-top: 5vh;
+  margin-left: -27.7vw;
+}
+
+.App-link {
+  color: #DEF2F1;
+}
+
+body {
+  background-color: #27374D
+}
+
+body.scroll-up {
+  background-color: #B64228;
+}
+
 }

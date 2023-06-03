@@ -1,9 +1,10 @@
 import {motion} from 'framer-motion';
 import { MenuItem } from './MenuItem';
+import {Routes, Route} from 'react-router-dom';
 
 const variants = {
   open: {
-    transition: { staggerChildren: 0.07, delayChildren: 0.2}
+    transition: { staggerChildren: 0.07, delayChildren: 0.5}
   },
   closed: {
     transition: {staggerChildren:.05, staggerDirection: -1}
