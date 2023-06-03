@@ -3,13 +3,14 @@ import { Card } from './assets/Components/Card';
 import {CardData} from './types';
 import { BrowserRouter as Router, Route, Routes, useNavigate, useParams, useMatch } from 'react-router-dom';
 import { History, LocationState } from 'history';
+import './Card.css';
 
 interface ListProps {
     history: any;
 }
 
 const List: React.FC<ListProps> = ({history }) => {
-    const match = useMatch("/:id")
+    const match = useMatch("projects/:id")
 
     return(
     <ul className="card-list">
@@ -28,13 +29,11 @@ const List: React.FC<ListProps> = ({history }) => {
 export const CardList = () => {
 
     return (
-    <Router>
         <Routes>
-            <Route path='/:id' element={<List history={useNavigate} />} />
-            <Route path='/' element={<List history={useNavigate}/>}/>
+            <Route path='projects/:id' element={<List history={useNavigate} />} />
+            <Route path='/projects' element={<List history={useNavigate}/>}/>
 
         </Routes>
-  </Router>
     );
 };
 
@@ -42,6 +41,22 @@ const cardData: CardData[] = [
     {
         id: "c",
         category: "Pizza",
+        title: "5 Food Apps Delivering the Best of Your City",
+        pointOfInterest: 80,
+        backgroundColor: "#814A0E"
+      },
+
+      {
+        id: "a",
+        category: "Burgers",
+        title: "5 Food Apps Delivering the Best of Your City",
+        pointOfInterest: 80,
+        backgroundColor: "#814A0E"
+      },
+
+      {
+        id: "b",
+        category: "Tacos",
         title: "5 Food Apps Delivering the Best of Your City",
         pointOfInterest: 80,
         backgroundColor: "#814A0E"
