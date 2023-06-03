@@ -488,7 +488,7 @@ li {
   display: inline-flex;
   justify-content:space-around;
   align-items: center;
-  background-color: #2D8274;
+  background-color: #00000000;
   border-radius: 5px;
   height: auto;
   margin-right: 3vw;
