@@ -8,6 +8,7 @@ import React, {useContext} from 'react';
 function Contact() {
   return (
     <div className="App">
+      <title>Contact Me</title>
       <header className="App-header">
         <p>
           Contact Me
