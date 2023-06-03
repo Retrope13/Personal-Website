@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import React, {useContext} from 'react';
 import Home from '../imgs/Home_Icon.png';
 import Projects from '../imgs/Projects_Icon.png';
@@ -28,8 +28,8 @@ const variants = {
 
 };
 
-const pages = ["../../", "../../Projects", "../../Contact"]
-const titles = ["Home", "Projects", "Contact Me"]
+const pages = ['/', '/projects', '/contact'];
+const titles = ["Home", "Projects", "Contact Me"];
 const icons = [Home, Projects, Contact];
 
 export const MenuItem: React.FC<MenuItemProps> = ({ i }) => {
@@ -40,8 +40,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({ i }) => {
         whileHover={{scale: 1.1}}
         whileTap = {{scale: 1}} >
         <img src={icons[i]} className="icon-placeholder"/> 
-        <Link to={pages[i]} className='text-placeholder'> 
-        {titles[i]} </Link>
+        <Link to={pages[i]} className='text-placeholder'>{titles[i]} </Link>
         </motion.li>
     );
 };
