@@ -3,16 +3,21 @@ import { motion } from "framer-motion";
 import { closeSpring } from "./animations";
 
 export const Image = ({
-  id = "",
-  isSelected = false,
+  id="",
+  isSelected=false,
   pointOfInterest = 0,
-  backgroundColor = '#FFFFFF'
+  backgroundColor = "#FFFFFF",
 }) => {
-
   return (
     <motion.div
       className="card-image-container"
-      style={{backgroundColor, originX: 0, originY: 0 }}
+      style={{
+        transform: "scale(1, -1)",
+        transformOrigin: "top left",
+        backgroundColor,
+        originX: 0,
+        originY: 0,
+      }}
     >
       <motion.img
         className="card-image"
