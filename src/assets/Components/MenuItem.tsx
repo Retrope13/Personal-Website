@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import { Link, Route } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import React, {useContext} from 'react';
 import Home from '../imgs/Home_Icon.png';
 import Projects from '../imgs/Projects_Icon.png';
@@ -33,6 +33,10 @@ const titles = ["Home", "Projects", "Contact Me"];
 const icons = [Home, Projects, Contact];
 
 export const MenuItem: React.FC<MenuItemProps> = ({ i }) => {
+    function handleClick() {
+        window.location.href = pages[i];
+    }
+
     return (
         //if I move the img into the link it makes the icon part of the link, but it resizes the image
         <motion.li 
@@ -40,7 +44,8 @@ export const MenuItem: React.FC<MenuItemProps> = ({ i }) => {
         whileHover={{scale: 1.1}}
         whileTap = {{scale: 1}} >
         <img src={icons[i]} className="icon-placeholder"/> 
-        <Link to={pages[i]} className='text-placeholder'>{titles[i]} </Link>
+        <motion.a href={pages[i]} onClick={handleClick} className='text-placeholder'>{titles[i]} </motion.a>
+
         </motion.li>
     );
 };

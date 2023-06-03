@@ -8,6 +8,7 @@ import { useDimensions} from "./assets/Components/use-dimensions";
 import { MenuToggle } from './assets/Components/MenuToggle';
 import React, {useContext} from 'react';
 import styled from 'styled-components';
+import { CardList } from './CardList';
 
 
 const Head = styled.h1`
@@ -94,7 +95,7 @@ const sidebar ={
   }
 };
 
-function App() {
+function Projects() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const height = useDimensions(containerRef).current.height;
@@ -114,9 +115,7 @@ function App() {
             <motion.div className="background" variants={sidebar}/>
               {/*This preserves the animation while also preventing users from clicking on links when the nav is closed*/}
               <div style={{pointerEvents: isOpen ? 'all' : 'none'}}> 
-              <Router>
               <Navigation/>
-              </Router>
               </div>
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
@@ -126,11 +125,11 @@ function App() {
         animate={{x: isOpen ? 100 : -100}} 
         className="content">
 
-          
+          <CardList/>
         </motion.div>
       </body>
     </div>
   );
 }
 
-export default App;
+export default Projects;
