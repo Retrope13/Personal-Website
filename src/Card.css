@@ -79,8 +79,8 @@
   
   .card:nth-child(4n + 1),
   .card:nth-child(4n + 4) {
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 40%;
+    max-width: 40%;
   }
   
   .card:nth-child(odd) {
