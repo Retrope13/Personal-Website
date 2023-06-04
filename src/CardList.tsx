@@ -39,7 +39,7 @@ export const CardList = () => {
 
 const cardData: CardData[] = [
     {
-        id: "c",
+        id: "a",
         category: "Pizza",
         title: "5 Food Apps Delivering the Best of Your City",
         pointOfInterest: 80,
@@ -47,7 +47,7 @@ const cardData: CardData[] = [
       },
 
       {
-        id: "a",
+        id: "b",
         category: "Burgers",
         title: "5 Food Apps Delivering the Best of Your City",
         pointOfInterest: 80,
@@ -55,7 +55,21 @@ const cardData: CardData[] = [
       },
 
       {
-        id: "b",
+        id: "c",
+        category: "Tacos",
+        title: "5 Food Apps Delivering the Best of Your City",
+        pointOfInterest: 80,
+        backgroundColor: "#814A0E"
+      },
+      {
+        id: "d",
+        category: "Tacos",
+        title: "5 Food Apps Delivering the Best of Your City",
+        pointOfInterest: 80,
+        backgroundColor: "#814A0E"
+      },
+      {
+        id: "e",
         category: "Tacos",
         title: "5 Food Apps Delivering the Best of Your City",
         pointOfInterest: 80,
