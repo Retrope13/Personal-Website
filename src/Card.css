@@ -165,14 +165,14 @@
   .overlay {
     z-index: 1;
     position: fixed;
-    background: #ffffff;
+    background: #1b2636;
     will-change: opacity;
     top: 0;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 990px;
+    max-width: 100%;
   }
   
   .overlay a {
