@@ -120,13 +120,9 @@ function Projects() {
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
           </div>
-        <motion.div 
-        transition={{duration: 1}} 
-        animate={{x: isOpen ? 100 : -100}} 
-        className="content">
+
 
           <CardList/>
-        </motion.div>
       </body>
     </div>
   );
