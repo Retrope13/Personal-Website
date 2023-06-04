@@ -113,6 +113,7 @@
     pointer-events: auto;
     position: relative;
     border-radius: 20px;
+    border: 2px solid #fff;
     background: #1b2636;
     overflow: hidden;
     width: 100%;
@@ -121,7 +122,7 @@
   }
   
   .open .card-content {
-    height: auto;
+    height: 90vh;
     max-width: 700px;
     overflow: hidden;
   }
