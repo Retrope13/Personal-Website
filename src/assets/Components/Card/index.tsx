@@ -37,10 +37,6 @@ export const Card = memo(
         const cardRef = useRef(null);
         const constraints = useScrollConstraints(cardRef, isSelected);
 
-        function handleClick() {
-            window.location.href = "/projects";
-        }
-
         function checkSwipeToDismiss() {
             if (y.get() > dismissDistance ) {
                 window.location.href = "http://localhost:3000/projects";
@@ -76,7 +72,6 @@ export const Card = memo(
                         drag={isSelected ? "y": false}
                         dragConstraints={constraints}
                         onDrag={checkSwipeToDismiss}
-                        onClick={handleClick}
                         onUpdate={checkZIndex}>
                             <Title title={title} category={category} isSelected={isSelected}/>
                             <CardContent/>
@@ -102,6 +97,6 @@ const Overlay = ({ isSelected }: OverlayProps) => (
     transition={{duration: .2}}
     style={{pointerEvents: isSelected ? "auto" : "none"}}
     className="overlay">
-        <Link to="/"/>
+        <Link to="/projects"/>
     </motion.div>
 );
