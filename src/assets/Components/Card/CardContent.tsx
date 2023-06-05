@@ -8,7 +8,7 @@ export const CardContent = React.memo(() => {
       className="content-container"
       style={{ transformOrigin: "top left" }}
     >
-      <LoremIpsum p={6} avgWordsPerSentence={6} avgSentencesPerParagraph={4} />
+      <p>fjdksalfjdkalfjdlsafjsdlka</p>
     </motion.div>
   );
 });
