@@ -37,7 +37,7 @@ const TextDiv = styled.div`
   align-items: center;
   width: 55vw;
   padding-left: 2vw;
-  margin-left: 25vw;
+  margin-left: 27vw;
   margin-bottom: 3vh;
 `
 
@@ -57,11 +57,11 @@ const BioTextDiv = styled.div`
 
 const Para = styled.p`
   font-family: Alexandria;
-  font-size: 2.2vh;
+  font-size: 2vh;
   color: #FFFFFF;
   display: flex-box;
   align-items: flex-start;
-  width: 55vw;
+  width: auto;
   height: 19vh
 `
 
@@ -121,14 +121,14 @@ function App() {
           </div>
         <motion.div 
         transition={{duration: 1}} 
-        animate={{x: isOpen ? 100 : -100}} 
+        animate={{x: isOpen ? 50 : -150}} 
         className="content">
-          <Head>Chez McKay</Head>
+          <Head>Sam McKay</Head>
           <div className='image-container'>
-           <img src={MyPhoto} alt="temporary photo"/> {/*You can put a div behind the image to give it some depth*/}
+           <img src={MyPhoto} alt="Photo of me at Meow Wolf!"/> {/*You can put a div behind the image to give it some depth*/}
           </div>
       <TextDiv style={{ marginTop: '-59vh', paddingTop: '3vh', display: 'flex'}}>      
-          <TextHead style={{marginBottom: '8vh', whiteSpace: 'nowrap', marginTop: '-17vh', marginLeft: '0vw'}} className='bio-heading'>A bit about me</TextHead>
+          <TextHead style={{marginBottom: '8vh', whiteSpace: 'nowrap', marginTop: '-17vh', marginLeft: '0'}} className='bio-heading'>A bit about me</TextHead>
         <div className='bio-container'>
         <Para>
         Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
