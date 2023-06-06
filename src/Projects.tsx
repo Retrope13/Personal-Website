@@ -1,12 +1,9 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import MyPhoto from './assets/imgs/SamMcKayPic.jpg';
-import {motion, sync, useCycle} from 'framer-motion';
-import {useEffect, useRef} from 'react';
+import {motion, useCycle} from 'framer-motion';
+import { useRef} from 'react';
 import {Navigation} from './assets/Components/Navigation';
 import { useDimensions} from "./assets/Components/use-dimensions";
 import { MenuToggle } from './assets/Components/MenuToggle';
-import React, {useContext} from 'react';
 import styled from 'styled-components';
 import { CardList } from './CardList';
 
@@ -103,7 +100,7 @@ function Projects() {
 
   return (
     <div className="App">
-      <title>Home</title>
+      <title>Projects</title>
       <body>
         <div className='top'>
           <motion.nav
@@ -120,9 +117,7 @@ function Projects() {
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
           </div>
-
-
-          <CardList/>
+            <CardList/>
       </body>
     </div>
   );
