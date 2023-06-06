@@ -25,7 +25,8 @@ export const Card = memo(
         id,
         title,
         category,
-        innerText
+        innerText,
+        link
     }: Props) => {
         const y = useMotionValue(0);
         const zIndex = useMotionValue(isSelected ? 2 : 0);
@@ -72,7 +73,7 @@ export const Card = memo(
                         onDrag={checkSwipeToDismiss}
                         onUpdate={checkZIndex}>
                             <Title title={title} category={category} isSelected={isSelected}/>
-                            <CardContent innerText={innerText}/>
+                            <CardContent innerText={innerText} link={link}/>
                         </motion.div>
                 </div>
                 {!isSelected && <Link to={id} className={`card-open-link`} />}
