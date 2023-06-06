@@ -5,6 +5,27 @@
       Helvetica, Arial, sans-serif;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
+
+
+  @font-face {
+    font-family: "Bavista";
+    src: url("./assets/fonts/Bavista_Soulare.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: "Alexandria";
+    src: url('./assets/fonts/AlexandriaFLF-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: "AlexandriaItalics";
+    src: url('./assets/fonts/AlexandriaFLF-Italic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Albas';
+    src: url('./assets/fonts/ALBAS___.TTF') format('truetype');
+  }
   
   #root {
     display: flex;
@@ -152,19 +173,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 300px;
+    max-width: auto;
     margin-left: 2vw;
+    margin-top: 2vh;
   }
   
   h2 {
     color: #fff;
     margin: 8px 0;
+    margin-top: 2vh;
+    font-family: "Bavista";
+    font-size: 5vh;
   }
   
   .category {
     color: #fff;
-    font-size: 14px;
+    font-size: 1.2vh;
     text-transform: uppercase;
+    width: auto;
   }
   
   .overlay {
