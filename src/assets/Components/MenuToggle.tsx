@@ -14,7 +14,7 @@ interface PathProps extends AnimationProps {
 const Path: React.FC<PathProps> = ({pathData, ...props}) => (
     <motion.path
     fill="transparent"
-    strokeWidth="3"
+    strokeWidth="4"
     stroke="hsl(0, 0%, 18%)"
     strokeLinecap = "round"
     d={pathData}
