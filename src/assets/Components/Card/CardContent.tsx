@@ -2,13 +2,19 @@ import * as React from "react";
 import { LoremIpsum } from "react-lorem-ipsum";
 import { motion } from "framer-motion";
 
-export const CardContent = React.memo(() => {
+interface ContentProps {
+  innerText: string
+}
+
+export const CardContent: React.FC<ContentProps> = React.memo(({innerText}) => {
   return (
     <motion.div
       className="content-container"
       style={{ transformOrigin: "top left" }}
     >
-      <p>fjdksalfjdkalfjdlsafjsdlka</p>
+      <p> 
+      {innerText}
+      </p>
     </motion.div>
   );
 });
