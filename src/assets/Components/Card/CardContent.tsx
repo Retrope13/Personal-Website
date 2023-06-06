@@ -4,14 +4,16 @@ import { motion } from "framer-motion";
 
 interface ContentProps {
   innerText: string
+  link: string
 }
 
-export const CardContent: React.FC<ContentProps> = React.memo(({innerText}) => {
+export const CardContent: React.FC<ContentProps> = React.memo(({innerText, link}) => {
   return (
     <motion.div
       className="content-container"
       style={{ transformOrigin: "top left" }}
     >
+      <a href={link}/>
       <p> 
       {innerText}
       </p>
