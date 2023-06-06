@@ -1,8 +1,9 @@
 import * as React from 'react';
 import {MotionValue, motion} from 'framer-motion';
 import {closeSpring, openSpring} from './animations'; 
+import { Image } from './Image';
 
-interface TitleProps {
+interface TitleProps { 
     title: string;
     category: string;
     isSelected: boolean;
@@ -24,10 +25,12 @@ export const Title: React.FC<TitleProps> = ({ title, category, isSelected}) => {
             transformOrigin: "top left",
             originX: 0,
             originY: 0,
+            zIndex: 1,
+            position: "absolute"
           }}
         >
-          <span className="category">{category}</span>
-          <h2>{title}</h2>
+          <span className="category" style={{zIndex: 1}}>{category}</span>
+          <h2 style={{zIndex: 2}}>{title}</h2>
         </motion.div>
       );
     };
