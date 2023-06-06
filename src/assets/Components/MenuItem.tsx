@@ -44,7 +44,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({ i }) => {
         whileHover={{scale: 1.1}}
         whileTap = {{scale: 1}} >
         <img src={icons[i]} className="icon-placeholder"/> 
-        <motion.a href={pages[i]} onClick={handleClick} className='text-placeholder'>{titles[i]} </motion.a>
+        <Link to={pages[i]} onClick={handleClick} className='text-placeholder'>{titles[i]} </Link>
 
         </motion.li>
     );
