@@ -40,39 +40,59 @@ export const CardList = () => {
 const cardData: CardData[] = [
     {
         id: "a",
-        category: "Pizza",
-        title: "5 Food Apps Delivering the Best of Your City",
-        pointOfInterest: 80,
-        backgroundColor: "#814A0E"
+        category: "Web Development, Frontend, Backend, React, Javascript",
+        title: "Trip Planner",
+
+        innerText: "one"
       },
 
       {
         id: "b",
-        category: "Burgers",
-        title: "5 Food Apps Delivering the Best of Your City",
-        pointOfInterest: 80,
-        backgroundColor: "#814A0E"
+        category: "Multithreading, Peripheral, UI, Python",
+        title: "CryptoBot",
+        innerText: "two"
       },
 
       {
         id: "c",
-        category: "Tacos",
-        title: "5 Food Apps Delivering the Best of Your City",
-        pointOfInterest: 80,
-        backgroundColor: "#814A0E"
+        category: "Game development, VR development, Unreal, Blueprints, Blender",
+        title: "Tower Defense",
+        innerText: "fdsafds"
       },
       {
         id: "d",
-        category: "Tacos",
-        title: "5 Food Apps Delivering the Best of Your City",
-        pointOfInterest: 80,
-        backgroundColor: "#814A0E"
+        category: "Machine learning, Python, Jupyter notebook",
+        title: "Music Classification",
+        innerText: "fdsafds"
       },
       {
         id: "e",
-        category: "Tacos",
-        title: "5 Food Apps Delivering the Best of Your City",
-        pointOfInterest: 80,
-        backgroundColor: "#814A0E"
+        category: "Blockchain, Ethereum, Smart contracts, Web development, UX/UI, React, JavaScript",
+        title: "Bidder, Faster, Stronger",
+        innerText: "fdsafds"
+      },
+      {
+        id: "f",
+        category: "Research, Web Development, React, JavaScript",
+        title: "GeoPursuit",
+        innerText: "fdsafds"
+      },
+      {
+        id: "g",
+        category: "Java, JUnit, JavaScript, Iterative testing ",
+        title: "Company Management",
+        innerText: "fdsafds"
+      },
+      {
+        id: "h",
+        category: "UI, Python, File input/output",
+        title: "DNDBuddy",
+        innerText: "fdsafds"
+      },
+      {
+        id: "i",
+        category: "Python, Linguistic analysis, Image stitching, File input/output",
+        title: "Translator",
+        innerText: "fdsafds"
       },
 ];
