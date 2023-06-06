@@ -25,9 +25,7 @@ export const Card = memo(
         id,
         title,
         category,
-        history,
-        pointOfInterest,
-        backgroundColor
+        innerText
     }: Props) => {
         const y = useMotionValue(0);
         const zIndex = useMotionValue(isSelected ? 2 : 0);
@@ -36,10 +34,6 @@ export const Card = memo(
 
         const cardRef = useRef(null);
         const constraints = useScrollConstraints(cardRef, isSelected);
-
-        function handleClick() {
-            window.location.href = "/projects";
-        }
 
         function checkSwipeToDismiss() {
             if (y.get() > dismissDistance ) {
@@ -76,10 +70,9 @@ export const Card = memo(
                         drag={isSelected ? "y": false}
                         dragConstraints={constraints}
                         onDrag={checkSwipeToDismiss}
-                        onClick={handleClick}
                         onUpdate={checkZIndex}>
                             <Title title={title} category={category} isSelected={isSelected}/>
-                            <CardContent/>
+                            <CardContent innerText={innerText}/>
                         </motion.div>
                 </div>
                 {!isSelected && <Link to={id} className={`card-open-link`} />}
@@ -102,6 +95,6 @@ const Overlay = ({ isSelected }: OverlayProps) => (
     transition={{duration: .2}}
     style={{pointerEvents: isSelected ? "auto" : "none"}}
     className="overlay">
-        <Link to="/"/>
+        <Link to="/projects"/>
     </motion.div>
 );
