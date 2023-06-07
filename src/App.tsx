@@ -28,7 +28,7 @@ const TextHead = styled.h1`
   height: 10vh;
 `
 
-const TextDiv = styled.div`
+export const TextDiv = styled.div`
   border: .15vw solid #FFFFFF;
   border-radius: 2vw;
   height: auto;
