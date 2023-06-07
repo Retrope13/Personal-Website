@@ -93,11 +93,12 @@
   
   .card {
     position: relative;
-    padding: 25px;
-    height: 460px;
+    padding: 1vw;
+    height: 35vh;
     width: auto;
     flex: 0 0 40%;
     max-width: 40%;
+    margin-bottom: -5vh;
   }
   
   .card:nth-child(4n + 1),
