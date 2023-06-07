@@ -72,8 +72,8 @@ export const Card = memo(
                         dragConstraints={constraints}
                         onDrag={checkSwipeToDismiss}
                         onUpdate={checkZIndex}>
-                            <Title title={title} category={category} isSelected={isSelected}/>
-                            <CardContent innerText={innerText} link={link}/>
+                            <Title title={title} category={category} isSelected={isSelected}  link={link}/>
+                            <CardContent innerText={innerText}/>
                         </motion.div>
                 </div>
                 {!isSelected && <Link to={id} className={`card-open-link`} />}
