@@ -10,7 +10,11 @@ import Contact from './Contact';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Projects />
+      <Routes>
+      <Route path='/' element={<App/>}/>
+      <Route path='/Projects' element={<Projects/>}/>
+      <Route path='/Contact' element={<Contact/>}/>
+      </Routes>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
