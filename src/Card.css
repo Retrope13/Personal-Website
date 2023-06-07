@@ -183,7 +183,7 @@
     margin: 8px 0;
     margin-top: 2vh;
     font-family: "Alba";
-    font-size: 4vh;
+    font-size: 3.7vh;
   }
   
   .category {
@@ -214,6 +214,11 @@
     left: 50%;
   
     transform: translateX(-50%);
+  }
+
+  .repoLink {
+    display: inline-block;
+    width: 5vw;
   }
   
   .content-container {
