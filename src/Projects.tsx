@@ -10,67 +10,13 @@ import { CardList } from './CardList';
 
 const Head = styled.h1`
   color: #FFFFFF;
-  margin-top: 0vh;
+  margin-left: 15vw;
   font-family: Bavista;
   font-size: 10vh;
   background-color: #00000000;
   border-radius: 5px;
   height: auto;
   `
-
-const TextHead = styled.h1`
-  color: #FFFFFF;
-  font-family: Bavista;
-  font-size: 8vh;
-  background-color: #00000000;
-  height: 10vh;
-`
-
-const TextDiv = styled.div`
-  border: .15vw solid #FFFFFF;
-  border-radius: 2vw;
-  height: auto;
-  background-color: #1b2636;
-  justify-content: center;
-  align-items: center;
-  width: 55vw;
-  padding-left: 2vw;
-  margin-left: 25vw;
-  margin-bottom: 3vh;
-`
-
-const BioTextDiv = styled.div`
-  border: .15vw solid #FFFFFF;
-  border-radius: 2vw;
-  background-color: #1b2636;
-  justify-content: center;
-  width: 55vw;
-  padding-left: 2vw;
-  margin-left: 25vw;
-  margin-bottom: 3vh;
-  margin-top: -59vh;
-  padding-top: 3vh;
-  display: flex;
-`
-
-const Para = styled.p`
-  font-family: Alexandria;
-  font-size: 2.2vh;
-  color: #FFFFFF;
-  display: flex-box;
-  align-items: flex-start;
-  width: 55vw;
-  height: 19vh
-`
-
-const AchievementsHead = styled.h1`
-  color: #FFFFFF;
-  margin-top: -22vh;
-  font-family: Bavista;
-  font-size: 8vh;
-  background-color: #00000000;
-  height: 10vh;
-`
 
 const sidebar ={
   open: (height = 1000) => ({
@@ -96,7 +42,6 @@ function Projects() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const height = useDimensions(containerRef).current.height;
-  const [isLoaded, toggleLoaded] = useCycle(false, true);
 
   return (
     <div className="App">
@@ -117,6 +62,7 @@ function Projects() {
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
           </div>
+          <Head>My Projects</Head>
             <CardList/>
       </body>
     </div>

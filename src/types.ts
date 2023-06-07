@@ -3,4 +3,5 @@ export interface CardData {
     category: string;
     title: string;
     innerText: string;
+    link: string;
 }
