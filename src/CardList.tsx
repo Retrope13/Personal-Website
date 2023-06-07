@@ -66,7 +66,7 @@ const cardData: CardData[] = [
         Integration of Binance's API facilitated actual trading, providing access to various cryptocurrencies. Our system implemented buying and selling algorithms based on user-defined strategies, ensuring efficient and profitable trades.
         
         Security and reliability were paramount. Robust error handling mechanisms were implemented, and rigorous testing validated system stability and accuracy.`,
-        link: "https://github.com/Retrope13"
+        link: "https://github.com/Retrope13/CryptoBot"
       },
 
       {
@@ -80,7 +80,7 @@ const cardData: CardData[] = [
         To enhance immersion, I optimized the game for the Oculus Quest 2 headset. Leveraging its high-resolution display and motion tracking, I provided players with a seamless and immersive virtual reality experience. This involved performance optimization, latency reduction, and fine-tuning the controls to ensure smooth and responsive gameplay.
         
         Throughout development, I prioritized game balance, level design, and user feedback. I iterated on mechanics, adjusted difficulty curves, and incorporated player suggestions to create an enjoyable gameplay experience.`,
-        link: "https://github.com/Retrope13"
+        link: "https://github.com/Retrope13/HW2_McKayS_EyreD"
       },
       {
         id: "d",
@@ -91,7 +91,7 @@ const cardData: CardData[] = [
         To achieve accurate genre classification, I implemented Support Vector Machines (SVM) and Random Forests classifiers. These algorithms were trained on a labeled dataset of songs with genre labels. The models outperformed random guessing and achieved significantly higher accuracy in predicting the genre of a song based on its features.
         
         Visualization techniques played a crucial role in the project. Heatmaps helped visualize relationships between different features, identifying correlations and dependencies. PCA visualization aided in reducing dimensionality and discovering clusters of similar genres. Feature importance analysis provided insights into the key characteristics that differentiate genres.`,
-        link: "https://github.com/Retrope13"
+        link: "https://github.com/Retrope13/Music_Classification_Project"
       },
       {
         id: "e",
@@ -104,7 +104,7 @@ const cardData: CardData[] = [
         For testing and deployment, I utilized Truffle, a development framework for Ethereum applications. Truffle provided tools for testing, compiling, and deploying the smart contract, ensuring consistent behavior across different browsers and networks. By utilizing Truffle during testing, I could verify that the platform offered a smooth user experience.
         
         To create visually appealing and unique NFTs, I employed Aesprite, an application for designing digital assets. Aesprite allowed me to generate original NFTs and associated assets, ensuring exclusivity and aesthetic appeal for the bidding platform.`,
-        link: "https://github.com/Retrope13"
+        link: "https://github.com/Retrope13/CS458-Bidding-Game"
       },
       {
         id: "f",
@@ -141,7 +141,7 @@ const cardData: CardData[] = [
         The painting functionality was implemented using JavaScript, enabling users to select, remove, edit, and add colors on the canvas. Through JavaScript, DOM manipulation was leveraged to dynamically update table cells, allowing real-time color changes and edits. JavaScript also facilitated the integration of event handlers, ensuring seamless interaction between user actions and the canvas display.
         
         To optimize performance and streamline development, I utilized Fuel, a lightweight PHP framework. Fuel provided a structured and efficient framework for building backend logic and handling HTTP requests. This allowed me to focus on implementing specific features and functionalities without repetitive and low-level coding tasks.`,
-        link: "https://github.com/Retrope13"
+        link: "https://github.com/Retrope13/CS312-Project"
       },
       {
         id: "i",
@@ -154,7 +154,7 @@ const cardData: CardData[] = [
         Additionally, I had an interest in converting the application into a web-based platform to reach a wider audience and improve accessibility. By transitioning to the web, players could access the application from any browser, eliminating software installations and offering a versatile and user-friendly experience.
         
         The main goal of this project was to create a graphical user interface that resembled video games, simplifying the Dungeons and Dragons experience for new players. `,
-        link: "https://github.com/Retrope13"
+        link: "https://github.com/Retrope13/DNDBUDDY"
       },
       {
         id: "j",
@@ -165,6 +165,6 @@ const cardData: CardData[] = [
         The translation algorithm, implemented in Python, intelligently analyzed the syntax of English sentences submitted through the command line interface. It generated an output file containing the corresponding Anterian translation. To visually represent the translation, I utilized the PIL library to stitch together images representing the steps and components of the translation process. This visual representation served as a guide for players looking to incorporate Anterian into their gameplay, promoting immersion and authenticity.
         
         The PIL image stitching library seamlessly combined the generated images into a composite image, allowing users to grasp the progression of the translation at a glance. This feature added depth and engagement to the language translator, catering specifically to the needs of Dungeons and Dragons enthusiasts who sought a unique language to enrich their gameplay experience.`,
-        link: "https://github.com/Retrope13"
+        link: "https://github.com/Retrope13/Anterian_language"
       },
 ];
