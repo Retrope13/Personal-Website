@@ -10,9 +10,9 @@ export const CardContent: React.FC<ContentProps> = React.memo(({innerText}) => {
   return (
     <motion.div
       className="content-container"
-      style={{ transformOrigin: "top left" }}
+      style={{ transformOrigin: "top left"}}
     >
-      <p> 
+      <p style={{whiteSpace: 'pre-line', marginLeft: '2vw'}}> 
       {innerText}
       </p>
     </motion.div>
