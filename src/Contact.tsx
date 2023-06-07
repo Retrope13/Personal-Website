@@ -38,19 +38,20 @@ const Icons = styled.img`
   width: 5vw;
   height: 9vh;
   display: inline-flex;
-  margin-top: 2vh;
-  margin-bottom: 3vh
+  margin-top: 1vh;
+  margin-bottom: 1vh
 `
 
 const ContactText = styled.h2`
   color: #fff;
   margin: 8px 0;
-  margin-top: 0vh;
+  margin-top: 1vh;
   font-family: "Alba";
   font-size: 3.2vh;
   margin-left: 0vw;
   display: inline-flex;
-
+  align-items: 'center;
+  vertical-align: middle;
 `
 
 const sidebar ={
@@ -103,10 +104,29 @@ function Contact() {
             className="content">
             <Head>Connect with me</Head>
             <Intro>Here are a few ways to get in touch with me!</Intro>
-            <TextDiv style={{width: '30vw', marginLeft: '15vw', marginTop: '7vh', alignItems: 'center'}}>
-              <Icons src={phone} alt="An all white icon of a handheld phone"/>
+
+            <TextDiv style={{width: '30vw', marginLeft: '15vw', alignItems: 'center', display: 'inline-block'}}>
+              <Icons src={phone} style={{height: '7vh', width: '4vw'}} alt="An all white icon of a handheld phone"/>
               <ContactText>fdsafdsa</ContactText>
+            </TextDiv >
+
+            <a href='mailto:sammckay31@gmail.com?subject=In%20Regards%20To%20Your%20Website'>
+            <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop:'7vh', alignItems: 'center', display: 'inline-block'}}>
+            <Icons src={email} style={{height: '8vh', width: '5vw'}} alt="An all white, thin lined icon of an envelope rounded on the sides"/>
             </TextDiv>
+            </a>
+
+            <a href='https://github.com/Retrope13' target='_blank'>
+            <TextDiv style={{width: '30vw', marginLeft: '15vw', marginTop: '7vh', alignItems: 'center', display: 'inline-block'}}>
+            <Icons src={github} alt="An all white icon version of the GitHub logo"/>
+            </TextDiv>
+            </a>
+
+            <a href='https://www.linkedin.com/in/sam-mckay13/' target='_blank'>
+            <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop: '7vh', alignItems: 'center', display: 'inline-block'}}>
+            <Icons src={linkedIn} alt="An all white icon version of the LinkedIn logo"/>
+            </TextDiv>
+            </a>
 
 
           </motion.div>
