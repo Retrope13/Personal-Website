@@ -148,7 +148,8 @@
   
   .open .card-content {
     height: 90vh;
-    max-width: 700px;
+    width: auto;
+    max-width: 32vw;
     overflow: hidden;
   }
   
@@ -230,7 +231,7 @@
   
   p {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 28px;
   }
   
