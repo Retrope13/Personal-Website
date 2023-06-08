@@ -1,4 +1,4 @@
-import './Home.css';
+import './Contact.css';
 import { TextDiv } from './Home';
 import linkedIn from './assets/imgs/LinkedIn.png';
 import phone from './assets/imgs/Phone.png';
