@@ -129,10 +129,34 @@ function Home() {
        </div>
 
        <div className='CSU-container'>
-          <Para style={{width: '99%'}}>While enrolled at CSU I had the opportunity to work on several incredible projects which you can see some of on the projects page of this website.
-            Throughout these projects I learned several programming languages such as Javascript, Java, C, C++, Python, HTML, PHP, Typescript, and R. I also became well-versed in concepts such 
-            as Agile CMMI, test-driven development, Object-Oriented design, VR development, game design, machine learning, team management, time management, and, most importantly, the process of learning a new programming language.
-            {/*It might be a good idea to make the languages and concepts two styled unordered lists sitting shoulder to shoulder. It would probably look cleaner*/}
+          <Para style={{width: '99%'}}>While enrolled at CSU, I had the opportunity to work on several incredible projects, which you can see on the projects page of this website.
+           Within many of these projects, I took on a leadership role and gained a firm grasp of various languages, libraries, and concepts, which have greatly assisted me in my journey as a developer.
+            <ul className='Languages'>
+              <li className='ulTitleL'>Languages:</li>
+              <li>Javascript,</li>
+              <li>Java,</li>
+              <li>C,</li>
+              <li>C++,</li>
+              <li>Python,</li>
+              <li>HTML,</li>
+              <li>PHP,</li>
+              <li>Typescript,</li>
+              <li>R</li>
+              </ul>
+
+
+              <ul className='Concepts'>
+              <li className='ulTitleC'>Concepts:</li>
+              <li>Agile Scrum,</li>
+              <li>Test-driven development,</li>
+              <li>Object-Oriented design,</li>
+              <li>Game design,</li>
+              <li>VR development,</li>
+              <li>Machine learning,</li>
+              <li>Team management,</li>
+              <li>Time management,</li>
+              <li>Language acquisition</li>
+              </ul>
           </Para>
        </div>
           </TextDiv>
