@@ -5,7 +5,7 @@ import {Navigation} from './assets/Components/Navigation';
 import { useDimensions} from "./assets/Components/use-dimensions";
 import { MenuToggle } from './assets/Components/MenuToggle';
 import styled from 'styled-components';
-import { CardList } from './CardList';
+import { List } from './CardList';
 
 
 const Head = styled.h1`
@@ -63,7 +63,7 @@ function Projects() {
           </motion.nav>
           </div>
           <Head>My Projects</Head>
-            <CardList/>
+            <List history={{}}/>
       </body>
     </div>
   );
