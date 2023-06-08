@@ -1,11 +1,17 @@
-import './App.css';
+import './Contact.css';
+import { TextDiv } from './Home';
+import linkedIn from './assets/imgs/LinkedIn.png';
+import phone from './assets/imgs/Phone.png';
+import github from './assets/imgs/github.png';
+import email from './assets/imgs/Contact_Icon.png';
 import {motion, useCycle} from 'framer-motion';
 import { useRef} from 'react';
-import {Navigation} from './assets/Components/Navigation';
 import { useDimensions} from "./assets/Components/use-dimensions";
+import {Navigation} from './assets/Components/Navigation';
 import { MenuToggle } from './assets/Components/MenuToggle';
 import styled from 'styled-components';
-import { CardList } from './CardList';
+import React from 'react';
+
 
 
 const Head = styled.h1`
@@ -18,58 +24,33 @@ const Head = styled.h1`
   height: auto;
   `
 
-const TextHead = styled.h1`
-  color: #FFFFFF;
-  font-family: Bavista;
-  font-size: 8vh;
-  background-color: #00000000;
-  height: 10vh;
+const Intro = styled.h2`
+  color: #fff;
+  margin: 8px 0;
+  margin-top: 1vh;
+  font-family: "Alba";
+  font-size: 3.2vh;
+  margin-left: 5vw;
 `
 
-const TextDiv = styled.div`
-  border: .15vw solid #FFFFFF;
-  border-radius: 2vw;
-  height: auto;
-  background-color: #1b2636;
-  justify-content: center;
-  align-items: center;
-  width: 55vw;
-  padding-left: 2vw;
-  margin-left: 25vw;
-  margin-bottom: 3vh;
+const Icons = styled.img`
+  width: 5vw;
+  height: 9vh;
+  display: inline-flex;
+  margin-top: 1vh;
+  margin-bottom: 1vh
 `
 
-const BioTextDiv = styled.div`
-  border: .15vw solid #FFFFFF;
-  border-radius: 2vw;
-  background-color: #1b2636;
-  justify-content: center;
-  width: 55vw;
-  padding-left: 2vw;
-  margin-left: 25vw;
-  margin-bottom: 3vh;
-  margin-top: -59vh;
-  padding-top: 3vh;
-  display: flex;
-`
-
-const Para = styled.p`
-  font-family: Alexandria;
-  font-size: 2.2vh;
-  color: #FFFFFF;
-  display: flex-box;
-  align-items: flex-start;
-  width: 55vw;
-  height: 19vh
-`
-
-const AchievementsHead = styled.h1`
-  color: #FFFFFF;
-  margin-top: -22vh;
-  font-family: Bavista;
-  font-size: 8vh;
-  background-color: #00000000;
-  height: 10vh;
+const ContactText = styled.h2`
+  color: #fff;
+  margin-top: 1vh;
+  font-family: "Alba";
+  font-size: 3.2vh;
+  display: inline-flex;
+  align-items: 'center;
+  vertical-align: middle;
+  justify-content: left;
+  white-space: wrap;
 `
 
 const sidebar ={
@@ -96,11 +77,10 @@ function Contact() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const height = useDimensions(containerRef).current.height;
-  const [isLoaded, toggleLoaded] = useCycle(false, true);
 
   return (
     <div className="App">
-      <title>Home</title>
+      <title>Contact Me</title>
       <body>
         <div className='top'>
           <motion.nav
@@ -117,9 +97,41 @@ function Contact() {
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
           </div>
+          <motion.div 
+            transition={{duration: 1}} 
+            animate={{x: isOpen ? 50 : -150}} 
+            className="content">
+            <Head>Connect with me</Head>
+            <Intro>Here are a few ways to get in touch with me!</Intro>
+
+            <TextDiv style={{width: '30vw', marginTop:'7vh', marginLeft: '15vw', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+              <Icons src={phone} style={{height: '8vh', width: '4vw', marginRight:'3vw'}} alt="An all white icon of a handheld phone"/>
+              <ContactText>(409)-504-8250</ContactText>
+            </TextDiv>
+
+            <a rel='noreferrer' href='mailto:sammckay31@gmail.com?subject=In%20Regards%20To%20Your%20Website'>
+            <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop:'7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+            <Icons src={email} style={{height: '8vh', width: '5vw', marginRight:'1vw'}} alt="An all white, thin lined icon of an envelope rounded on the sides"/>
+            <ContactText>sammckay31@gmail.com</ContactText>
+            </TextDiv>
+            </a>
+
+            <a rel='noreferrer' href='https://github.com/Retrope13' target='_blank'>
+            <TextDiv style={{width: '30vw', marginLeft: '15vw', marginTop: '7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+            <Icons src={github} style={{marginRight:'5vw'}} alt="An all white icon version of the GitHub logo"/>
+            <ContactText>Retrope13</ContactText>
+            </TextDiv>
+            </a>
+
+            <a rel='noreferrer' href='https://www.linkedin.com/in/sam-mckay13/' target='_blank'>
+            <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop: '7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+            <Icons src={linkedIn} style={{marginRight:'4vw'}} alt="An all white icon version of the LinkedIn logo"/>
+            <ContactText>Sam-mckay13</ContactText>
+            </TextDiv>
+            </a>
 
 
-          <CardList/>
+          </motion.div>
       </body>
     </div>
   );

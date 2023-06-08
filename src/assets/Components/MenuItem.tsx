@@ -33,9 +33,6 @@ const titles = ["Home", "Projects", "Contact Me"];
 const icons = [Home, Projects, Contact];
 
 export const MenuItem: React.FC<MenuItemProps> = ({ i }) => {
-    function handleClick() {
-        window.location.href = pages[i];
-    }
 
     return (
         //if I move the img into the link it makes the icon part of the link, but it resizes the image
@@ -43,8 +40,8 @@ export const MenuItem: React.FC<MenuItemProps> = ({ i }) => {
         variants = {variants}
         whileHover={{scale: 1.1}}
         whileTap = {{scale: 1}} >
-        <img src={icons[i]} className="icon-placeholder"/> 
-        <Link to={pages[i]} onClick={handleClick} className='text-placeholder'>{titles[i]} </Link>
+        <img style={{width: '50%'}} src={icons[i]} className="icon-placeholder"/> 
+        <Link to={pages[i]} className='text-placeholder'>{titles[i]} </Link>
 
         </motion.li>
     );
