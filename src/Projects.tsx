@@ -1,4 +1,4 @@
-import './App.css';
+import './Projects.css';
 import {motion, useCycle} from 'framer-motion';
 import { useRef} from 'react';
 import {Navigation} from './assets/Components/Navigation';
