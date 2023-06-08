@@ -14,7 +14,6 @@ import React from 'react';
 
 
 
-
 const Head = styled.h1`
   color: #FFFFFF;
   margin-top: 0vh;
@@ -44,14 +43,14 @@ const Icons = styled.img`
 
 const ContactText = styled.h2`
   color: #fff;
-  margin: 8px 0;
   margin-top: 1vh;
   font-family: "Alba";
   font-size: 3.2vh;
-  margin-left: 0vw;
   display: inline-flex;
   align-items: 'center;
   vertical-align: middle;
+  justify-content: left;
+  white-space: wrap;
 `
 
 const sidebar ={
@@ -105,26 +104,29 @@ function Contact() {
             <Head>Connect with me</Head>
             <Intro>Here are a few ways to get in touch with me!</Intro>
 
-            <TextDiv style={{width: '30vw', marginLeft: '15vw', alignItems: 'center', display: 'inline-block'}}>
-              <Icons src={phone} style={{height: '7vh', width: '4vw'}} alt="An all white icon of a handheld phone"/>
-              <ContactText>fdsafdsa</ContactText>
-            </TextDiv >
+            <TextDiv style={{width: '30vw', marginTop:'7vh', marginLeft: '15vw', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+              <Icons src={phone} style={{height: '8vh', width: '4vw', marginRight:'3vw'}} alt="An all white icon of a handheld phone"/>
+              <ContactText>(409)-504-8250</ContactText>
+            </TextDiv>
 
             <a href='mailto:sammckay31@gmail.com?subject=In%20Regards%20To%20Your%20Website'>
-            <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop:'7vh', alignItems: 'center', display: 'inline-block'}}>
-            <Icons src={email} style={{height: '8vh', width: '5vw'}} alt="An all white, thin lined icon of an envelope rounded on the sides"/>
+            <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop:'7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+            <Icons src={email} style={{height: '8vh', width: '5vw', marginRight:'1vw'}} alt="An all white, thin lined icon of an envelope rounded on the sides"/>
+            <ContactText>sammckay31@gmail.com</ContactText>
             </TextDiv>
             </a>
 
             <a href='https://github.com/Retrope13' target='_blank'>
-            <TextDiv style={{width: '30vw', marginLeft: '15vw', marginTop: '7vh', alignItems: 'center', display: 'inline-block'}}>
-            <Icons src={github} alt="An all white icon version of the GitHub logo"/>
+            <TextDiv style={{width: '30vw', marginLeft: '15vw', marginTop: '7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+            <Icons src={github} style={{marginRight:'5vw'}} alt="An all white icon version of the GitHub logo"/>
+            <ContactText>Retrope13</ContactText>
             </TextDiv>
             </a>
 
             <a href='https://www.linkedin.com/in/sam-mckay13/' target='_blank'>
-            <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop: '7vh', alignItems: 'center', display: 'inline-block'}}>
-            <Icons src={linkedIn} alt="An all white icon version of the LinkedIn logo"/>
+            <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop: '7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+            <Icons src={linkedIn} style={{marginRight:'4vw'}} alt="An all white icon version of the LinkedIn logo"/>
+            <ContactText>Sam-mckay13</ContactText>
             </TextDiv>
             </a>
 
