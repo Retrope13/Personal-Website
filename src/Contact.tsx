@@ -1,5 +1,5 @@
-import './App.css';
-import { TextDiv } from './App';
+import './Home.css';
+import { TextDiv } from './Home';
 import linkedIn from './assets/imgs/LinkedIn.png';
 import phone from './assets/imgs/Phone.png';
 import github from './assets/imgs/github.png';
@@ -109,21 +109,21 @@ function Contact() {
               <ContactText>(409)-504-8250</ContactText>
             </TextDiv>
 
-            <a href='mailto:sammckay31@gmail.com?subject=In%20Regards%20To%20Your%20Website'>
+            <a rel='noreferrer' href='mailto:sammckay31@gmail.com?subject=In%20Regards%20To%20Your%20Website'>
             <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop:'7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
             <Icons src={email} style={{height: '8vh', width: '5vw', marginRight:'1vw'}} alt="An all white, thin lined icon of an envelope rounded on the sides"/>
             <ContactText>sammckay31@gmail.com</ContactText>
             </TextDiv>
             </a>
 
-            <a href='https://github.com/Retrope13' target='_blank'>
+            <a rel='noreferrer' href='https://github.com/Retrope13' target='_blank'>
             <TextDiv style={{width: '30vw', marginLeft: '15vw', marginTop: '7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
             <Icons src={github} style={{marginRight:'5vw'}} alt="An all white icon version of the GitHub logo"/>
             <ContactText>Retrope13</ContactText>
             </TextDiv>
             </a>
 
-            <a href='https://www.linkedin.com/in/sam-mckay13/' target='_blank'>
+            <a rel='noreferrer' href='https://www.linkedin.com/in/sam-mckay13/' target='_blank'>
             <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop: '7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
             <Icons src={linkedIn} style={{marginRight:'4vw'}} alt="An all white icon version of the LinkedIn logo"/>
             <ContactText>Sam-mckay13</ContactText>
