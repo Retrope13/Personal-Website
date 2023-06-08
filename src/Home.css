@@ -398,7 +398,7 @@ nav {
   top:0;
   left:0;
   bottom: 0;
-  width: 300px;
+  width: 4vw;
   height: 100vh;
   margin-left: .7vw;
 }
@@ -408,10 +408,10 @@ button {
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 18px;
-  left: 15px;
-  width: 50px;
-  height: 50px;
+  top: 1vh;
+  left: 1vw;
+  width: 1vw;
+  height: 5vh;
   border-radius: 50%;
   background: transparent;
 
@@ -442,26 +442,6 @@ li {
   display: flex;
   align-items: center;
   cursor: pointer;
-}
-
-.icon-placeholder {
-  width: 17%;
-  height: 20%;
-  flex: 70px 0;
-  margin-right: 4%;
-  margin-left: 0%;
-  margin-top: 8%;
-}
-
-.text-placeholder {
-  border-radius: 5px;
-  flex: 1;
-  font-size:x-large;
-  text-decoration: none;
-  color: #FFFFFF;
-  font-weight: 100px;
-  margin-top: 2vh;
-
 }
 
 .content {
@@ -515,8 +495,6 @@ img {
 }
 
 .bio-heading {
-  display: flex;
-  margin-left: 25vw;
   margin-top: -15vh;
   font-size: small;
 }

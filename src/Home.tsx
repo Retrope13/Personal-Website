@@ -1,4 +1,4 @@
-import './App.css';
+import './Home.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import MyPhoto from './assets/imgs/SamMcKayPic.jpg';
 import {motion, sync, useCycle} from 'framer-motion';
@@ -35,24 +35,10 @@ export const TextDiv = styled.div`
   background-color: #1b2636;
   justify-content: center;
   align-items: center;
-  width: 55vw;
-  padding-left: 2vw;
+  width: 70%;
+  padding-left: 1vw;
   margin-left: 27vw;
   margin-bottom: 3vh;
-`
-
-const BioTextDiv = styled.div`
-  border: .15vw solid #FFFFFF;
-  border-radius: 2vw;
-  background-color: #1b2636;
-  justify-content: center;
-  width: 55vw;
-  padding-left: 2vw;
-  margin-left: 25vw;
-  margin-bottom: 3vh;
-  margin-top: -59vh;
-  padding-top: 3vh;
-  display: flex;
 `
 
 const Para = styled.p`
@@ -94,7 +80,7 @@ const sidebar ={
   }
 };
 
-function App() {
+function Home() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const height = useDimensions(containerRef).current.height;
@@ -128,9 +114,9 @@ function App() {
            <img src={MyPhoto} alt="Photo of me at Meow Wolf!"/> {/*You can put a div behind the image to give it some depth*/}
           </div>
       <TextDiv style={{ marginTop: '-59vh', paddingTop: '3vh', display: 'flex'}}>      
-          <TextHead style={{marginBottom: '8vh', whiteSpace: 'nowrap', marginTop: '-17vh', marginLeft: '0'}} className='bio-heading'>A bit about me</TextHead>
+          <TextHead style={{marginBottom: '8vh', whiteSpace: 'nowrap', marginTop: '-17vh', marginLeft: '-3vw'}} className='bio-heading'>A bit about me</TextHead>
         <div className='bio-container'>
-        <Para>
+        <Para style={{width: '50vw'}}>
         Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
         I love user experience/user interface design, and website development focused on disability-driven development, so this website was a way to sharpen my tool set.
         I pursued a degree in computer science because of the potential it has proven to have as a tool to help people and the creative liberties that it affords developers.
@@ -143,7 +129,7 @@ function App() {
        </div>
 
        <div className='CSU-container'>
-          <Para>While enrolled at CSU I had the opportunity to work on several incredible projects which you can see some of on the projects page of this website.
+          <Para style={{width: '99%'}}>While enrolled at CSU I had the opportunity to work on several incredible projects which you can see some of on the projects page of this website.
             Throughout these projects I learned several programming languages such as Javascript, Java, C, C++, Python, HTML, PHP, Typescript, and R. I also became well-versed in concepts such 
             as Agile CMMI, test-driven development, Object-Oriented design, VR development, game design, machine learning, team management, time management, and, most importantly, the process of learning a new programming language.
             {/*It might be a good idea to make the languages and concepts two styled unordered lists sitting shoulder to shoulder. It would probably look cleaner*/}
@@ -156,4 +142,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
