@@ -1,7 +1,7 @@
 import React from'react';
 import { Card } from './assets/Components/Card/index';
 import {CardData} from './types';
-import { BrowserRouter as Router, Route, Routes, useNavigate, useParams, useMatch } from 'react-router-dom';
+import { Route, Routes, useNavigate, useMatch } from 'react-router-dom';
 import './Card.css';
 
 interface ListProps {
@@ -67,12 +67,12 @@ const cardData: CardData[] = [
       id: "e",
       category: "Blockchain, Ethereum, Smart contracts, Web development, UX/UI, React, JavaScript, Team Management",
       title: "Bidder, Faster, Stronger ~ CS458",
-      innerText: `Using React.js, I developed a responsive website that serves as a bidding platform for NFTs. The website incorporates Web3 to connect users' MetaMask accounts and interact with a Solidity-based smart contract.
+      innerText: `Using React.js, I developed a website that serves as a bidding platform for NFTs. The website incorporates Web3 to connect users' MetaMask accounts and interact with a Solidity-based smart contract.
 
-      The bidding platform's core functionality was implemented using Solidity, a programming language for Ethereum smart contracts. The Solidity smart contract governed the creation, ownership, and bidding of NFTs, ensuring a secure and transparent process. Web3 facilitated the connection between the website and users' MetaMask accounts, enabling secure wallet management and transaction execution on the Ethereum network.
+      The bidding platform's core functionality was implemented using Solidity, a programming language for Ethereum smart contracts. The Solidity smart contract governed the transferrence, and bidding of NFTs, ensuring a secure and transparent process. Web3 facilitated the connection between the website and users' MetaMask accounts, enabling secure wallet management and transaction execution on the Ethereum network.
       
-      For testing and deployment, I utilized Truffle, a development framework for Ethereum applications. Truffle provided tools for testing, compiling, and deploying the smart contract, ensuring consistent behavior across different browsers and networks. By utilizing Truffle during testing, I could verify that the platform offered a smooth user experience.
-      
+      For testing and deployment, I utilized Truffle, a development framework for Ethereum applications. Truffle provided tools for testing, compiling, and deploying the smart contract, ensuring consistent behavior across different browsers and networks.
+
       To create visually appealing and unique NFTs, I employed Aesprite, an application for designing digital assets. Aesprite allowed me to generate original NFTs and associated assets, ensuring exclusivity and aesthetic appeal for the bidding platform.`,
       link: "https://github.com/Retrope13/CS458-Bidding-Game"
     },
@@ -95,7 +95,7 @@ const cardData: CardData[] = [
       title: "Company Management ~ CS415",
       innerText: `The backbone of our website was built using Java for the backend development. We adopted object-oriented design principles to structure our codebase in a modular and organized manner. This approach allowed us to leverage class-dependent functions and methods, making the implementation and maintenance of backend functionalities easier and more efficient.
 
-      To guarantee the reliability and correctness of our backend methods, we employed JUnit, a widely used testing framework in the Java ecosystem. Through JUnit, we designed comprehensive test cases that covered various scenarios and edge cases. These test cases enabled us to validate the functionality of our methods and promptly identify and address any issues or bugs in our backend code.
+      To guarantee the reliability and correctness of our backend methods, we employed JUnit to test our implementations. Through JUnit, we designed comprehensive test cases that covered various scenarios and edge cases.
       
       Additionally, we incorporated several automated testing suites to further enhance the quality and robustness of our code. Tools such as Randoop, EvoSuite, Pmd, Spotbugs, and Ekstazi played a crucial role in this regard. These suites provided additional layers of testing, including the generation of test cases, static code analysis, and bug detection. By leveraging these automated testing suites, we ensured a thorough evaluation of our codebase and improved the overall integrity of our backend implementation.`,
       link: "https://github.com/Retrope13"
@@ -108,9 +108,9 @@ const cardData: CardData[] = [
       
       For backend functionality and data management, PHP and SQL were employed. PHP facilitated server-side processing and interaction with the database, while SQL efficiently stored and retrieved data related to user preferences, colors, and edits.
       
-      The painting functionality was implemented using JavaScript, enabling users to select, remove, edit, and add colors on the canvas. Through JavaScript, DOM manipulation was leveraged to dynamically update table cells, allowing real-time color changes and edits. JavaScript also facilitated the integration of event handlers, ensuring seamless interaction between user actions and the canvas display.
+      The painting functionality was implemented using JavaScript, enabling users to select, remove, edit, and add colors on the canvas. Using JavaScript I was also able to dynamically update table cells, allowing real-time color changes and edits.
       
-      To optimize performance and streamline development, I utilized Fuel, a lightweight PHP framework. Fuel provided a structured and efficient framework for building backend logic and handling HTTP requests. This allowed me to focus on implementing specific features and functionalities without repetitive and low-level coding tasks.`,
+      I also used Fuel which provided a structured and efficient framework for building backend logic and handling HTTP requests. This allowed me to focus on implementing specific features and functionalities without repetitive and low-level coding tasks.`,
       link: "https://github.com/Retrope13/CS312-Project"
     },
     {
@@ -130,11 +130,11 @@ const cardData: CardData[] = [
       id: "j",
       category: "Python, Linguistic analysis, Image stitching, File input/output",
       title: "Translator ~ Personal Project",
-      innerText: `I developed a language translator for a personal Dungeons and Dragons project using Python and a command line interface. The translator converted English sentences into a fictional language of my own creation called Anterian, with the additional feature of visually representing the translation using the PIL image stitching library. This appealed to Dungeons and Dragons enthusiasts and enhanced the immersive experience.
+      innerText: `I developed a language translator for a personal Dungeons and Dragons project using Python and the command line interface. The translator converted English sentences into a fictional language of my own creation called Anterian, with the additional feature of visually representing the translation using the PIL image stitching library.
 
-      The translation algorithm, implemented in Python, intelligently analyzed the syntax of English sentences submitted through the command line interface. It generated an output file containing the corresponding Anterian translation. To visually represent the translation, I utilized the PIL library to stitch together images representing the steps and components of the translation process. This visual representation served as a guide for players looking to incorporate Anterian into their gameplay, promoting immersion and authenticity.
+      The translation algorithm, implemented in Python, analyzed the syntax of English sentences submitted through the command line interface and generated an output file containing the corresponding Anterian translation. The visual representation served as a guide for players looking to incorporate Anterian into their gameplay, promoting immersion and authenticity.
       
-      The PIL image stitching library seamlessly combined the generated images into a composite image, allowing users to grasp the progression of the translation at a glance. This feature added depth and engagement to the language translator, catering specifically to the needs of Dungeons and Dragons enthusiasts who sought a unique language to enrich their gameplay experience.`,
+      The image stitching feature added depth and engagement to the language translator, catering specifically to the needs of Dungeons and Dragons enthusiasts who sought a unique language to enrich their gameplay experience.`,
       link: "https://github.com/Retrope13/Anterian_language"
     },
   ];
