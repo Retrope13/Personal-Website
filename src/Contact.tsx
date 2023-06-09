@@ -4,6 +4,7 @@ import linkedIn from './assets/imgs/LinkedIn.png';
 import phone from './assets/imgs/Phone.png';
 import github from './assets/imgs/github.png';
 import email from './assets/imgs/Contact_Icon.png';
+import download from './assets/imgs/Download.png';
 import {motion, useCycle} from 'framer-motion';
 import { useRef} from 'react';
 import { useDimensions} from "./assets/Components/use-dimensions";
@@ -127,6 +128,13 @@ function Contact() {
             <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop: '7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
             <Icons src={linkedIn} style={{marginRight:'4vw'}} alt="An all white icon version of the LinkedIn logo"/>
             <ContactText>Sam-mckay13</ContactText>
+            </TextDiv>
+            </a>
+
+            <a href="./assets/Sam-McKay-Resume.pdf" download={true}>
+            <TextDiv style={{width: '30vw', marginLeft: '30vw', marginTop: '6vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+            <Icons src={download} style={{marginRight:'4vw'}} alt="An all white icon version of the LinkedIn logo"/>
+            <ContactText style={{marginLeft: '2.2vw'}}>Resume</ContactText>
             </TextDiv>
             </a>
 
