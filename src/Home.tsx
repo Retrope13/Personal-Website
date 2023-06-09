@@ -1,12 +1,10 @@
 import './Home.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import MyPhoto from './assets/imgs/SamMcKayPic.jpg';
-import {motion, sync, useCycle} from 'framer-motion';
-import {useEffect, useRef} from 'react';
+import {motion, useCycle} from 'framer-motion';
+import {useRef} from 'react';
 import {Navigation} from './assets/Components/Navigation';
 import { useDimensions} from "./assets/Components/use-dimensions";
 import { MenuToggle } from './assets/Components/MenuToggle';
-import React, {useContext} from 'react';
 import styled from 'styled-components';
 
 
@@ -76,7 +74,6 @@ function Home() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const height = useDimensions(containerRef).current.height;
-  const [isLoaded, toggleLoaded] = useCycle(false, true);
 
   return (
     <div className="App">
@@ -103,15 +100,15 @@ function Home() {
         className="content">
           <Head>Sam McKay</Head>
           <div className='image-container'>
-           <img src={MyPhoto} alt="Photo of me at Meow Wolf!"/> {/*You can put a div behind the image to give it some depth*/}
+           <img src={MyPhoto} alt="Me at Meow Wolf sitting in a semi-circular green chair with twisting tubes behind me!"/> {/*You can put a div behind the image to give it some depth*/}
           </div>
       <TextDiv style={{ marginTop: '-59vh', paddingTop: '3vh', display: 'flex'}}>      
           <TextHead style={{marginBottom: '8vh', whiteSpace: 'nowrap', marginTop: '-17vh', marginLeft: '-3vw'}} className='bio-heading'>A bit about me</TextHead>
         <div className='bio-container'>
         <Para style={{width: '50vw'}}>
         Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
-        I love user experience/user interface design, and website development focused on disability-driven development, so this website was a way to sharpen my tool set.
-        I pursued a degree in computer science because of the potential it has proven to have as a tool to help people and the creative liberties that it affords developers.
+        I love user experience/user interface design, and website development focused on accessibility, so this website was a way to sharpen my tool set.
+        I pursued a degree in computer science because of the potential it has as a tool to help people and the creative liberties that it affords developers.
         </Para>
           </div>
           </TextDiv>
