@@ -14,7 +14,7 @@ const Head = styled.h1`
   color: #FFFFFF;
   margin-top: 0vh;
   font-family: Bavista;
-  font-size: 10vh;
+  font-size: 100px;
   background-color: #00000000;
   border-radius: 5px;
   height: auto;
@@ -43,21 +43,13 @@ export const TextDiv = styled.div`
 
 const Para = styled.p`
   font-family: Alexandria;
-  font-size: 2vh;
+  font-size: 20px;
   color: #FFFFFF;
   display: flex-box;
   align-items: flex-start;
   width: auto;
-  height: 19vh
-`
-
-const AchievementsHead = styled.h1`
-  color: #FFFFFF;
-  margin-top: -22vh;
-  font-family: Bavista;
-  font-size: 8vh;
-  background-color: #00000000;
-  height: 10vh;
+  height: 19vh;
+  line-height: 30px;
 `
 
 const sidebar ={
@@ -129,33 +121,33 @@ function Home() {
        </div>
 
        <div className='CSU-container'>
-          <Para style={{width: '99%'}}>While enrolled at CSU, I had the opportunity to work on several incredible projects, which you can see on the projects page of this website.
+          <Para style={{width: '99%'}}>While enrolled at CSU, I earned a 3.71 cumulative GPA, my Bachelor's in Computer Science, and had the opportunity to work on several projects which you can see on the projects page of this website.
            Within many of these projects, I took on a leadership role and gained a firm grasp of various languages, libraries, and concepts, which have greatly assisted me in my journey as a developer.
-            <ul className='Languages'>
+            <ul className='Languages' style={{listStyleType: 'circle'}}>
               <li className='ulTitleL'>Languages:</li>
-              <li>Javascript,</li>
-              <li>Java,</li>
-              <li>C,</li>
-              <li>C++,</li>
-              <li>Python,</li>
-              <li>HTML,</li>
-              <li>PHP,</li>
-              <li>Typescript,</li>
-              <li>R</li>
+              <li>&#x25CF; Javascript</li>
+              <li>&#x25CF; Java</li>
+              <li>&#x25CF; C</li>
+              <li>&#x25CF; C++</li>
+              <li>&#x25CF; Python</li>
+              <li>&#x25CF; HTML</li>
+              <li>&#x25CF; PHP</li>
+              <li>&#x25CF; Typescript</li>
+              <li>&#x25CF; R</li>
               </ul>
 
 
               <ul className='Concepts'>
               <li className='ulTitleC'>Concepts:</li>
-              <li>Agile Scrum,</li>
-              <li>Test-driven development,</li>
-              <li>Object-Oriented design,</li>
-              <li>Game design,</li>
-              <li>VR development,</li>
-              <li>Machine learning,</li>
-              <li>Team management,</li>
-              <li>Time management,</li>
-              <li>Language acquisition</li>
+              <li>&#x25CF; Agile Scrum</li>
+              <li>&#x25CF; Test-driven development</li>
+              <li>&#x25CF; Object-Oriented design</li>
+              <li>&#x25CF; Game design</li>
+              <li>&#x25CF; VR development</li>
+              <li>&#x25CF; Machine learning</li>
+              <li>&#x25CF; Team management</li>
+              <li>&#x25CF; Time management</li>
+              <li>&#x25CF; Language acquisition</li>
               </ul>
           </Para>
        </div>

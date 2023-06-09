@@ -505,7 +505,7 @@ img {
 .CSU-container {
   display: flex;
   margin-top: -13vh;
-  height: 50vh;
+  height: 62vh;
 }
 
 .ulTitleL {
@@ -517,7 +517,6 @@ img {
 .Languages {
   margin-top: 67vh;
   margin-left: 5vw;
-  list-style-type: disc;
 }
 
 .Languages::marker {
@@ -526,6 +525,7 @@ img {
 
 .Languages li {
   font-family: "Alexandria";
+  margin-bottom: 2vh;
 }
 
 .ulTitleC {
@@ -541,6 +541,8 @@ img {
 
 .Concepts li {
   font-family: "Alexandria";
+  margin-bottom: 2vh;
+  width: 50vw;
 }
 
 .bio-container {
