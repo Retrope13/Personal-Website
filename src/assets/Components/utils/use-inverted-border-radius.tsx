@@ -16,8 +16,8 @@ export function useInvertedBorderRadius(radius: any) {
       borderRadius.set(`${xRadius} ${yRadius}`);
     }
 
-    const unsubScaleX = scaleX.onChange(updateRadius);
-    const unsubScaleY = scaleY.onChange(updateRadius);
+    const unsubScaleX = scaleX.on("change", updateRadius);
+    const unsubScaleY = scaleY.on("change", updateRadius);
 
     return () => {
       unsubScaleX();

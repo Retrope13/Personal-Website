@@ -505,7 +505,44 @@ img {
 .CSU-container {
   display: flex;
   margin-top: -13vh;
-  font-size: small;
+  height: 62vh;
+}
+
+.ulTitleL {
+  font-family: "Alexandria";
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+
+.Languages {
+  margin-top: 67vh;
+  margin-left: 5vw;
+}
+
+.Languages::marker {
+  color: red;
+}
+
+.Languages li {
+  font-family: "Alexandria";
+  margin-bottom: 2vh;
+}
+
+.ulTitleC {
+  font-family: "Alexandria";
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+
+.Concepts {
+  margin-top: 67vh;
+  margin-left: 35vw;
+}
+
+.Concepts li {
+  font-family: "Alexandria";
+  margin-bottom: 2vh;
+  width: 50vw;
 }
 
 .bio-container {
