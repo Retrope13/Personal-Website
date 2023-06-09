@@ -51,13 +51,6 @@ export const Card = memo(
         }
 
         const containerRef = useRef(null);
-        useWheelScroll(
-            containerRef,
-            y,
-            constraints,
-            checkSwipeToDismiss,
-            isSelected
-        );
 
         return (
             <li ref={containerRef} className={`card`}>
