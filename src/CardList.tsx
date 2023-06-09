@@ -28,15 +28,14 @@ const cardData: CardData[] = [
       id: "b",
       category: "Multithreading, Peripheral, UI, Python, Agile-Scrum",
       title: "CryptoBot ~ CS370",
-      innerText: `In college, my team and I developed a computerized system to automate cryptocurrency trading. We utilized Python, a fingerprint sensor, and Binance's API for secure and seamless transactions.
+      innerText: `My team and I developed a system to automate cryptocurrency trading. We utilized Python, a RaspberryPi, a fingerprint sensor, and Binance's API for secure and seamless transactions.
 
       Multithreading was a key feature, enabling simultaneous handling of multiple tasks. This allowed efficient management of cryptocurrency information, real-time market data, and trade executions.
       
-      We created a user-friendly graphical interface for monitoring portfolios, setting preferences, and accessing real-time market data. Security was enhanced with fingerprint authentication.
+      We created a user-friendly graphical interface for monitoring portfolios and selecting new cryptocurrencies to purchase. Security was enhanced with fingerprint authentication.
       
       Integration of Binance's API facilitated actual trading, providing access to various cryptocurrencies. Our system implemented buying and selling algorithms based on user-defined strategies, ensuring efficient and profitable trades.
-      
-      Security and reliability were paramount. Robust error handling mechanisms were implemented, and rigorous testing validated system stability and accuracy.`,
+      `,
       link: "https://github.com/Retrope13/CryptoBot"
     },
 
@@ -44,13 +43,13 @@ const cardData: CardData[] = [
       id: "c",
       category: "Game development, VR development, Unreal, Blueprints, Blender",
       title: "Tower Defense ~ CS310H",
-      innerText: `I created an immersive virtual reality tower-defense game using the Unreal Engine. I employed character design in Blender to sculpt, model, and texture unique characters that enhanced the visual appeal of the game. The blueprinting system in Unreal allowed me to implement complex game logic, including enemy spawning, tower defenses, and a user interface for player interaction.
+      innerText: `I created an immersive virtual reality tower-defense game using the Unreal Engine. I employed character design in Blender to sculpt, model, and texture unique characters. The blueprinting system in Unreal allowed me to implement enemy spawning, tower defenses, and a user interface for player interaction.
 
-      To increase the game's challenge, I developed a naive AI system for the enemies. This system included pathfinding, attack strategies, and dynamic reactions to changing game conditions. By designing different enemy types with distinct behaviors, I ensured diverse challenges for players as they progressed through the levels.
+      To increase the game's challenge, I developed a naive AI system for the enemies. This system included pathfinding, attack strategies, and dynamic reactions to changing game conditions.
       
-      To enhance immersion, I optimized the game for the Oculus Quest 2 headset. Leveraging its high-resolution display and motion tracking, I provided players with a seamless and immersive virtual reality experience. This involved performance optimization, latency reduction, and fine-tuning the controls to ensure smooth and responsive gameplay.
+      I optimized the game for the Oculus Quest 2 headset. Leveraging its high-resolution display and motion tracking, I provided players with a seamless and immersive virtual reality experience.
       
-      Throughout development, I prioritized game balance, level design, and user feedback. I iterated on mechanics, adjusted difficulty curves, and incorporated player suggestions to create an enjoyable gameplay experience.`,
+      Throughout development, I iterated on mechanics, adjusted difficulty curves, and incorporated player suggestions to create an enjoyable gameplay experience.`,
       link: "https://github.com/Retrope13/HW2_McKayS_EyreD"
     },
     {
@@ -68,7 +67,7 @@ const cardData: CardData[] = [
       id: "e",
       category: "Blockchain, Ethereum, Smart contracts, Web development, UX/UI, React, JavaScript, Team Management",
       title: "Bidder, Faster, Stronger ~ CS458",
-      innerText: `Using React.js, I developed a responsive website that serves as a bidding platform for NFTs. The website incorporates Web3 to connect users' MetaMask accounts and interact with a Solidity-based smart contract. The frontend design was carefully crafted to ensure a seamless user experience across devices.
+      innerText: `Using React.js, I developed a responsive website that serves as a bidding platform for NFTs. The website incorporates Web3 to connect users' MetaMask accounts and interact with a Solidity-based smart contract.
 
       The bidding platform's core functionality was implemented using Solidity, a programming language for Ethereum smart contracts. The Solidity smart contract governed the creation, ownership, and bidding of NFTs, ensuring a secure and transparent process. Web3 facilitated the connection between the website and users' MetaMask accounts, enabling secure wallet management and transaction execution on the Ethereum network.
       
