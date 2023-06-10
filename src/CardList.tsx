@@ -21,7 +21,8 @@ const cardData: CardData[] = [
       A database was incorporated to support searching for cities and airport codes. This enabled easy retrieval of relevant location information and refinement of travel plans.
       
       Rigorous testing was conducted throughout the development process to ensure a smooth user experience. Regular testing and quality assurance fine-tuned website functionality and performance, allowing seamless search, trip customization, route optimization, and distance calculation.`,
-      link: "https://github.com/Retrope13"
+      repolink: "https://github.com/Retrope13",
+      classlink: "https://www.cs.colostate.edu/~cs314/yr2021fa/#/"
     },
 
     {
@@ -36,7 +37,8 @@ const cardData: CardData[] = [
       
       Integration of Binance's API facilitated actual trading, providing access to various cryptocurrencies. Our system implemented buying and selling algorithms based on user-defined strategies, ensuring efficient and profitable trades.
       `,
-      link: "https://github.com/Retrope13/CryptoBot"
+      repolink: "https://github.com/Retrope13/CryptoBot",
+      classlink: "https://www.cs.colostate.edu/~cs370/Spring22/"
     },
 
     {
@@ -50,7 +52,8 @@ const cardData: CardData[] = [
       I optimized the game for the Oculus Quest 2 headset. Leveraging its high-resolution display and motion tracking, I provided players with a seamless and immersive virtual reality experience.
       
       Throughout development, I iterated on mechanics, adjusted difficulty curves, and incorporated player suggestions to create an enjoyable gameplay experience.`,
-      link: "https://github.com/Retrope13/HW2_McKayS_EyreD"
+      repolink: "https://github.com/Retrope13/HW2_McKayS_EyreD",
+      classlink: "https://www.cs.colostate.edu/~cs310h/#/"
     },
     {
       id: "d",
@@ -61,7 +64,8 @@ const cardData: CardData[] = [
       To achieve accurate genre classification, I implemented Support Vector Machines (SVM) and Random Forests classifiers. These algorithms were trained on a labeled dataset of songs with genre labels. The models outperformed random guessing and achieved significantly higher accuracy in predicting the genre of a song based on its features.
       
       Visualization techniques played a crucial role in the project. Heatmaps helped visualize relationships between different features, identifying correlations and dependencies. PCA visualization aided in reducing dimensionality and discovering clusters of similar genres. Feature importance analysis provided insights into the key characteristics that differentiate genres.`,
-      link: "https://github.com/Retrope13/Music_Classification_Project"
+      repolink: "https://github.com/Retrope13/Music_Classification_Project",
+      classlink: "https://www.cs.colostate.edu/~cs345/yr2022fa/#/"
     },
     {
       id: "e",
@@ -74,7 +78,8 @@ const cardData: CardData[] = [
       For testing and deployment, I utilized Truffle, a development framework for Ethereum applications. Truffle provided tools for testing, compiling, and deploying the smart contract, ensuring consistent behavior across different browsers and networks.
 
       To create visually appealing and unique NFTs, I employed Aesprite, an application for designing digital assets. Aesprite allowed me to generate original NFTs and associated assets, ensuring exclusivity and aesthetic appeal for the bidding platform.`,
-      link: "https://github.com/Retrope13/CS458-Bidding-Game"
+      repolink: "https://github.com/Retrope13/CS458-Bidding-Game",
+      classlink: "https://www.cs.colostate.edu/~cs458/#/"
     },
     {
       id: "f",
@@ -87,7 +92,8 @@ const cardData: CardData[] = [
       The interactive map, a key feature of our project, was created using Highcharts, a powerful JavaScript library. Highcharts allowed for customization and interactive functionalities, enhancing data presentation and engagement.
       
       To evaluate the significance of differences between the interactive map and the presentation, we conducted a statistical test. Following ACM guidelines, we maintained a professional and research-oriented tone throughout, including the writing of a comprehensive research paper.`,
-      link: "https://github.com/Retrope13"
+      repolink: "https://github.com/Retrope13",
+      classlink: "https://www.cs.colostate.edu/~cs464/#/"
     },
     {
       id: "g",
@@ -98,7 +104,8 @@ const cardData: CardData[] = [
       To guarantee the reliability and correctness of our backend methods, we employed JUnit to test our implementations. Through JUnit, we designed comprehensive test cases that covered various scenarios and edge cases.
       
       Additionally, we incorporated several automated testing suites to further enhance the quality and robustness of our code. Tools such as Randoop, EvoSuite, Pmd, Spotbugs, and Ekstazi played a crucial role in this regard. These suites provided additional layers of testing, including the generation of test cases, static code analysis, and bug detection. By leveraging these automated testing suites, we ensured a thorough evaluation of our codebase and improved the overall integrity of our backend implementation.`,
-      link: "https://github.com/Retrope13"
+      repolink: "https://github.com/Retrope13",
+      classlink: "https://www.cs.colostate.edu/~cs415/2023sp/#/"
     },
     {
       id: "h",
@@ -111,7 +118,8 @@ const cardData: CardData[] = [
       The painting functionality was implemented using JavaScript, enabling users to select, remove, edit, and add colors on the canvas. Using JavaScript I was also able to dynamically update table cells, allowing real-time color changes and edits.
       
       I also used Fuel which provided a structured and efficient framework for building backend logic and handling HTTP requests. This allowed me to focus on implementing specific features and functionalities without repetitive and low-level coding tasks.`,
-      link: "https://github.com/Retrope13/CS312-Project"
+      repolink: "https://github.com/Retrope13/CS312-Project",
+      classlink: "https://www.online.colostate.edu/courses/CS/CS312.dot"
     },
     {
       id: "i",
@@ -124,7 +132,8 @@ const cardData: CardData[] = [
       Additionally, I had an interest in converting the application into a web-based platform to reach a wider audience and improve accessibility. By transitioning to the web, players could access the application from any browser, eliminating software installations and offering a versatile and user-friendly experience.
       
       The main goal of this project was to create a graphical user interface that resembled video games, simplifying the Dungeons and Dragons experience for new players. `,
-      link: "https://github.com/Retrope13/DNDBUDDY"
+      repolink: "https://github.com/Retrope13/DNDBUDDY",
+      classlink: ""
     },
     {
       id: "j",
@@ -135,7 +144,8 @@ const cardData: CardData[] = [
       The translation algorithm, implemented in Python, analyzed the syntax of English sentences submitted through the command line interface and generated an output file containing the corresponding Anterian translation. The visual representation served as a guide for players looking to incorporate Anterian into their gameplay, promoting immersion and authenticity.
       
       The image stitching feature added depth and engagement to the language translator, catering specifically to the needs of Dungeons and Dragons enthusiasts who sought a unique language to enrich their gameplay experience.`,
-      link: "https://github.com/Retrope13/Anterian_language"
+      repolink: "https://github.com/Retrope13/Anterian_language",
+      classlink: ""
     },
   ];
 
