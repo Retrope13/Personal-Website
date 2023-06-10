@@ -26,7 +26,7 @@ export const MenuToggle: React.FC<ToggleProps> = ({ onClick }) => {
 
 return (
     <button onClick={onClick}>
-        <svg width="1.5vw" height="1.5vw" viewBox="0 0 23 23">
+        <svg width="40" height="25" viewBox="0 0 23 23">
             <Path
             pathData=""
             variants = {{

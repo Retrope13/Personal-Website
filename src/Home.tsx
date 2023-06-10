@@ -107,7 +107,7 @@ function Home() {
         <div className='bio-container'>
         <Para style={{width: '50vw'}}>
         Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
-        I love user experience/user interface design, and website development focused on accessibility, so this website was a way to sharpen my tool set.
+        I love user experience/user interface design, and website development focused on accessibility so this website was a way to sharpen some of the tools in my set and learn some things too!
         I pursued a degree in computer science because of the potential it has as a tool to help people and the creative liberties that it affords developers.
         </Para>
           </div>
