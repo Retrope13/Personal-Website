@@ -22,7 +22,7 @@ const cardData: CardData[] = [
       
       Rigorous testing was conducted throughout the development process to ensure a smooth user experience. Regular testing and quality assurance fine-tuned website functionality and performance, allowing seamless search, trip customization, route optimization, and distance calculation.`,
       repolink: "https://github.com/Retrope13",
-      classlink: "https://www.cs.colostate.edu/~cs314/yr2021fa/#/"
+      classlink: "https://github.com/Retrope13/CS314-Trip_Planner"
     },
 
     {
@@ -92,7 +92,7 @@ const cardData: CardData[] = [
       The interactive map, a key feature of our project, was created using Highcharts, a powerful JavaScript library. Highcharts allowed for customization and interactive functionalities, enhancing data presentation and engagement.
       
       To evaluate the significance of differences between the interactive map and the presentation, we conducted a statistical test. Following ACM guidelines, we maintained a professional and research-oriented tone throughout, including the writing of a comprehensive research paper.`,
-      repolink: "https://github.com/Retrope13",
+      repolink: "https://github.com/Retrope13/CS464-GeoPursuit",
       classlink: "https://www.cs.colostate.edu/~cs464/#/"
     },
     {
@@ -104,7 +104,7 @@ const cardData: CardData[] = [
       To guarantee the reliability and correctness of our backend methods, we employed JUnit to test our implementations. Through JUnit, we designed comprehensive test cases that covered various scenarios and edge cases.
       
       Additionally, we incorporated several automated testing suites to further enhance the quality and robustness of our code. Tools such as Randoop, EvoSuite, Pmd, Spotbugs, and Ekstazi played a crucial role in this regard. These suites provided additional layers of testing, including the generation of test cases, static code analysis, and bug detection. By leveraging these automated testing suites, we ensured a thorough evaluation of our codebase and improved the overall integrity of our backend implementation.`,
-      repolink: "https://github.com/Retrope13",
+      repolink: "https://github.com/Retrope13/CS415-Company-Management",
       classlink: "https://www.cs.colostate.edu/~cs415/2023sp/#/"
     },
     {
