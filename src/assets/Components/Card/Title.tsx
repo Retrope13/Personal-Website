@@ -10,10 +10,11 @@ interface TitleProps {
     title: string;
     category: string;
     isSelected: boolean;
-    link: string;
+    repolink: string;
+    classlink: string;
 }
 
-export const Title: React.FC<TitleProps> = ({ title, category, isSelected, link}) => {
+export const Title: React.FC<TitleProps> = ({ title, category, isSelected, repolink, classlink}) => {
       const [isSchool, setisSchool] = useState(false);
       const x = isSelected ? 30 : 15;
       const y = x;
@@ -42,11 +43,13 @@ export const Title: React.FC<TitleProps> = ({ title, category, isSelected, link}
         >
           <span className="category" style={{zIndex: 1}}>{category}</span>
           <h2 style={{zIndex: 2}}>{title}</h2>
-          <a className='repoLink' href={link} target='_blank'>
+          <a className='repoLink' href={repolink} target='_blank'>
           <img style={{height: "7vh", width: "4vw", marginTop: "1vh"}} src={gitIcon}/>
           </a>
           {isSchool &&
+          <a className='repoLink' href={classlink} target='_blank'>
           <img style={{height: "7vh", width: "4vw", marginTop: "1vh"}} src={CSU}/>
+          </a>
 }
         </motion.div>
       );
