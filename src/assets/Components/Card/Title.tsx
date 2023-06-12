@@ -1,7 +1,6 @@
 import * as React from 'react';
-import {MotionValue, motion} from 'framer-motion';
+import {motion} from 'framer-motion';
 import {closeSpring, openSpring} from './animations'; 
-import { Image } from './Image';
 import gitIcon from '../../imgs/github.png';
 import CSU from '../../imgs/CSU.png';
 import { useState, useEffect } from 'react';
