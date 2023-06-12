@@ -1,4 +1,6 @@
   
+@media (max-width: 1920px) { 
+
   * {
     box-sizing: border-box;
     font-family: ".SFNSText", "SFProText-Regular", "SFUIText-Regular", ".SFUIText",
@@ -234,8 +236,23 @@
   
   p {
     color: #ffffff;
-    font-size: 1vw;
     line-height: 28px;
+    white-space: pre-line;
+    margin-left: '2vw';
+    font-size: 'auto'
+  }
+
+}
+
+
+  @media (max-width: 1500px) {
+    p {
+      color: #ffffff;
+      line-height: 20px;
+      white-space: pre-line;
+      margin-left: '2vw';
+      margin-top: -5vh;
+    }
   }
   
   @media only screen and (max-width: 800px) {
@@ -267,6 +284,27 @@
   
     .card-content-container.open {
       padding: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      overflow: hidden;
+      padding: 40px 0;
+      cursor: grab;
+    }
+
+    .card-content {
+      pointer-events: auto;
+      position: relative;
+      border-radius: 20px;
+      border: 2px solid #fff;
+      background: #1b2636;
+      width: 200%;
+      height: 100%;
+      margin: 0 auto;
     }
   }
   
