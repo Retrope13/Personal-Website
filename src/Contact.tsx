@@ -1,5 +1,4 @@
 import './Contact.css';
-import { TextDiv } from './Home';
 import linkedIn from './assets/imgs/LinkedIn.png';
 import phone from './assets/imgs/Phone.png';
 import github from './assets/imgs/github.png';
@@ -14,6 +13,19 @@ import styled from 'styled-components';
 import React from 'react';
 
 
+
+export const TextDiv = styled.div`
+  border: .15vw solid #FFFFFF;
+  border-radius: 2vw;
+  height: 15vh;
+  background-color: #1b2636;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  padding-left: 1vw;
+  margin-left: 27vw;
+  margin-bottom: 3vh;
+`
 
 const Head = styled.h1`
   color: #FFFFFF;
@@ -105,7 +117,7 @@ function Contact() {
             <Head>Connect with me</Head>
             <Intro>Here are a few ways to get in touch with me!</Intro>
 
-            <TextDiv style={{width: '30vw', marginTop:'7vh', marginLeft: '15vw', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+            <TextDiv className='PhoneDiv' style={{width: '30vw', marginTop:'7vh', marginLeft: '15vw', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
               <Icons src={phone} style={{height: '8vh', width: '4vw', marginRight:'3vw'}} alt="An all white icon of a handheld phone"/>
               <ContactText>(409)-504-8250</ContactText>
             </TextDiv>
