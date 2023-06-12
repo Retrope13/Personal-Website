@@ -1,4 +1,3 @@
-import * as React from "react";
 import { memo, useRef } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -8,7 +7,6 @@ import { CardContent } from "./CardContent";
 import { Title } from "./Title";
 import { openSpring, closeSpring } from "./animations";
 import { useScrollConstraints } from "../utils/use-scroll-constraints";
-import { useWheelScroll } from "../utils/use-wheel-scroll";
 
 interface Props extends CardData {
     isSelected: boolean;
@@ -39,7 +37,7 @@ export const Card = memo(
 
         function checkSwipeToDismiss() {
             if (y.get() > dismissDistance ) {
-                window.location.href = "http://localhost:3000/projects";
+                window.location.href = "/projects";
             }
         }
 
