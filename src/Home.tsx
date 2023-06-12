@@ -23,17 +23,17 @@ const TextHead = styled.h1`
   font-family: Bavista;
   font-size: 8vh;
   background-color: #00000000;
-  height: 10vh;
+  height: 100px;
 `
 
-export const TextDiv = styled.div`
+const TextDiv = styled.div`
   border: .15vw solid #FFFFFF;
   border-radius: 2vw;
-  height: auto;
+  height: 400px;
   background-color: #1b2636;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 60vw;
   padding-left: 1vw;
   margin-left: 27vw;
   margin-bottom: 3vh;
@@ -47,7 +47,7 @@ const Para = styled.p`
   align-items: flex-start;
   width: auto;
   height: 19vh;
-  line-height: 30px;
+  line-height: 130%;
 `
 
 const sidebar ={
@@ -103,7 +103,7 @@ function Home() {
            <img src={MyPhoto} alt="Me at Meow Wolf sitting in a semi-circular green chair with twisting tubes behind me!"/> {/*You can put a div behind the image to give it some depth*/}
           </div>
       <TextDiv style={{ marginTop: '-59vh', paddingTop: '3vh', display: 'flex'}}>      
-          <TextHead style={{marginBottom: '8vh', whiteSpace: 'nowrap', marginTop: '-17vh', marginLeft: '-3vw'}} className='bio-heading'>A bit about me</TextHead>
+          <TextHead className='bio-heading'>A bit about me</TextHead>
         <div className='bio-container'>
         <Para style={{width: '50vw'}}>
         Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
@@ -112,7 +112,7 @@ function Home() {
         </Para>
           </div>
           </TextDiv>
-        <TextDiv>
+        <TextDiv className='CSU-div' style={{height: '750px'}}>
        <div className="CSU-heading">
           <TextHead style={{marginTop: '-22vh'}}>My time at CSU</TextHead>
        </div>
@@ -120,7 +120,7 @@ function Home() {
        <div className='CSU-container'>
           <Para style={{width: '99%'}}>While enrolled at CSU, I earned a 3.71 cumulative GPA, my Bachelor's in Computer Science, and had the opportunity to work on several projects which you can see on the projects page of this website.
            Within many of these projects, I took on a leadership role and gained a firm grasp of various languages, libraries, and concepts, which have greatly assisted me in my journey as a developer.
-            <ul className='Languages' style={{listStyleType: 'circle'}}>
+            <ul className='Languages'>
               <li className='ulTitleL'>Languages:</li>
               <li>&#x25CF; Javascript</li>
               <li>&#x25CF; Java</li>
