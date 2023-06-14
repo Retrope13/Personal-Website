@@ -31,6 +31,7 @@
 
 .App {
   background-color: #DEF2F1;
+  overflow-x: auto;
 }
 
 nav {
@@ -111,6 +112,7 @@ li {
   justify-content:space-around;
   align-items: center;
   background-color: #00000000;
+  min-width: 300px;
   border-radius: 5px;
   height: auto;
   width: auto;
@@ -235,9 +237,13 @@ body.scroll-up {
 
 
 
-/*Full mode*/
+/*laptop mode*/
 
 @media (max-width: 1500px) {
+
+  .App {
+    overflow: auto;
+  }
 
   .CSU-div {
     align-items:flex-start;

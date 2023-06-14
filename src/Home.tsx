@@ -11,6 +11,7 @@ import styled from 'styled-components';
 const Head = styled.h1`
   color: #FFFFFF;
   margin-top: 0vh;
+  min-width: 100px;
   font-family: Bavista;
   font-size: 100px;
   background-color: #00000000;
