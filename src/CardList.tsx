@@ -69,7 +69,7 @@ const cardData: CardData[] = [
     },
     {
       id: "e",
-      category: "Blockchain, Ethereum, Smart contracts, Web development, UX/UI, React, JavaScript, Team Management",
+      category: "Blockchain, Ethereum, Smart contracts, UX/UI, React, JavaScript",
       title: "Bidder, Faster, Stronger ~ CS458",
       innerText: `Using React.js, I developed a website that serves as a bidding platform for NFTs. The website incorporates Web3 to connect users' MetaMask accounts and interact with a Solidity-based smart contract.
 

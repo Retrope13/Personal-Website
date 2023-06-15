@@ -35,6 +35,7 @@ const Head = styled.h1`
   background-color: #00000000;
   border-radius: 5px;
   height: auto;
+  margin-left: 15vw;
   `
 
 const Intro = styled.h2`
@@ -43,7 +44,7 @@ const Intro = styled.h2`
   margin-top: 1vh;
   font-family: "Alba";
   font-size: 3.2vh;
-  margin-left: 5vw;
+  margin-left: 15vw;
 `
 
 const Icons = styled.img`

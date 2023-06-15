@@ -37,12 +37,13 @@ ul {
 
 .content {
   background-color: #00000000;
+  color: #00000000;
   min-width: 70vw;
   width: 80vw;
   align-items: center;
   justify-content: right;
   min-height: auto;
-  margin-left: 10vw;
+  margin-left: 0vw;
 }
 
 .background {
@@ -68,4 +69,5 @@ ul {
       margin-left: '2vw';
       font-size: 'auto'
     }
+
 }
