@@ -119,8 +119,8 @@
   }
 
   .card-content-container.closed {
-    max-width: 500px;
-    min-width: 400px;
+    max-width: 600px;
+    min-width: 500px;
   }
   
   .card-content-container {
@@ -159,7 +159,7 @@
   .open .card-content {
     height: 90vh;
     width: auto;
-    max-width: 500px;
+    max-width: 600px;
     overflow: hidden;
   }
   
@@ -266,7 +266,7 @@
 
 
     .card-content-container.closed {
-      max-width: 500px;
+      max-width: 600px;
       min-width: 500px;
     }
   }
