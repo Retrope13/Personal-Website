@@ -111,10 +111,8 @@ function Contact() {
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
           </div>
-          <motion.div 
-            transition={{duration: 1}} 
-            animate={{x: isOpen ? 50 : -150}} 
-            className="content">
+
+          <div className='contactContent'>
             <Head>Connect with me</Head>
             <Intro>Here are a few ways to get in touch with me!</Intro>
 
@@ -150,9 +148,7 @@ function Contact() {
             <ContactText style={{marginLeft: '2.2vw'}}>Resume</ContactText>
             </TextDiv>
             </a>
-
-
-          </motion.div>
+            </div>
       </body>
     </div>
   );
