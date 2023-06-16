@@ -1,5 +1,4 @@
 import './Contact.css';
-import { TextDiv } from './Home';
 import linkedIn from './assets/imgs/LinkedIn.png';
 import phone from './assets/imgs/Phone.png';
 import github from './assets/imgs/github.png';
@@ -15,6 +14,19 @@ import React from 'react';
 
 
 
+export const TextDiv = styled.div`
+  border: .15vw solid #FFFFFF;
+  border-radius: 2vw;
+  height: 15vh;
+  background-color: #1b2636;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  padding-left: 1vw;
+  margin-left: 27vw;
+  margin-bottom: 3vh;
+`
+
 const Head = styled.h1`
   color: #FFFFFF;
   margin-top: 0vh;
@@ -23,6 +35,7 @@ const Head = styled.h1`
   background-color: #00000000;
   border-radius: 5px;
   height: auto;
+  margin-left: 15vw;
   `
 
 const Intro = styled.h2`
@@ -31,7 +44,7 @@ const Intro = styled.h2`
   margin-top: 1vh;
   font-family: "Alba";
   font-size: 3.2vh;
-  margin-left: 5vw;
+  margin-left: 15vw;
 `
 
 const Icons = styled.img`
@@ -98,14 +111,12 @@ function Contact() {
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
           </div>
-          <motion.div 
-            transition={{duration: 1}} 
-            animate={{x: isOpen ? 50 : -150}} 
-            className="content">
+
+          <div className='contactContent'>
             <Head>Connect with me</Head>
             <Intro>Here are a few ways to get in touch with me!</Intro>
 
-            <TextDiv style={{width: '30vw', marginTop:'7vh', marginLeft: '15vw', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
+            <TextDiv className='PhoneDiv' style={{width: '30vw', marginTop:'7vh', marginLeft: '15vw', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
               <Icons src={phone} style={{height: '8vh', width: '4vw', marginRight:'3vw'}} alt="An all white icon of a handheld phone"/>
               <ContactText>(409)-504-8250</ContactText>
             </TextDiv>
@@ -137,9 +148,7 @@ function Contact() {
             <ContactText style={{marginLeft: '2.2vw'}}>Resume</ContactText>
             </TextDiv>
             </a>
-
-
-          </motion.div>
+            </div>
       </body>
     </div>
   );

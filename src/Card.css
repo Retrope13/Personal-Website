@@ -1,4 +1,6 @@
   
+@media (max-width: 1920px) { 
+
   * {
     box-sizing: border-box;
     font-family: ".SFNSText", "SFProText-Regular", "SFUIText-Regular", ".SFUIText",
@@ -84,10 +86,11 @@
   
   .card-list {
     display: flex;
+    flex: 0 0 50%;
     flex-wrap: wrap;
     align-content: flex-start;
     width: auto;
-    margin-left: 15vw;
+    margin-left: 18.5vw;
     margin-top: 7vh;
   }
   
@@ -113,6 +116,11 @@
   
   .card:nth-child(even) {
     padding-right: 0;
+  }
+
+  .card-content-container.closed {
+    max-width: 600px;
+    min-width: 500px;
   }
   
   .card-content-container {
@@ -151,7 +159,7 @@
   .open .card-content {
     height: 90vh;
     width: auto;
-    max-width: 32vw;
+    max-width: 600px;
     overflow: hidden;
   }
   
@@ -187,7 +195,7 @@
     margin: 8px 0;
     margin-top: 2vh;
     font-family: "Alba";
-    font-size: 3.7vh;
+    font-size: 3.5vh;
   }
   
   .category {
@@ -234,8 +242,33 @@
   
   p {
     color: #ffffff;
-    font-size: 1vw;
     line-height: 28px;
+    white-space: pre-line;
+    margin-left: '2vw';
+    font-size: 'auto'
+  }
+
+}
+
+
+  @media (max-width: 1500px) {
+    p {
+      color: #ffffff;
+      line-height: 20px;
+      white-space: pre-line;
+      margin-left: '2vw';
+      margin-top: -5vh;
+    }
+
+    .card-list {
+      flex: 0 0 50%;
+    }
+
+
+    .card-content-container.closed {
+      max-width: 600px;
+      min-width: 500px;
+    }
   }
   
   @media only screen and (max-width: 800px) {
@@ -267,6 +300,27 @@
   
     .card-content-container.open {
       padding: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      overflow: hidden;
+      padding: 40px 0;
+      cursor: grab;
+    }
+
+    .card-content {
+      pointer-events: auto;
+      position: relative;
+      border-radius: 20px;
+      border: 2px solid #fff;
+      background: #1b2636;
+      width: 200%;
+      height: 100%;
+      margin: 0 auto;
     }
   }
   

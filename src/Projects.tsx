@@ -10,7 +10,7 @@ import { List } from './CardList';
 
 const Head = styled.h1`
   color: #FFFFFF;
-  margin-left: 15vw;
+  margin-left: 18.5vw;
   font-family: Bavista;
   font-size: 10vh;
   background-color: #00000000;

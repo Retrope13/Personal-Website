@@ -1,3 +1,8 @@
+
+@media (max-width: 1920px) {
+
+
+
 ul,
 li {
   margin: 0;
@@ -28,11 +33,11 @@ ul {
   color: #FFFFFF;
   font-weight: 100px;
   margin-top: 2vh;
-
 }
 
 .content {
   background-color: #00000000;
+  color: #00000000;
   min-width: 70vw;
   width: 80vw;
   align-items: center;
@@ -50,4 +55,19 @@ ul {
   height: 100vh;
   background-color: #00000000; /*I could change this to #002A2B2A for like a shadow effect but I'm not sure how to feel about it */
   border-radius: 2px;
+}
+
+}
+
+
+@media (max-width: 1500px) {
+
+    p {
+      color: #ffffff;
+      line-height: 3px;
+      white-space: pre-line;
+      margin-left: '2vw';
+      font-size: 'auto'
+    }
+
 }

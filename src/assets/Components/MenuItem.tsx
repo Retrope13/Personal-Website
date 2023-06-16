@@ -40,7 +40,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({ i }) => {
         variants = {variants}
         whileHover={{scale: 1.1}}
         whileTap = {{scale: 1}} >
-        <img alt='An Icon for the navbar. The icon could be a House with a chimney, a piece of paper with lines instead of text, or an unopened envelope. All of these are in a minimalistic, white style.' style={{width: '50%'}} src={icons[i]} className="icon-placeholder"/> 
+        <img alt='An Icon for the navbar. The icon could be a House with a chimney, a piece of paper with lines instead of text, or an unopened envelope. All of these are in a minimalistic, white style.' style={{minWidth: '70px'}} src={icons[i]} className="icon-placeholder"/> 
         <Link to={pages[i]} className='text-placeholder'>{titles[i]} </Link>
 
         </motion.li>

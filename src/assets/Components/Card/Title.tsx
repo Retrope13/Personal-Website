@@ -1,7 +1,6 @@
 import * as React from 'react';
-import {MotionValue, motion} from 'framer-motion';
+import {motion} from 'framer-motion';
 import {closeSpring, openSpring} from './animations'; 
-import { Image } from './Image';
 import gitIcon from '../../imgs/github.png';
 import CSU from '../../imgs/CSU.png';
 import { useState, useEffect } from 'react';
@@ -44,11 +43,11 @@ export const Title: React.FC<TitleProps> = ({ title, category, isSelected, repol
           <span className="category" style={{zIndex: 1}}>{category}</span>
           <h2 style={{zIndex: 2}}>{title}</h2>
           <a className='repoLink' href={repolink} target='_blank'>
-          <img style={{height: "7vh", width: "4vw", marginTop: "1vh"}} src={gitIcon}/>
+          <img style={{height: "7vh", width: "4vw", minWidth: '60px', marginTop: "1vh"}} src={gitIcon}/>
           </a>
           {isSchool &&
           <a className='repoLink' href={classlink} target='_blank'>
-            <img style={{height: "7vh", width: "4vw", marginTop: "1vh"}} src={CSU}/>
+            <img style={{height: "7vh", width: "4vw", minWidth: '60px', marginTop: "1vh"}} src={CSU}/>
           </a>
 }
         </motion.div>
