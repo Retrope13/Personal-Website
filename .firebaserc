@@ -8,5 +8,8 @@
     "sam-mckay-personal-website": {
       "extensionInstances": {}
     }
+  },
+  "hosting": {
+    "site": "mckaypable.com"
   }
 }
