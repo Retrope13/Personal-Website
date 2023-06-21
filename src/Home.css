@@ -120,6 +120,7 @@ li {
 img {
   border-radius: 5px;
   position: static;
+  display: inline;
   height: 600px;
 }
 
@@ -141,49 +142,42 @@ img {
 }
 
 .CSU-container {
-  display: flex;
+  display: block;
   margin-top: -13vh;
-  height: 62vh;
+  height: auto;
+  width: auto;
 }
 
 .ulTitleL {
   font-family: "Alexandria";
-  font-size: 3vh;
+  font-size: 35px;
   margin-bottom: 2vh;
 }
 
+.Concepts,
 .Languages {
-  margin-left: 100px;
-  display: block;
-  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  position: static;
+  width: 400px;
 }
 
 
+.Concepts li,
 .Languages li {
   font-family: "Alexandria";
-  margin-bottom: 2vh;
-  cursor:auto;
+  margin-top: 20px;
+  cursor: auto;
 }
 
 .ulTitleC {
   font-family: "Alexandria";
-  font-size: 3vh;
+  font-size: 35px;
   margin-bottom: 2vh;
 }
 
-.Concepts {
-  margin-left: 700px;
-  margin-top: -450px;
-  display: block;
-  position: relative;
-}
-
-.Concepts li {
-  font-family: "Alexandria";
-  margin-bottom: 2vh;
-  width: 50vw;
-  cursor: auto;
-}
 
 .bio-container {
   display: flex;
