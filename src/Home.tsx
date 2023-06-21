@@ -22,23 +22,21 @@ const Head = styled.h1`
 const TextHead = styled.h1`
   color: #FFFFFF;
   font-family: Bavista;
-  font-size: 8vh;
-  background-color: #00000000;
+  font-size: 90px;
   height: 100px;
+  background-color: #00000000;
 `
 
 const TextDiv = styled.div`
   border: .15vw solid #FFFFFF;
   border-radius: 2vw;
-  height: 400px;
-  display: inline-block;
+  height: auto;
   background-color: #1b2636;
-  justify-content: center;
-  align-items: flex-start;
-  width: 60vw;
+  width: auto;
   padding-left: 1vw;
-  margin-left: 27vw;
   margin-bottom: 3vh;
+  display: inline-block;
+  position: static;
 `
 
 const Para = styled.p`
@@ -47,7 +45,7 @@ const Para = styled.p`
   color: #FFFFFF;
   align-items: flex-start;
   width: 99%;
-  height: 19vh;
+  height: 99%;
   line-height: auto;
   white-space: pre-line;
 `
@@ -107,14 +105,14 @@ function Home() {
       <TextDiv>      
           <TextHead className='bio-heading'>A bit about me</TextHead>
         <div className='bio-container'>
-        <Para style={{width: '99%'}}>
+        <Para>
         Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
         I love user experience/user interface design, and website development focused on accessibility so this website was a way to sharpen some of the tools in my set and learn some things too!
         I pursued a degree in computer science because of the potential it has as a tool to help people and the creative liberties that it affords developers.
         </Para>
           </div>
           </TextDiv>
-        <TextDiv className='CSU-div' style={{height: '750px'}}>
+        <TextDiv className='CSU-div'>
        <div className="CSU-heading">
           <TextHead style={{marginTop: '-22vh'}}>My time at CSU</TextHead>
        </div>
