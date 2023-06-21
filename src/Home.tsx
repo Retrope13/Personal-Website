@@ -32,7 +32,8 @@ const TextDiv = styled.div`
   border-radius: 2vw;
   height: auto;
   background-color: #1b2636;
-  width: auto;
+  width: 68%;
+  margin-left: auto;
   padding-left: 1vw;
   margin-bottom: 3vh;
 `
@@ -75,23 +76,19 @@ function Home() {
   const isMobile = window.innerWidth < 768;
   let variant = {};
 
-  useEffect(() => {
     if (!isMobile) {
       variant = {
         animate: {
-          x: isOpen ? 50 : -150
+          x: 200
         }
       };
     } else {
       variant = {
         animate: {
-          y: isOpen ? 50 : -150
+          y: 250
         }
       };
     }
-
-  }, [])
-
 
 
   return (
@@ -117,12 +114,13 @@ function Home() {
           <motion.div 
         transition={{duration: 1}} 
         variants = {variant}
+        whileInView={isOpen ? "animate" : "none"}
         className="content">
           <Head>Sam McKay</Head>
           <div className='image-container'>
            <img src={MyPhoto} alt="Me at Meow Wolf sitting in a semi-circular green chair with twisting tubes behind me!"/> {/*You can put a div behind the image to give it some depth*/}
           </div>
-      <TextDiv>      
+      <TextDiv>
           <TextHead className='bio-heading'>A bit about me</TextHead>
         <div className='bio-container'>
         <Para>

@@ -23,7 +23,6 @@
 @media (max-width: 1920px) {
   /* CSS styles for screens larger than 1024px */
 
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -98,20 +97,17 @@ li {
 }
 
 .image-container {
-  display: inline-flex;
-  justify-content: space-around;
-  position:static;
-  align-items: center;
+  display: inline;
+  position:sticky;
   background-color: #00000000;
-  min-width: 300px;
   border-radius: 5px;
-  border: .2vw solid #FFFFFF;
 }
 
 img {
+  border: .2vw solid #FFFFFF;
   border-radius: 5px;
   position: static;
-  display: block;
+  display: inline;
   height: 600px;
   float: left;
 }
