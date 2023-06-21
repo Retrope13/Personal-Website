@@ -120,19 +120,13 @@ li {
 img {
   border-radius: 5px;
   position: static;
-  display: inline;
+  display: inline-block;
+  vertical-align: top;
   height: 600px;
 }
 
 .bio-text-div {
   height: 40vh;
-}
-
-.bio-heading {
-  margin-top: -28vh;
-  white-space: 'nowrap';
-  margin-top: '-17vh';
-  margin-left: -10vh;
 }
 
 .CSU-heading {
@@ -142,10 +136,7 @@ img {
 }
 
 .CSU-container {
-  display: block;
   margin-top: -13vh;
-  height: auto;
-  width: auto;
 }
 
 .ulTitleL {
@@ -179,11 +170,6 @@ img {
 }
 
 
-.bio-container {
-  display: flex;
-  margin-top: 5vh;
-  margin-left: -27.7vw;
-}
 
 .App-link {
   color: #DEF2F1;
