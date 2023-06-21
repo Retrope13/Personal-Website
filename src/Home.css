@@ -107,21 +107,20 @@ li {
 
 .image-container {
   display: inline-flex;
-  justify-content:space-around;
+  justify-content: space-around;
+  position:static;
   align-items: center;
   background-color: #00000000;
   min-width: 300px;
   border-radius: 5px;
-  height: auto;
-  width: auto;
   margin-top: 3vh;
   border: .2vw solid #FFFFFF
 }
 
 img {
   border-radius: 5px;
-  height: 58vh;
-  width: 23vw;
+  position: static;
+  height: 600px;
 }
 
 .bio-text-div {
@@ -154,15 +153,16 @@ img {
 }
 
 .Languages {
-  margin-top: 72vh;
-  margin-left: 5vw;
+  margin-left: 100px;
   display: block;
+  position: relative;
 }
 
 
 .Languages li {
   font-family: "Alexandria";
   margin-bottom: 2vh;
+  cursor:auto;
 }
 
 .ulTitleC {
@@ -172,14 +172,17 @@ img {
 }
 
 .Concepts {
-  margin-top: 72vh;
-  margin-left: 35vw;
+  margin-left: 700px;
+  margin-top: -450px;
+  display: block;
+  position: relative;
 }
 
 .Concepts li {
   font-family: "Alexandria";
   margin-bottom: 2vh;
   width: 50vw;
+  cursor: auto;
 }
 
 .bio-container {
