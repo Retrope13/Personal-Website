@@ -79,14 +79,6 @@ li {
   cursor: pointer;
 }
 
-.content {
-  background-color: #00000000;
-  min-width: 70vw;
-  width: 80vw;
-  min-height: auto;
-  margin-left: 100vw;
-}
-
 .background {
   position: fixed;
   top: 0;
@@ -113,16 +105,15 @@ li {
   background-color: #00000000;
   min-width: 300px;
   border-radius: 5px;
-  margin-top: 3vh;
-  border: .2vw solid #FFFFFF
+  border: .2vw solid #FFFFFF;
 }
 
 img {
   border-radius: 5px;
   position: static;
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   height: 600px;
+  float: left;
 }
 
 .bio-text-div {
@@ -148,7 +139,6 @@ img {
 .Concepts,
 .Languages {
   display: inline-block;
-  vertical-align: top;
   margin: 0;
   padding: 0;
   position: static;
@@ -196,7 +186,14 @@ body.scroll-up {
 
 @media (max-width: 767px) {
   /* CSS styles for screens smaller than 768px */
+
+  body {
+    width: 100%;
+  }
   
+  .content {
+    margin-left: 100%;
+  }
 
 
 }

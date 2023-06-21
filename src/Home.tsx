@@ -1,7 +1,7 @@
 import './Home.css';
 import MyPhoto from './assets/imgs/SamMcKayPic.jpg';
 import {motion, useCycle} from 'framer-motion';
-import {useRef} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import {Navigation} from './assets/Components/Navigation';
 import { useDimensions} from "./assets/Components/use-dimensions";
 import { MenuToggle } from './assets/Components/MenuToggle';
@@ -35,8 +35,6 @@ const TextDiv = styled.div`
   width: auto;
   padding-left: 1vw;
   margin-bottom: 3vh;
-  display: inline-block;
-  position: static;
 `
 
 const Para = styled.p`
@@ -74,6 +72,27 @@ function Home() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const height = useDimensions(containerRef).current.height;
+  const isMobile = window.innerWidth < 768;
+  let variant = {};
+
+  useEffect(() => {
+    if (!isMobile) {
+      variant = {
+        animate: {
+          x: isOpen ? 50 : -150
+        }
+      };
+    } else {
+      variant = {
+        animate: {
+          y: isOpen ? 50 : -150
+        }
+      };
+    }
+
+  }, [])
+
+
 
   return (
     <div className="App">
@@ -94,9 +113,10 @@ function Home() {
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
           </div>
-        <motion.div 
+
+          <motion.div 
         transition={{duration: 1}} 
-        animate={{x: isOpen ? 50 : -150}} 
+        variants = {variant}
         className="content">
           <Head>Sam McKay</Head>
           <div className='image-container'>
@@ -151,7 +171,7 @@ function Home() {
           </Para>
        </div>
           </TextDiv>
-        </motion.div>
+          </motion.div>
       </body>
     </div>
   );
