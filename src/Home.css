@@ -23,7 +23,6 @@
 @media (max-width: 1920px) {
   /* CSS styles for screens larger than 1024px */
 
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -79,14 +78,6 @@ li {
   cursor: pointer;
 }
 
-.content {
-  background-color: #00000000;
-  min-width: 70vw;
-  width: 80vw;
-  min-height: auto;
-  margin-left: 100vw;
-}
-
 .background {
   position: fixed;
   top: 0;
@@ -106,33 +97,23 @@ li {
 }
 
 .image-container {
-  display: inline-flex;
-  justify-content:space-around;
-  align-items: center;
+  display: inline;
+  position:sticky;
   background-color: #00000000;
-  min-width: 300px;
   border-radius: 5px;
-  height: auto;
-  width: auto;
-  margin-top: 3vh;
-  border: .2vw solid #FFFFFF
 }
 
 img {
+  border: .2vw solid #FFFFFF;
   border-radius: 5px;
-  height: 58vh;
-  width: 23vw;
+  position: static;
+  display: inline;
+  height: 600px;
+  float: left;
 }
 
 .bio-text-div {
   height: 40vh;
-}
-
-.bio-heading {
-  margin-top: -28vh;
-  white-space: 'nowrap';
-  margin-top: '-17vh';
-  margin-left: -10vh;
 }
 
 .CSU-heading {
@@ -142,51 +123,39 @@ img {
 }
 
 .CSU-container {
-  display: flex;
   margin-top: -13vh;
-  height: 62vh;
 }
 
 .ulTitleL {
   font-family: "Alexandria";
-  font-size: 3vh;
+  font-size: 35px;
   margin-bottom: 2vh;
 }
 
+.Concepts,
 .Languages {
-  margin-top: 72vh;
-  margin-left: 5vw;
-  display: block;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: static;
+  width: 400px;
 }
 
 
+.Concepts li,
 .Languages li {
   font-family: "Alexandria";
-  margin-bottom: 2vh;
+  margin-top: 20px;
+  cursor: auto;
 }
 
 .ulTitleC {
   font-family: "Alexandria";
-  font-size: 3vh;
+  font-size: 35px;
   margin-bottom: 2vh;
 }
 
-.Concepts {
-  margin-top: 72vh;
-  margin-left: 35vw;
-}
 
-.Concepts li {
-  font-family: "Alexandria";
-  margin-bottom: 2vh;
-  width: 50vw;
-}
-
-.bio-container {
-  display: flex;
-  margin-top: 5vh;
-  margin-left: -27.7vw;
-}
 
 .App-link {
   color: #DEF2F1;
@@ -213,7 +182,14 @@ body.scroll-up {
 
 @media (max-width: 767px) {
   /* CSS styles for screens smaller than 768px */
+
+  body {
+    width: 100%;
+  }
   
+  .content {
+    margin-left: 100%;
+  }
 
 
 }
