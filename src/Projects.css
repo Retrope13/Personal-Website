@@ -1,3 +1,14 @@
+.Head {
+  color: #FFFFFF;
+  margin-left: 18.5vw;
+  font-family: Bavista;
+  font-size: 10vh;
+  background-color: #00000000;
+  border-radius: 5px;
+  height: auto;
+
+}
+
 
 @media (max-width: 1920px) {
 
@@ -55,8 +66,13 @@ img {
 
 @media (max-width: 1000px) {
 
-  .background {
-    color: #FFFFFF;
+  .Projects .background {
+    height: auto;
+    background-color: #B64228;
+  }
+
+  .Projects .body {
+    width:auto;
   }
   
 }

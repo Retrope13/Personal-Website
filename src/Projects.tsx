@@ -4,19 +4,8 @@ import { useRef} from 'react';
 import {Navigation} from './assets/Components/Navigation';
 import { useDimensions} from "./assets/Components/use-dimensions";
 import { MenuToggle } from './assets/Components/MenuToggle';
-import styled from 'styled-components';
 import { List } from './CardList';
 
-
-const Head = styled.h1`
-  color: #FFFFFF;
-  margin-left: 18.5vw;
-  font-family: Bavista;
-  font-size: 10vh;
-  background-color: #00000000;
-  border-radius: 5px;
-  height: auto;
-  `
 
 const sidebar ={
   open: (height = 1000) => ({
@@ -28,7 +17,7 @@ const sidebar ={
     }
   }),
   closed: {
-    clipPath: "circle(30px at 40px 40px)",
+    clipPath: "circle(0px at 40px 40px)",
     transitions: {
       delay: 0.5,
       type: "spring",
@@ -42,11 +31,28 @@ function Projects() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const height = useDimensions(containerRef).current.height;
+  const isMobile = window.innerWidth < 1000;
+  console.log(window.innerWidth);
+  let variant = {};
+
+    if (!isMobile) {
+      variant = {
+        animate: {
+          x: 0
+        }
+      };
+    } else {
+      variant = {
+        animate: {
+          y: 250
+        }
+      };
+    }
 
   return (
     <div className="App">
       <title>Projects</title>
-      <body>
+      <body className='Projects'>
         <div className='top'>
           <motion.nav
           initial={false}
@@ -62,8 +68,14 @@ function Projects() {
             <MenuToggle toggle={isOpen} onClick={toggleOpen}/>
           </motion.nav>
           </div>
-          <Head>My Projects</Head>
+          <motion.div
+            transition={{duration: 1}} 
+            variants = {variant}
+            whileInView={isOpen ? "animate" : "none"}
+            className="content">
+          <h1 className='Head'>My Projects</h1>
             <List history={{}}/>
+            </motion.div>
       </body>
     </div>
   );
