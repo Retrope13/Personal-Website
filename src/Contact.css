@@ -9,6 +9,16 @@
     margin-left: 5vw;
   }
 
+.icon {
+    border: none;
+    width: 5vw;
+    height: 9vh;
+    display: inline-flex;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border: 0px;
+}
+
 @media (max-width: 1920) {
 
     .PhoneDiv {
