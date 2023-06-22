@@ -279,6 +279,12 @@ body.scroll-up {
   
 }
 
+
+
+@media (max-width: 844px) {
+  
+}
+
 @media (max-width: 1000px) {
   /* CSS styles for screens smaller than 768px */
 
@@ -331,8 +337,8 @@ body.scroll-up {
   .background {
     background-color: #B64228;
     border-radius: 5px;
-    width: 100vw;
-    height: 35vh;
+    width: 101vw;
+    height:80%;
     position: relative;
     margin-left: -1vw;
   }
@@ -345,6 +351,9 @@ body.scroll-up {
     width: 50px;
   }
 
+  .top {
+    height: 7vh;
+  }
 
 
 }

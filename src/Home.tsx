@@ -43,7 +43,8 @@ function Home() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const height = useDimensions(containerRef).current.height;
-  const isMobile = window.innerWidth < 768;
+  const isMobile = window.innerWidth < 1000;
+  console.log(window.innerWidth);
   let variant = {};
 
     if (!isMobile) {
