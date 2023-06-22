@@ -19,14 +19,6 @@ const Head = styled.h1`
   height: auto;
   `
 
-const TextHead = styled.h1`
-  color: #FFFFFF;
-  font-family: Bavista;
-  font-size: 90px;
-  height: 100px;
-  background-color: #00000000;
-`
-
 const sidebar ={
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
@@ -37,7 +29,7 @@ const sidebar ={
     }
   }),
   closed: {
-    clipPath: "circle(30px at 40px 40px)",
+    clipPath: "circle(0px at 40px 40px)",
     transitions: {
       delay: 0.5,
       type: "spring",
@@ -114,7 +106,7 @@ function Home() {
        </div>
 
        <div className='CSU-container'>
-          <div className='Para' >{"\n"}While enrolled at CSU, I earned a 3.71 cumulative GPA, my Bachelor's in Computer Science, and had the opportunity to work on several projects which you can see on the projects page of this website.
+          <div className='Para' >While enrolled at CSU, I earned a 3.71 cumulative GPA, my Bachelor's in Computer Science, and had the opportunity to work on several projects which you can see on the projects page of this website.
            Within many of these projects, I took on a leadership role and gained a firm grasp of various languages, libraries, and concepts, which have greatly assisted me in my journey as a developer.
           {"\n"}
 
