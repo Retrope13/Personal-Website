@@ -329,12 +329,24 @@ body.scroll-up {
   }
 
   .background {
-    background-color: #00000000;
+    background-color: #B64228;
+    border-radius: 5px;
+    width: 100vw;
+    height: 35vh;
+    position: relative;
+    margin-left: -1vw;
   }
 
-  button {
+  .top button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     width: 50px;
+  }
+
+  .test {
+    width: 100px;
   }
 
 
