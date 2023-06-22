@@ -35,17 +35,6 @@ ul {
   margin-top: 2vh;
 }
 
-.content {
-  background-color: #00000000;
-  color: #00000000;
-  min-width: 70vw;
-  width: 80vw;
-  align-items: center;
-  justify-content: right;
-  min-height: auto;
-  margin-left: 3vw;
-}
-
 .background {
   position: absolute;
   top: 0;
@@ -55,6 +44,13 @@ ul {
   height: 100vh;
   background-color: #00000000; /*I could change this to #002A2B2A for like a shadow effect but I'm not sure how to feel about it */
   border-radius: 2px;
+}
+
+img {
+  border-radius: 5px;
+  position: static;
+  display: inline;
+  height: 600px;
 }
 
 }
@@ -70,4 +66,8 @@ ul {
       font-size: 'auto'
     }
 
+}
+
+@media (max-width: 767px) {
+  
 }
