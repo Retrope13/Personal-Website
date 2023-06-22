@@ -19,7 +19,7 @@
     border: 0px;
 }
 
-@media (max-width: 1920) {
+@media (max-width: 1920px) {
 
     .PhoneDiv {
         width: 30vw; 
@@ -30,8 +30,28 @@
         justify-content: flex-start;
         height: 20px;
     }
+
+    .icon {
+        border: none;
+        width: 5vw;
+        height: 9vh;
+        display: inline-flex;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        border: 0px;
+    }
 }
 
 @media (max-width: 1500) {
+
+    .icon {
+        border: none;
+        width: 5vw;
+        height: 9vh;
+        display: inline-flex;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        border: 0px;
+    }
 
 }

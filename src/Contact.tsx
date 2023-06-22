@@ -115,28 +115,28 @@ function Contact() {
 
             <a rel='noreferrer' href='mailto:sammckay31@gmail.com?subject=In%20Regards%20To%20Your%20Website'>
             <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop:'7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
-            <img src={email} style={{height: '8vh', width: '5vw', marginRight:'1vw'}} alt="An all white, thin lined icon of an envelope rounded on the sides"/>
+            <img className='icon' src={email} style={{height: '8vh', width: '5vw', marginRight:'1vw'}} alt="An all white, thin lined icon of an envelope rounded on the sides"/>
             <ContactText>sammckay31@gmail.com</ContactText>
             </TextDiv>
             </a>
 
             <a rel='noreferrer' href='https://github.com/Retrope13' target='_blank'>
             <TextDiv style={{width: '30vw', marginLeft: '15vw', marginTop: '7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
-            <img src={github} style={{marginRight:'5vw'}} alt="An all white icon version of the GitHub logo"/>
+            <img className='icon' src={github} style={{marginRight:'5vw'}} alt="An all white icon version of the GitHub logo"/>
             <ContactText>Retrope13</ContactText>
             </TextDiv>
             </a>
 
             <a rel='noreferrer' href='https://www.linkedin.com/in/sam-mckay13/' target='_blank'>
             <TextDiv style={{width: '30vw', marginLeft: '2vw', marginTop: '7vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
-            <img src={linkedIn} style={{marginRight:'4vw'}} alt="An all white icon version of the LinkedIn logo"/>
+            <img className='icon' src={linkedIn} style={{marginRight:'4vw'}} alt="An all white icon version of the LinkedIn logo"/>
             <ContactText>Sam-mckay13</ContactText>
             </TextDiv>
             </a>
 
             <a href="./assets/Sam-McKay-Resume.pdf" download={true}>
             <TextDiv style={{width: '30vw', marginLeft: '30vw', marginTop: '6vh', alignItems: 'center', display: 'inline-flex', justifyContent: 'flex-start'}}>
-            <img src={download} style={{marginRight:'4vw'}} alt="An all white icon version of the LinkedIn logo"/>
+            <img className='icon' src={download} style={{marginRight:'4vw'}} alt="An all white icon version of the LinkedIn logo"/>
             <ContactText style={{marginLeft: '2.2vw'}}>Resume</ContactText>
             </TextDiv>
             </a>
