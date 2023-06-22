@@ -19,36 +19,6 @@ const Head = styled.h1`
   height: auto;
   `
 
-const TextHead = styled.h1`
-  color: #FFFFFF;
-  font-family: Bavista;
-  font-size: 90px;
-  height: 100px;
-  background-color: #00000000;
-`
-
-const TextDiv = styled.div`
-  border: .15vw solid #FFFFFF;
-  border-radius: 2vw;
-  height: auto;
-  background-color: #1b2636;
-  width: 68%;
-  margin-left: auto;
-  padding-left: 1vw;
-  margin-bottom: 3vh;
-`
-
-const Para = styled.p`
-  font-family: Alexandria;
-  font-size: 20px;
-  color: #FFFFFF;
-  align-items: flex-start;
-  width: 99%;
-  height: 99%;
-  line-height: auto;
-  white-space: pre-line;
-`
-
 const sidebar ={
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
@@ -59,7 +29,7 @@ const sidebar ={
     }
   }),
   closed: {
-    clipPath: "circle(30px at 40px 40px)",
+    clipPath: "circle(0px at 40px 40px)",
     transitions: {
       delay: 0.5,
       type: "spring",
@@ -120,28 +90,28 @@ function Home() {
           <div className='image-container'>
            <img src={MyPhoto} alt="Me at Meow Wolf sitting in a semi-circular green chair with twisting tubes behind me!"/> {/*You can put a div behind the image to give it some depth*/}
           </div>
-      <TextDiv>
-          <TextHead className='bio-heading'>A bit about me</TextHead>
+      <div className='TextDiv'>
+          <h1 className='TextHead' id='bioHead'>A bit about me</h1>
         <div className='bio-container'>
-        <Para>
+        <div className='Para'>
         Welcome to my website! I am Sam McKay, a 22-year-old college graduate with a degree in Computer Science from CSU! 
         I love user experience/user interface design, and website development focused on accessibility so this website was a way to sharpen some of the tools in my set and learn some things too!
         I pursued a degree in computer science because of the potential it has as a tool to help people and the creative liberties that it affords developers.
-        </Para>
+        </div>
           </div>
-          </TextDiv>
-        <TextDiv className='CSU-div'>
+          </div>
+        <div className='TextDiv'>
        <div className="CSU-heading">
-          <TextHead style={{marginTop: '-22vh'}}>My time at CSU</TextHead>
+          <h1 className='TextHead' style={{marginTop: '-22vh'}}>My time at CSU</h1>
        </div>
 
        <div className='CSU-container'>
-          <Para >While enrolled at CSU, I earned a 3.71 cumulative GPA, my Bachelor's in Computer Science, and had the opportunity to work on several projects which you can see on the projects page of this website.
+          <div className='Para' >While enrolled at CSU, I earned a 3.71 cumulative GPA, my Bachelor's in Computer Science, and had the opportunity to work on several projects which you can see on the projects page of this website.
            Within many of these projects, I took on a leadership role and gained a firm grasp of various languages, libraries, and concepts, which have greatly assisted me in my journey as a developer.
           {"\n"}
 
             <ul className='Languages'>
-              <li className='ulTitleL'>Languages:</li>
+              <li className='ulTitleL' style={{borderBottom: '4px solid #FFFFFF'}} >Languages:</li>
               <li>&#x25CF; Javascript</li>
               <li>&#x25CF; Java</li>
               <li>&#x25CF; C</li>
@@ -155,7 +125,7 @@ function Home() {
 
 
               <ul className='Concepts'>
-              <li className='ulTitleC'>Concepts:</li>
+              <li className='ulTitleC' style={{borderBottom: '4px solid #FFFFFF'}}>Concepts:</li>
               <li>&#x25CF; Agile Scrum</li>
               <li>&#x25CF; Test-driven development</li>
               <li>&#x25CF; Object-Oriented design</li>
@@ -166,9 +136,9 @@ function Home() {
               <li>&#x25CF; Time management</li>
               <li>&#x25CF; Language acquisition</li>
               </ul>
-          </Para>
+          </div>
        </div>
-          </TextDiv>
+          </div>
           </motion.div>
       </body>
     </div>
