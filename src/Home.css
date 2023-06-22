@@ -78,6 +78,38 @@ li {
   cursor: pointer;
 }
 
+
+.TextDiv {
+  border: .15vw solid #FFFFFF;
+  border-radius: 2vw;
+  height: auto;
+  background-color: #1b2636;
+  width: 68%;
+  margin-left: auto;
+  padding-left: 1vw;
+  padding-bottom: 2%;
+  margin-bottom: 3vh;
+}
+
+.TextHead {
+color: #FFFFFF;
+font-family: Bavista;
+font-size: 90px;
+height: 100px;
+background-color: #00000000;
+}
+
+.Para {
+  font-family: Alexandria;
+  font-size: 20px;
+  color: #FFFFFF;
+  align-items: flex-start;
+  width: 99%;
+  height: 99%;
+  line-height: auto;
+  white-space: pre-line;
+}
+
 .background {
   position: fixed;
   top: 0;
@@ -138,9 +170,9 @@ img {
   margin: 0;
   padding: 0;
   position: static;
-  width: 400px;
+  width: auto;
+  margin-right: 10%;
 }
-
 
 .Concepts li,
 .Languages li {
@@ -172,27 +204,20 @@ body.scroll-up {
   background-color: #B64228;
 }
 
+.content {
+  background-color: #00000000;
+  color: #00000000;
+  min-width: 70vw;
+  width: 80vw;
+  align-items: center;
+  justify-content: right;
+  min-height: auto;
+  margin-left: 3vw;
+}
+
 }
 
 
-
-/*Phone mode*/
-
-
-
-@media (max-width: 767px) {
-  /* CSS styles for screens smaller than 768px */
-
-  body {
-    width: 100%;
-  }
-  
-  .content {
-    margin-left: 100%;
-  }
-
-
-}
 
 
 
@@ -204,7 +229,7 @@ body.scroll-up {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   /* CSS styles for screens between 768px and 1023px */
-
+  
 }
 
 
@@ -214,31 +239,31 @@ body.scroll-up {
 /*laptop mode*/
 
 @media (max-width: 1500px) {
-
+  
   .App {
     overflow: auto;
   }
-
+  
   .CSU-div {
     align-items:flex-start;
     justify-content: flex-start;
   }
-
-
+  
+  
   .top {
     background-color: #B64228;
   }
-
+  
   .bio-heading {
     margin-top: -34vh;
     white-space: 'nowrap';
     margin-left: -15vh;
   }
-
+  
   .bio-container {
     margin-top: 2vh;
   }
-
+  
   .Languages {
     margin-top: 65%;
   }
@@ -246,10 +271,72 @@ body.scroll-up {
   .Concepts {
     margin-top: 65%;
   }
-
+  
   .CSU-container {
     margin-top: -5vh;
   }
+  
+  
+}
+
+@media (max-width: 1000px) {
+  /* CSS styles for screens smaller than 768px */
+
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  p {
+    color: #ffffff;
+    line-height: 3px;
+    white-space: pre-line;
+    margin-left: '2vw';
+    font-size: 'auto'
+  }
+
+  .content {
+    background-color: #00000000;
+    color: #00000000;
+    width: 100%;
+    min-height: 100vh;
+    margin-left: 0vw;
+  }
+
+  .TextDiv {
+    display: block;
+    width: 100vw;
+    height: auto;
+  }
+
+  img {
+    display: flex;
+    width: 100%;
+    float: none;
+  }
+
+  .TextHead {
+    font-size: 15vw;
+  }
+
+  .Languages {
+    width: 45%;
+    margin-top: auto;
+  }
+
+  .Concepts {
+    margin-top: auto;
+  }
+
+  .background {
+    background-color: #00000000;
+  }
+
+  button {
+    height: 50px;
+    width: 50px;
+  }
+
 
 
 }
