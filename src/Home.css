@@ -33,6 +33,11 @@
   overflow-x: auto;
 }
 
+
+.Heading {
+  margin-top: 10%;
+}
+
 p {
   align-items: center;
 }
@@ -62,18 +67,13 @@ html {
   width: 5%;
   border-radius: 3%;
  
-  background: linear-gradient(to right, #6f5345 33%, #ce7052 33% 66%, #dc9954 66%);
+  background: linear-gradient(to right, #6f5345 25%, #ce7052 25% 50%, #dc9954 50% 75%, #d3c598 75%);
 }
 
-#progressbar2 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 0%;
- 
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  animation: animate 5s linear infinite;
-}
+
+
+
+
 
 @keyframes animate {
   0%, 100%
