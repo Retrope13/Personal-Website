@@ -20,6 +20,11 @@
   src: url('./assets/fonts/ALBAS___.TTF') format('truetype');
 }
 
+@font-face {
+  font-family: 'Alba';
+  src: url('./assets/fonts/ALBA____.TTF') format('truetype');
+}
+
 @media (max-width: 1920px) {
   /* CSS styles for screens larger than 1024px */
 
@@ -54,8 +59,8 @@ html {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100px;
-  height: 100%;
+  width: 1vw;
+  height: 100vh;
   background: rgba(255, 255, 255, 0.05);
 }
 
@@ -64,15 +69,68 @@ html {
   position: fixed;
   top: 0;
   right: 0;
-  width: 5%;
-  border-radius: 3%;
- 
+  width: 4.535vw;
   background: linear-gradient(to right, #6f5345 25%, #ce7052 25% 50%, #dc9954 50% 75%, #d3c598 75%);
 }
 
 
+.brown-circle {
+  width: 5vw;
+  height: 6.3vw;
+  background-color: #6f5345;
+  border-radius: 0 5vw 0 0;
+  overflow: hidden;
+  position: absolute;
+  top: 3.5vh;
+  right: 6vh;
+}
+
+.orange-circle {
+  width: 5vw;
+  height: 6.8vw;
+  background-color: #ce7052;
+  border-radius: 0 5vw 0 0 ;
+  position: absolute;
+  top: 2.5vh;
+  right: 4vh;
+}
+
+.light-orange-circle {
+  width: 5vw;
+  height: 7.45vw;
+  background-color: #dc9954;
+  border-radius: 0 5vw 0 0;
+  position: absolute;
+  top: 1.5vh;
+  right: 2vh;
+}
 
 
+.cream-circle {
+  width: 5vw;
+  height: 8vw;
+  background-color: #d3c598;
+  border-radius: 0 5vw 0 0 ;
+  position: absolute;
+  top: .5vh;
+  right: 0vh;
+}
+
+.background-circle {
+  width: 7vw;
+  height: 8vw;
+  background-color: #f3f0d4;
+  border-radius: 0 5vw 0 0 ;
+  position: absolute;
+  top: 5vh;
+  right: 8vh;
+}
+/*! Somehow the bottoms of the downward curve in the top right get misaligned when resizing the window */
+
+
+heading {
+  border-radius: 50%;
+}
 
 
 @keyframes animate {

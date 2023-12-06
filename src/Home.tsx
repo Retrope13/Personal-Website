@@ -7,34 +7,45 @@ import styled from 'styled-components';
 const Head = styled.h1`
   color: #ce7052; 
   margin-top: 0vh;
-  min-width: 100px;
-  font-family: Bavista;
+  font-family: Alba;
   font-size: 100px;
   background-color: #00000000;
-  height: auto;
   text-shadow: 
-    2px 2px 0 #dc9954, /* Red shadow */
-    4px 4px 0 #d3c598; /* Green shadow */
+    6px 6px 0 #dc9954, /*cream*/
+    10px 10px 0 #d3c598; /*Brown*/
   `
 
 function Home() {
   const progress = document.getElementById("progressbar1")
-  let totalHeight = document.body.scrollHeight - window.innerHeight;
+  let totalHeight = document.body.scrollHeight - window.innerHeight;  
+  let startingTop = 10
+  if (progress) {
+    progress.style.top = startingTop + 'vh'
+
+  }
   window.onscroll = function(){
-    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    let progressHeight = (window.scrollY / totalHeight) * 100; 
     if (progress) {
-      progress.style.height = progressHeight + "%"  
+      progress.style.height = progressHeight + "%" 
+      progress.style.top = (0 + 'vh') 
+      startingTop = startingTop - .5   
     }
   }
 
   return (
     <div className="App">
-      <div className="Heading"><Head>fdsafsdaf</Head></div>
+      <div className="Heading"> 
+          <div className='cream-circle'/>
+          <div className='light-orange-circle'/> 
+          <div className='orange-circle'/>
+          <div className='brown-circle'/>
+          <div className='background-circle'/>
+      </div>
       <title>Home</title>
-      <body>
-        <div id="progressbar1">
+      <body> 
+        <div id="scrollpath"> 
+          <div id="progressbar1"/>
         </div>
-        <div id="scrollpath"></div> 
           <h2>CreativeScroll Progress Bar</h2> 
         <section>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima cupiditate accusamus ratione exercitationem
