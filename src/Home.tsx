@@ -1,5 +1,6 @@
 import './Home.css';
 import MyPhoto from './assets/imgs/SamMcKayPic.jpg';
+import headerImg from './assets/imgs/retrolineHeading.png'
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 
@@ -18,33 +19,35 @@ const Head = styled.h1`
 function Home() {
   const progress = document.getElementById("progressbar1")
   let totalHeight = document.body.scrollHeight - window.innerHeight;  
-  let startingTop = 10
-  if (progress) {
-    progress.style.top = startingTop + 'vh'
+  let startingTop = 100 
+  if (progress) { 
+    progress.style.top = startingTop + '%'
 
   }
   window.onscroll = function(){
-    let progressHeight = (window.scrollY / totalHeight) * 100; 
+    let progressHeight = ((window.scrollY * 1.5) / totalHeight) * 100;
+    console.log(window.scrollY*1.5)
+    console.log(window.innerHeight)
     if (progress) {
-      progress.style.height = progressHeight + "%" 
+      progress.style.height = progressHeight  + "vh" 
       progress.style.top = (0 + 'vh') 
-      startingTop = startingTop - .5   
     }
   }
 
   return (
+    
     <div className="App">
-      <div className="Heading"> 
-          <div className='cream-circle'/>
-          <div className='light-orange-circle'/> 
-          <div className='orange-circle'/>
-          <div className='brown-circle'/>
-          <div className='background-circle'/>
-      </div>
       <title>Home</title>
+      <img id='headerImg' src={headerImg}/>
+      <div className="Heading"> 
+
+      </div>
       <body> 
+        <Head>
+          Sam
+        </Head>
         <div id="scrollpath"> 
-          <div id="progressbar1"/>
+          <div id="progressbar1"/>  
         </div>
           <h2>CreativeScroll Progress Bar</h2> 
         <section>
