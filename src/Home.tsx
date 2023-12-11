@@ -6,8 +6,10 @@ import styled from 'styled-components';
 
 
 const Head = styled.h1`
+  position: absolute;
   color: #ce7052; 
-  margin-top: 0vh;
+  top: 15vh;
+  left: 3vw;
   font-family: Alba;
   font-size: 100px;
   background-color: #00000000;
@@ -40,15 +42,15 @@ function Home() {
       <title>Home</title>
       <img id='headerImg' src={headerImg}/>
       <div className="Heading"> 
+        <div id="scrollpath"> 
+          <div id="progressbar1"/>
+        </div> 
 
       </div>
       <body> 
         <Head>
-          Sam
+          Sam McKay
         </Head>
-        <div id="scrollpath"> 
-          <div id="progressbar1"/>  
-        </div>
           <h2>CreativeScroll Progress Bar</h2> 
         <section>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima cupiditate accusamus ratione exercitationem
