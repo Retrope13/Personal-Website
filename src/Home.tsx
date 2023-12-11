@@ -1,12 +1,14 @@
 import './Home.css';
 import MyPhoto from './assets/imgs/SamMcKayPic.jpg';
 import headerImg from './assets/imgs/retrolineHeading.png'
+import footerImg from './assets/imgs/footerImg.png'
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 
 
 const Head = styled.h1`
   position: absolute;
+  z-index: 1;
   color: #ce7052; 
   top: 15vh;
   left: 3vw;
@@ -21,17 +23,17 @@ const Head = styled.h1`
 function Home() {
   const progress = document.getElementById("progressbar1")
   let totalHeight = document.body.scrollHeight - window.innerHeight;  
-  let startingTop = 100 
+  let startingTop = 10
   if (progress) { 
-    progress.style.top = startingTop + '%'
+    progress.style.top = startingTop + 'vh'
 
   }
   window.onscroll = function(){
-    let progressHeight = ((window.scrollY * 1.5) / totalHeight) * 100;
+    let progressHeight = ((window.scrollY * 1.45) / totalHeight) * 100;
     console.log(window.scrollY*1.5)
     console.log(window.innerHeight)
     if (progress) {
-      progress.style.height = progressHeight  + "vh" 
+      progress.style.height = progressHeight  + "vh"   
       progress.style.top = (0 + 'vh') 
     }
   }
@@ -41,12 +43,14 @@ function Home() {
     <div className="App">
       <title>Home</title>
       <img id='headerImg' src={headerImg}/>
-      <div className="Heading"> 
-        <div id="scrollpath"> 
-          <div id="progressbar1"/>
-        </div> 
+      <div className="Heading">
+        <div className ='hider'>
+        </div>
+          <div id="scrollpath">  
+            <div id="progressbar1"/> 
+          </div> 
 
-      </div>
+      </div> 
       <body> 
         <Head>
           Sam McKay
@@ -164,6 +168,7 @@ function Home() {
          a deleniti harum possimus iste autem modi temporibus recusandae eius eligendi placeat culpa, 
          accusantium debitis enim voluptate at?
           </p>
+        <img id="footerImg" src={footerImg}/>
         </section>
       </body>
     </div>
