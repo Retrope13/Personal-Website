@@ -33,103 +33,77 @@
   pointer-events: none;
 }
 
+/** There is an issue where if the scroll bar is able to even go one pixel over the height of the window the user can scroll infinitely */
 .App {
   background-color: #f3f0d4;
   overflow-x: auto;
+  overflow-y:auto;
+  max-height: auto;
 }
 
+#headerImg {
+  max-width: 100vw;
+  position: absolute;
+  z-index: 2;
+}
 
 .Heading {
   margin-top: 10%;
+  height: 10%;
 }
+
+.hider {
+  background-color: #F3F0D4;
+  position: absolute;
+  width: 100vw;
+  height: 60vh;
+  top: 0;
+  z-index: 1;
+}
+
 
 p {
   align-items: center;
 }
 
 section {
-  width: 50%
+  margin-top: 40vh;
+  margin-left: 6vw;
+  width: 50%;
+  position: center;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+
 #scrollPath {
   position: fixed;
   top: 0;
   right: 0;
-  width: 1vw;
+  max-width: 5vw;
   height: 100vh;
   background: rgba(255, 255, 255, 0.05);
 }
 
 
 #progressbar1 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 4.535vw;
+  position: absolute;
+  margin-top: 0;
+  left: 81.85vw;
+  min-width: 3.4vw;
+  max-width: 3.4vw;
   background: linear-gradient(to right, #6f5345 25%, #ce7052 25% 50%, #dc9954 50% 75%, #d3c598 75%);
+  z-index: 0;
 }
 
 
-.brown-circle {
-  width: 5vw;
-  height: 6.3vw;
-  background-color: #6f5345;
-  border-radius: 0 5vw 0 0;
-  overflow: hidden;
+#footerImg {
+  max-width: 100vw;
   position: absolute;
-  top: 3.5vh;
-  right: 6vh;
-}
-
-.orange-circle {
-  width: 5vw;
-  height: 6.8vw;
-  background-color: #ce7052;
-  border-radius: 0 5vw 0 0 ;
-  position: absolute;
-  top: 2.5vh;
-  right: 4vh;
-}
-
-.light-orange-circle {
-  width: 5vw;
-  height: 7.45vw;
-  background-color: #dc9954;
-  border-radius: 0 5vw 0 0;
-  position: absolute;
-  top: 1.5vh;
-  right: 2vh;
-}
-
-
-.cream-circle {
-  width: 5vw;
-  height: 8vw;
-  background-color: #d3c598;
-  border-radius: 0 5vw 0 0 ;
-  position: absolute;
-  top: .5vh;
-  right: 0vh;
-}
-
-.background-circle {
-  width: 7vw;
-  height: 8vw;
-  background-color: #f3f0d4;
-  border-radius: 0 5vw 0 0 ;
-  position: absolute;
-  top: 5vh;
-  right: 8vh;
-}
-/*! Somehow the bottoms of the downward curve in the top right get misaligned when resizing the window */
-
-
-heading {
-  border-radius: 50%;
+  z-index: 2;
+  left: 0;
 }
 
 
