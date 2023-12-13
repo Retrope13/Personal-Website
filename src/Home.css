@@ -1,18 +1,7 @@
 
-
 @font-face {
-  font-family: "Bavista";
-  src: url("./assets/fonts/Bavista_Soulare.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: "Alexandria";
-  src: url('./assets/fonts/AlexandriaFLF-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "AlexandriaItalics";
-  src: url('./assets/fonts/AlexandriaFLF-Italic.ttf') format('truetype');
+  font-family: 'Juana';
+  src: url('./assets/fonts/Fontspring-DEMO-juana-light.otf') format('opentype');
 }
 
 @font-face {
@@ -24,6 +13,17 @@
   font-family: 'Alba';
   src: url('./assets/fonts/ALBA____.TTF') format('truetype');
 }
+
+@font-face {
+  font-family: 'Roca';
+  src: url('./assets/fonts/RocaOne-It.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roca2';
+  src: url('./assets/fonts/RocaTwo-It.ttf') format('truetype');
+}
+
 
 @media (max-width: 1920px) {
   /* CSS styles for screens larger than 1024px */
@@ -41,10 +41,12 @@
   max-height: auto;
 }
 
+
 #headerImg {
   max-width: 100vw;
   position: absolute;
   z-index: 2;
+  margin-bottom: 10vh;
 }
 
 .Heading {
@@ -61,15 +63,10 @@
   z-index: 1;
 }
 
-
-p {
-  align-items: center;
-}
-
 section {
-  margin-top: 40vh;
-  margin-left: 6vw;
-  width: 50%;
+  margin-top: 30vh;
+  margin-left: 3vw;
+  width: 70%;
   position: center;
 }
 
@@ -89,7 +86,7 @@ html {
 
 
 #progressbar1 {
-  position: absolute;
+  position: fixed;
   margin-top: 0;
   left: 81.85vw;
   min-width: 3.4vw;
@@ -104,6 +101,7 @@ html {
   position: absolute;
   z-index: 2;
   left: 0;
+  background-color: #F3F0D4;
 }
 
 
