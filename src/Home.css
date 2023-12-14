@@ -95,6 +95,12 @@ html {
   z-index: 0;
 }
 
+iframe {
+  display: block;
+  width: 50vw;
+  height: 100vh;
+}
+
 
 #footerImg {
   max-width: 100vw;

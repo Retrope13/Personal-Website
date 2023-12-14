@@ -7,6 +7,7 @@ import github from './assets/imgs/github.png'
 import LinkedIn from './assets/imgs/LinkedIn.png';
 import email from './assets/imgs/email.png';
 import ResumeIcon from './assets/imgs/Resume.png';
+import Resume from './assets/imgs/Resume.pdf';
 
 import styled from 'styled-components';
 
@@ -190,8 +191,9 @@ function Home() {
              This project provided an invaluable learning experience about blockchain technology, and I utilized Ganache as the testing system. I take great pride in the successful completion of this project.
           </Content>
 
-          <StyledH2>Resume</StyledH2> <a href='assets/imgs/Sam_McKay_Resume.pdf' rel="noreferrer noopener" target="_blank">  <Icon alt="An icon of a piece of paper with lines instead of text. It is in a white, minimalistic style" style={resumeIcon} src={ResumeIcon}/> </a>
+          <StyledH2>Resume</StyledH2> <a href={Resume} rel="noreferrer noopener" target="_blank">  <Icon alt="An icon of a piece of paper with lines instead of text. It is in a white, minimalistic style" style={resumeIcon} src={ResumeIcon}/> </a>
           <Content> 
+            <iframe src={Resume}></iframe>
           </Content> 
 
         <img id="footerImg" alt='A stylistic rounded line that curves downward and to the right off of the screen. The lines are brown, burnt orange, light orange, and a gray cream. ' src={footerImg}/> 
