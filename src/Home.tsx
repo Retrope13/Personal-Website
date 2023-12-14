@@ -130,7 +130,7 @@ function Home() {
 
 // ^ Create the function that calculates the height of the progress bar
   window.onscroll = function(){
-    let progressHeight = ((window.scrollY * .7) / totalHeight) * 100;
+    let progressHeight = ((window.scrollY * .7) / totalHeight) * 100; 
     console.log(window.scrollY*1.5)
     console.log(window.innerHeight)
     if (progress) {
