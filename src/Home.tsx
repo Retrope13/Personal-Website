@@ -87,7 +87,7 @@ const StyledH2 = styled.h2`
   `
   const ContactH2 = styled.h2`
     position: relative;
-    display: inline;
+    display: center;
     left: 30vw;
     z-index: 1;
     color: #ce7052; 
@@ -115,7 +115,7 @@ function Home() {
     height: '6vw',
   }
 
-  //^ the styling for the sentence about contacts at the bottom.
+  //^ the styling for the sentence about contacts at the bottom. I need to make this perfectly in the center. rn i'm guessing
   const ContactContent = {
     left: '44vh',
   }

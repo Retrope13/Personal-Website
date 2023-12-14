@@ -96,9 +96,11 @@ html {
 }
 
 iframe {
+  border-radius: 1vw;
   display: block;
   width: 50vw;
   height: 100vh;
+  border: .5vh solid #ce7052;
 }
 
 
@@ -111,6 +113,7 @@ iframe {
 
 #contactDiv {
   position: relative;
+  align-items: center;
   left: 7vw;
   width: 80vw;
 }
