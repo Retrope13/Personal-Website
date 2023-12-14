@@ -8,6 +8,7 @@ import LinkedIn from './assets/imgs/LinkedIn.png';
 import email from './assets/imgs/email.png';
 import ResumeIcon from './assets/imgs/Resume.png';
 import Resume from './assets/imgs/Resume.pdf';
+import Download from './assets/imgs/Download.png';
 
 import styled from 'styled-components';
 
@@ -166,7 +167,7 @@ function Home() {
             During my time at CSU I earned a 3.72 GPA, was on the Dean's list, and was an active member of the National Society for Collegiate Scholars. 
             I am most passionate about web development and design but more recently I have been taking an interest in offensive cybersecurity and game development.
             </Content>
-              <StyledH2>Projects</StyledH2><a href="https://github.com/Retrope13" target='_blank' rel="noreferrer noopener"> <Icon src={github}/> </a> {/* I might also want to use framer motion to make the button hover effect look cooler */}
+              <StyledH2>Projects</StyledH2><a href="https://github.com/Retrope13" target='_blank' rel="noreferrer noopener"> <Icon src={github} alt="The Github logo done in a white, minimalistic style with a brown background."/> </a> {/* I might also want to use framer motion to make the button hover effect look cooler */}
             <Content>
             I have worked on several projects during my time at CSU but I have also created many personal projects. All of the code for my projects can be found on Github. The projects I am most proud of are: "Gone Fishing", and "Bidder, Faster, Stronger".
             <br/><br/>
@@ -191,7 +192,7 @@ function Home() {
              This project provided an invaluable learning experience about blockchain technology, and I utilized Ganache as the testing system. I take great pride in the successful completion of this project.
           </Content>
 
-          <StyledH2>Resume</StyledH2> <a href={Resume} rel="noreferrer noopener" target="_blank">  <Icon alt="An icon of a piece of paper with lines instead of text. It is in a white, minimalistic style" style={resumeIcon} src={ResumeIcon}/> </a>
+          <StyledH2>Resume</StyledH2> <a href={Resume} rel="noreferrer noopener" target="_blank">  <Icon alt="A download icon with an arrow pointing downward into a shallow receptical. It is in a white, minimalistic style with a brown background." style={resumeIcon} src={Download}/> </a>
           <Content> 
             <iframe src={Resume}></iframe>
           </Content> 
@@ -200,9 +201,9 @@ function Home() {
           <ContactH2>Contact Me</ContactH2>
           <Content style={ContactContent}>Feel free to contact me through Github, Email, or LinkedIn!</Content> 
           <div id='contactDiv'>
-          <a href="https://github.com/Retrope13" target='_blank' rel="noreferrer noopener"><Icon alt="An icon of the github logo. It is in a white, minimalistic style" src={github} style={BottomIcons}/> </a>
-          <a href="mailto:mckaypable@gmail.com" target='_blank' rel="noreferrer noopener"><Icon alt="An icon of an envelope. It is in a white, minimalistic style" src={email} style={BottomIcons}/> </a>
-          <a href="https://www.linkedin.com/in/sam-mckay13/" target='_blank' rel="noreferrer noopener"><Icon alt="An icon of the LinkedIn logo. It is in a white minimalistic style." src={LinkedIn} style={BottomIcons}/> </a>
+          <a href="https://github.com/Retrope13" target='_blank' rel="noreferrer noopener"><Icon alt="An icon of the github logo. It is in a white, minimalistic style with a brown background." src={github} style={BottomIcons}/> </a>
+          <a href="mailto:mckaypable@gmail.com" target='_blank' rel="noreferrer noopener"><Icon alt="An icon of an envelope. It is in a white, minimalistic style with a brown background." src={email} style={BottomIcons}/> </a>
+          <a href="https://www.linkedin.com/in/sam-mckay13/" target='_blank' rel="noreferrer noopener"><Icon alt="An icon of the LinkedIn logo. It is in a white minimalistic style with a brown background." src={LinkedIn} style={BottomIcons}/> </a>
           </div>
         </section>
       </body>
