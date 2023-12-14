@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.750de00e.css",
-    "main.js": "/static/js/main.fa70e324.js",
+    "main.css": "/static/css/main.b41a2e60.css",
+    "main.js": "/static/js/main.e1a058b9.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/SamMcKayPic.jpg": "/static/media/SamMcKayPic.c9218f99e8254adbf544.jpg",
-    "static/media/CSU.png": "/static/media/CSU.a9fccb13570c83b0840f.png",
-    "static/media/Bavista_Soulare.ttf": "/static/media/Bavista_Soulare.9765b8a81e7a99a9806d.ttf",
-    "static/media/AlexandriaFLF-Italic.ttf": "/static/media/AlexandriaFLF-Italic.f5396bea0eff6a1ee406.ttf",
-    "static/media/AlexandriaFLF-Bold.ttf": "/static/media/AlexandriaFLF-Bold.d7d7e6c49bb307e0dbf5.ttf",
-    "static/media/ALBAS___.TTF": "/static/media/ALBAS___.4a3284afd68c4ca804d1.TTF",
+    "static/media/SamMcKayPic.png": "/static/media/SamMcKayPic.43a35db03622d4badbf9.png",
+    "static/media/RocaOne-It.ttf": "/static/media/RocaOne-It.181986d6e1daf1fae252.ttf",
+    "static/media/RocaTwo-It.ttf": "/static/media/RocaTwo-It.75c57da90ef6e12c84e9.ttf",
+    "static/media/Resume.pdf": "/static/media/Resume.0416ed1767ff4c7c7f65.pdf",
+    "static/media/retrolineHeading.png": "/static/media/retrolineHeading.4dd7b6b81282dc59396c.png",
+    "static/media/ALBAS___.TTF": "/static/media/ALBAS___.95720cda8b7051a46c05.TTF",
+    "static/media/footerImg.png": "/static/media/footerImg.aa0bf6db774506dc63bc.png",
+    "static/media/ALBA____.TTF": "/static/media/ALBA____.b755c7d324f37b330b62.TTF",
+    "static/media/Fontspring-DEMO-juana-light.otf": "/static/media/Fontspring-DEMO-juana-light.7c165c0355452c6e8dfd.otf",
     "static/media/github.png": "/static/media/github.98b1b007e4139a050b9d.png",
     "static/media/Download.png": "/static/media/Download.632a8e0b8fd7a89c2b10.png",
     "index.html": "/index.html",
-    "main.750de00e.css.map": "/static/css/main.750de00e.css.map",
-    "main.fa70e324.js.map": "/static/js/main.fa70e324.js.map",
+    "main.b41a2e60.css.map": "/static/css/main.b41a2e60.css.map",
+    "main.e1a058b9.js.map": "/static/js/main.e1a058b9.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.750de00e.css",
-    "static/js/main.fa70e324.js"
+    "static/css/main.b41a2e60.css",
+    "static/js/main.e1a058b9.js"
   ]
 }
