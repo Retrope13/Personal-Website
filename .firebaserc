@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "sam-mckay-personal-website",
-    "myApp": "sam-mckay-personal-website"
+    "myApp": "sam-mckay-personal-website",
   },
   "targets": {},
   "etags": {

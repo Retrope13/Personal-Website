@@ -6,7 +6,6 @@ import footerImg from './assets/imgs/footerImg.png'
 import github from './assets/imgs/github.png'
 import LinkedIn from './assets/imgs/LinkedIn.png';
 import email from './assets/imgs/email.png';
-import ResumeIcon from './assets/imgs/Resume.png';
 import Resume from './assets/imgs/Resume.pdf';
 import Download from './assets/imgs/Download.png';
 
@@ -42,7 +41,7 @@ const StyledH2 = styled.h2`
   margin-right: 2vw;
   z-index: 1;
   color: #ce7052; 
-  top: 3vh;
+  top: 3vh; 
   font-family: Alba;
   font-size: 5vw;
   background-color: #00000000;
@@ -194,7 +193,7 @@ function Home() {
 
           <StyledH2>Resume</StyledH2> <a href={Resume} rel="noreferrer noopener" target="_blank">  <Icon alt="A download icon with an arrow pointing downward into a shallow receptical. It is in a white, minimalistic style with a brown background." style={resumeIcon} src={Download}/> </a>
           <Content> 
-            <iframe src={Resume}></iframe>
+            <iframe title='resume viewer' src={Resume}></iframe>
           </Content> 
 
         <img id="footerImg" alt='A stylistic rounded line that curves downward and to the right off of the screen. The lines are brown, burnt orange, light orange, and a gray cream. ' src={footerImg}/> 
