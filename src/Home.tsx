@@ -6,10 +6,11 @@ import footerImg from './assets/imgs/footerImg.png'
 import github from './assets/imgs/github.png'
 import LinkedIn from './assets/imgs/LinkedIn.png';
 import email from './assets/imgs/email.png';
-import Resume from './assets/imgs/Resume.pdf';
-import Download from './assets/imgs/Download.png';
+import Resume from './assets/imgs/Resume.pdf'; 
+import Download from './assets/imgs/Download.png'; 
 
 import styled from 'styled-components';
+import { useEffect, useState } from 'react';
 
 const HeadShot = styled.img`
   position: absolute;
@@ -104,8 +105,14 @@ const StyledH2 = styled.h2`
 
 
 function Home() {
-  const progress = document.getElementById("progressbar1")
-  let totalHeight = document.body.scrollHeight - window.innerHeight;  
+  const [progress, setProgress] = useState<HTMLElement | null>(null);
+  const [totalHeight, setHeight] = useState<number | null>(null);
+  useEffect(() => {
+    setProgress(document.getElementById("progressbar1"));
+    setHeight(document.body.scrollHeight - window.innerHeight);
+
+  }, []);
+
 
   //^ the styling for the icons that are placed at the bottom of the page
   const BottomIcons = {
@@ -129,15 +136,20 @@ function Home() {
 
 
 // ^ Create the function that calculates the height of the progress bar
-  window.onscroll = function(){
-    let progressHeight = ((window.scrollY * .7) / totalHeight) * 100; 
-    console.log(window.scrollY*1.5)
-    console.log(window.innerHeight)
-    if (progress) {
-      progress.style.height = progressHeight  + "vh"   
-      progress.style.top = (0 + 'vh') 
+document.addEventListener("DOMContentLoaded", function() {
+  if (totalHeight) {
+    window.onscroll = function(){
+      let progressHeight = ((window.scrollY * .7) / totalHeight) * 100; 
+      console.log(window.scrollY*1.5)
+      console.log(window.innerHeight)
+      if (progress) {
+        progress.style.height = progressHeight  + "vh"   
+        progress.style.top = (0 + 'vh') 
+      }
     }
   }
+
+})
 
   return (
     
