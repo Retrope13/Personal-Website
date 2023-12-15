@@ -88,11 +88,13 @@ const StyledH2 = styled.h2`
   `
   const ContactH2 = styled.h2`
     position: relative;
-    display: center;
-    left: 30vw;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    top: -3vh;
+    left: -4vw;
     z-index: 1;
     color: #ce7052; 
-    top: 3vh;
     font-family: Alba;
     font-size: 5vw;
     background-color: #00000000;
@@ -105,27 +107,28 @@ const StyledH2 = styled.h2`
 
 
 function Home() {
-  const [progress, setProgress] = useState<HTMLElement | null>(null);
-  const [totalHeight, setHeight] = useState<number | null>(null);
-  useEffect(() => {
-    setProgress(document.getElementById("progressbar1"));
-    setHeight(document.body.scrollHeight - window.innerHeight);
 
-  }, []);
+  const progress = document.getElementById("progressbar1");
+  const totalHeight = document.body.scrollHeight - window.innerHeight; 
 
 
   //^ the styling for the icons that are placed at the bottom of the page
-  const BottomIcons = {
-    top: '0vh',
-    margin: '5vh 10vw',
+  const BottomIcons = {  
+    display: "inline-block",
     width: '6vw',
     height: '6vw',
+    top: "0vh"
   }
 
-  //^ the styling for the sentence about contacts at the bottom. I need to make this perfectly in the center. rn i'm guessing
+  //^ the styling for the sentence about contacts at the bottom.
   const ContactContent = {
-    left: '44vh',
-  }
+    display: "flex",
+    justifyContent: "center",
+    width: "100vw",
+    position: "relative",
+    left: "-3vw",
+    top: "-10vh"
+  } as React.CSSProperties;
 
   //^The icon for my resume
   const resumeIcon = {
@@ -136,20 +139,20 @@ function Home() {
 
 
 // ^ Create the function that calculates the height of the progress bar
-document.addEventListener("DOMContentLoaded", function() {
-  if (totalHeight) {
     window.onscroll = function(){
-      let progressHeight = ((window.scrollY * .7) / totalHeight) * 100; 
-      console.log(window.scrollY*1.5)
-      console.log(window.innerHeight)
+      let progressHeight;
+      if (totalHeight) {
+        progressHeight = ((window.scrollY * .7) / totalHeight) * 100;  
+        console.log(window.scrollY*1.5)
+        console.log(window.innerHeight)
+
+      }
       if (progress) {
-        progress.style.height = progressHeight  + "vh"   
+        progress.style.height = progressHeight  + "vh"  
         progress.style.top = (0 + 'vh') 
       }
-    }
-  }
 
-})
+}
 
   return (
     
@@ -189,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function() {
             Subsequently, I extended the functionality by creating an Amazon Alexa skill to complement the application. Leveraging the Alexa developer kit and AWS Lambda,
              I established communication with a Bitbucket repository. The backend of the project was then modified to periodically check the Bitbucket repository for new requests to flip a card.
             <br/>
-            This personal project was a significant learning experience, and I am pleased that I challenged myself in this innovative way."
+            This personal project was a significant learning experience, and I am pleased that I challenged myself in this innovative way.
             <br/><br/>
             The 'Bidder, Faster, Stronger' project was developed as part of Computer Science 458, Blockchain Principles and Applications, a senior-level CS course offered at CSU.
              The primary objective of this project was to create a smart contract deployable on the Ethereum blockchain, leveraging its decentralized nature for an engaging application.
@@ -210,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         <img id="footerImg" alt='A stylistic rounded line that curves downward and to the right off of the screen. The lines are brown, burnt orange, light orange, and a gray cream. ' src={footerImg}/> 
           <ContactH2>Contact Me</ContactH2>
-          <Content style={ContactContent}>Feel free to contact me through Github, Email, or LinkedIn!</Content> 
+            <Content style={ContactContent}>Feel free to contact me through Github, Email, or LinkedIn!</Content> 
           <div id='contactDiv'>
           <a href="https://github.com/Retrope13" target='_blank' rel="noreferrer noopener"><Icon alt="An icon of the github logo. It is in a white, minimalistic style with a brown background." src={github} style={BottomIcons}/> </a>
           <a href="mailto:mckaypable@gmail.com" target='_blank' rel="noreferrer noopener"><Icon alt="An icon of an envelope. It is in a white, minimalistic style with a brown background." src={email} style={BottomIcons}/> </a>
