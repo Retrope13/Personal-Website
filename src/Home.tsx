@@ -19,7 +19,7 @@ const HeadShot = styled.img`
   border: .5vw solid #DC9954;
   left: 4vw;
   top: 7vh;
-  width: 30vw;
+  width: 600px;
 `
 
 const Head = styled.h1`
@@ -29,7 +29,7 @@ const Head = styled.h1`
   top: 10vh;
   left: 39vw;
   font-family: Alba;
-  font-size: 8vw;
+  font-size: 150px;
   background-color: #00000000;
   text-shadow: 
     .25vw .25vw 0 #dc9954, /*light orange*/
@@ -44,44 +44,44 @@ const StyledH2 = styled.h2`
   color: #ce7052; 
   top: 3vh; 
   font-family: Alba;
-  font-size: 5vw;
+  font-size: 100px;
   background-color: #00000000;
   text-shadow: 
     .25vw .25vw 0 #dc9954, /*light orange*/
     .5vw .5vw .2vw #6F5345; /*cream*/
     `
 
-    //*Jenelle's website has the buttons faded, then when you hover on them they saturate and grow.
-    const Icon = styled.img`
-      position: relative;
-      width: 7vw;
-      height: 6.8vw;
-      background-color: #6F5345;
-      border-radius: 1vw;
-      top: 4vh;
-      z-index: 3;
-      overflow: none;
-      cursor: pointer;
-  
+  //*Jenelle's website has the buttons faded, then when you hover on them they saturate and grow.
+  const Icon = styled.img`
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #6F5345;
+    border-radius: 1vw;
+    top: 4vh;
+    z-index: 3;
+    overflow: none;
+    cursor: pointer;
 
-      //! I might want to change this to an angled drop shadown but idk
-      box-shadow:inset 0vw 0vw 0vw 0vw rgba(255,255,255,.5),
-      0vw 0vw .2vw .2vh rgba(0,0,0,1),
-      1vw 1vw 1vw 0vw rgba(0,0,0,.1);
-  
-      &:active,
-      &:focus {
-        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-        7px 7px 20px 0px rgba(0,0,0,.1),
-        4px 4px 5px 0px rgba(0,0,0,.1);
-        transform: scale(.95); //*I might want to change this
-      }
-    `
+
+    //! I might want to change this to an angled drop shadown but idk
+    box-shadow:inset 0vw 0vw 0vw 0vw rgba(255,255,255,.5),
+    0vw 0vw .2vw .2vh rgba(0,0,0,1),
+    1vw 1vw 1vw 0vw rgba(0,0,0,.1);
+
+    &:active,
+    &:focus {
+      box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+      transform: scale(.95); //*I might want to change this
+    }
+  `
       //^ maybe I should add a background div to the content so it stands out more?
   const Content = styled.p`
     position: relative;
     font-family: Roca2;
-    font-size: 1.4vw;
+    font-size: 30px;
     left: 3vw;
     color: #7C331D;
     /*washed red: #D45456, aqua blue: #289C9D, */
@@ -104,7 +104,7 @@ const StyledH2 = styled.h2`
   `
 
 
-
+//~When I look at the mobile version right now the page is really zoomed out. I think it's because of overflow rules?
 
 function Home() {
 
