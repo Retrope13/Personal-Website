@@ -19,7 +19,7 @@ const HeadShot = styled.img`
   border: 7px solid #DC9954;
   left: 80px;
   top: 5vh;
-  width: 30vw;
+  width: 600px;
 `
 
 const Head = styled.h1`
@@ -41,8 +41,8 @@ const Subtitle = styled.h3`
   position: absolute;
   z-index: 2;
   color: #6F5345; 
-  top: 37vh;
-  left: 40vw;
+  top: 400px;
+  left: 750px;
   font-family: Roca2;
   font-size: 30px;
   white-space: nowrap;
@@ -95,7 +95,7 @@ const StyledH2 = styled.h2`
     font-family: Roca2;
     font-size: 30px;
     left: 70px;
-    width: 70vw;
+    width: 1200px;
     color: #7C331D;
     /*washed red: #D45456, aqua blue: #289C9D, */
   `
