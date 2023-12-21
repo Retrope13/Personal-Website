@@ -29,16 +29,13 @@
 @media (min-width: 1024px) {
   /* CSS styles for screens larger than 1024px */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App {
   background-color: #f3f0d4;
   overflow-x: visible;
   overflow-y:hidden;
   max-height: auto;
+  position: relative;
+  width: 100vw;
 }
 
 
@@ -94,9 +91,9 @@ html {
 
 
 #scrollPath {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
+  right: 0px;
   max-width: 1920px;
   height: 1080px;
   background: rgba(255, 255, 255, 0.05);
@@ -104,9 +101,9 @@ html {
 
 
 #progressbar1 {
-  position: relative;
+  position: fixed;
   margin-top: 0;
-  right: 282px;
+  right: 0;
   min-width: 66px;
   background: linear-gradient(to right, #6f5345 25%, #ce7052 25% 50%, #dc9954 50% 75%, #d3c598 75%);
   z-index: 0;
