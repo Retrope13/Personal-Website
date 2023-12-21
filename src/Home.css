@@ -289,7 +289,7 @@ a {
 @media (max-width: 1023px) {
   .App {
     background-color: #f3f0d4;
-    overflow-x: visible;
+    overflow-x: hidden;
     overflow-y:hidden;
     max-height: auto;
     position: relative;
@@ -347,7 +347,6 @@ a {
   }
 
 
-  /*^ I thought this was responsible for not allowing nested sidescrolling. look into it */
   .heading_container {
     width: 100vw;
     height: 0px;
