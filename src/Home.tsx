@@ -18,7 +18,7 @@ const HeadShot = styled.img`
   border-radius: 20px;
   border: 7px solid #DC9954;
   left: 80px;
-  top: 5vh;
+  top: 45px;
   width: 600px;
 `
 
@@ -95,15 +95,15 @@ const StyledH2 = styled.h2`
     font-family: Roca2;
     font-size: 30px;
     left: 70px;
-    width: 1200px;
+    width: 1350px; 
     color: #7C331D;
-    /*washed red: #D45456, aqua blue: #289C9D, */
+    /*washed red: #D45456, aqua blue: #289C9D, */ 
   `
   const ContactH2 = styled.h2`
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 1920px;
     top: -30px;
     left: -60px;
     z-index: 1;
@@ -134,7 +134,7 @@ function Home() {
   const ContactContent = {
     display: "flex",
     justifyContent: "center",
-    width: "100vw",
+    width: "1920px",
     position: "relative",
     left: "-60px",
     top: "-120px",
@@ -157,7 +157,7 @@ function Home() {
         console.log(window.innerHeight);
 
       }
-      if (progress) {
+      if (progress) { 
         progress.style.height = progressHeight  + "vh";
         progress.style.top = (0 + 'px'); 
       }
@@ -234,8 +234,8 @@ function Home() {
           <a href="mailto:mckaypable@gmail.com" target='_blank' rel="noreferrer noopener"><Icon alt="An icon of an envelope. It is in a white, minimalistic style with a brown background." src={email} style={BottomIcons}/> </a>
           <a href="https://www.linkedin.com/in/sam-mckay13/" target='_blank' rel="noreferrer noopener"><Icon alt="An icon of the LinkedIn logo. It is in a white minimalistic style with a brown background." src={LinkedIn} style={BottomIcons}/> </a>
           </div>
-        </section>
         <img id="footerImg" alt='A stylistic rounded line that curves downward and to the right off of the screen. The lines are brown, burnt orange, light orange, and a gray cream. ' src={footerImg}/> 
+        </section>
       </body>
     </div>
   );
