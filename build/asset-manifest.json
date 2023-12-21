@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b41a2e60.css",
-    "main.js": "/static/js/main.e1a058b9.js",
+    "main.css": "/static/css/main.5302fa91.css",
+    "main.js": "/static/js/main.bced1099.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/SamMcKayPic.png": "/static/media/SamMcKayPic.43a35db03622d4badbf9.png",
     "static/media/RocaOne-It.ttf": "/static/media/RocaOne-It.181986d6e1daf1fae252.ttf",
@@ -9,18 +9,18 @@
     "static/media/Resume.pdf": "/static/media/Resume.0416ed1767ff4c7c7f65.pdf",
     "static/media/retrolineHeading.png": "/static/media/retrolineHeading.4dd7b6b81282dc59396c.png",
     "static/media/ALBAS___.TTF": "/static/media/ALBAS___.95720cda8b7051a46c05.TTF",
-    "static/media/footerImg.png": "/static/media/footerImg.aa0bf6db774506dc63bc.png",
     "static/media/ALBA____.TTF": "/static/media/ALBA____.b755c7d324f37b330b62.TTF",
+    "static/media/footerImg.png": "/static/media/footerImg.0b61cd9054b051143985.png",
     "static/media/Fontspring-DEMO-juana-light.otf": "/static/media/Fontspring-DEMO-juana-light.7c165c0355452c6e8dfd.otf",
     "static/media/github.png": "/static/media/github.98b1b007e4139a050b9d.png",
     "static/media/Download.png": "/static/media/Download.632a8e0b8fd7a89c2b10.png",
     "index.html": "/index.html",
-    "main.b41a2e60.css.map": "/static/css/main.b41a2e60.css.map",
-    "main.e1a058b9.js.map": "/static/js/main.e1a058b9.js.map",
+    "main.5302fa91.css.map": "/static/css/main.5302fa91.css.map",
+    "main.bced1099.js.map": "/static/js/main.bced1099.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b41a2e60.css",
-    "static/js/main.e1a058b9.js"
+    "static/css/main.5302fa91.css",
+    "static/js/main.bced1099.js"
   ]
 }
