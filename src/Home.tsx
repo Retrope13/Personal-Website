@@ -175,7 +175,7 @@ function Home() {
         <Head>
             Sam McKay
             <br/>
-          </Head>
+          </Head> 
             <Subtitle>
             WEB DEVELOPER AND SOFTWARE ENGINEER
               </Subtitle>
@@ -186,6 +186,7 @@ function Home() {
         </div>
           <div id="scrollpath">  
             <div id="progressbar1"/> 
+
           </div> 
 
       </div> 
@@ -197,7 +198,7 @@ function Home() {
             During my time at CSU I earned a 3.72 GPA, was on the Dean's list, and was an active member of the National Society for Collegiate Scholars. 
             I am most passionate about web development and design but more recently I have been taking an interest in offensive cybersecurity and game development.
             </Content>
-              <StyledH2>Projects</StyledH2><a href="https://github.com/Retrope13" target='_blank' rel="noreferrer noopener"> <Icon src={github} alt="The Github logo done in a white, minimalistic style with a brown background."/> </a> {/* I might also want to use framer motion to make the button hover effect look cooler */}
+              <StyledH2>Projects</StyledH2><a href="https://github.com/Retrope13" target='_blank' rel="noreferrer noopener"><Icon src={github} alt="The Github logo done in a white, minimalistic style with a brown background."/></a> {/* I might also want to use framer motion to make the button hover effect look cooler */}
             <Content>
             I have worked on several projects during my time at CSU but I have also created many personal projects. All of the code for my projects can be found on Github. The projects I am most proud of are: "Gone Fishing", and "Bidder, Faster, Stronger".
             <br/><br/>
