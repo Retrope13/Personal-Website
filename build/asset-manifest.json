@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4474245.css",
-    "main.js": "/static/js/main.7d0cf192.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "main.css": "/static/css/main.1a0cfc3a.css",
+    "main.js": "/static/js/main.c0f4a2a1.js",
+    "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
     "static/media/SamMcKayPic.png": "/static/media/SamMcKayPic.43a35db03622d4badbf9.png",
     "static/media/RocaOne-It.ttf": "/static/media/RocaOne-It.181986d6e1daf1fae252.ttf",
     "static/media/RocaTwo-It.ttf": "/static/media/RocaTwo-It.75c57da90ef6e12c84e9.ttf",
-    "static/media/Resume.pdf": "/static/media/Resume.0416ed1767ff4c7c7f65.pdf",
     "static/media/retrolineHeading.png": "/static/media/retrolineHeading.4dd7b6b81282dc59396c.png",
+    "static/media/Resume.pdf": "/static/media/Resume.e64dea2766e4f14c8596.pdf",
     "static/media/ALBAS___.TTF": "/static/media/ALBAS___.95720cda8b7051a46c05.TTF",
     "static/media/ALBA____.TTF": "/static/media/ALBA____.b755c7d324f37b330b62.TTF",
     "static/media/footerImg.png": "/static/media/footerImg.0b61cd9054b051143985.png",
@@ -15,12 +15,12 @@
     "static/media/github.png": "/static/media/github.98b1b007e4139a050b9d.png",
     "static/media/Download.png": "/static/media/Download.632a8e0b8fd7a89c2b10.png",
     "index.html": "/index.html",
-    "main.f4474245.css.map": "/static/css/main.f4474245.css.map",
-    "main.7d0cf192.js.map": "/static/js/main.7d0cf192.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.1a0cfc3a.css.map": "/static/css/main.1a0cfc3a.css.map",
+    "main.c0f4a2a1.js.map": "/static/js/main.c0f4a2a1.js.map",
+    "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4474245.css",
-    "static/js/main.7d0cf192.js"
+    "static/css/main.1a0cfc3a.css",
+    "static/js/main.c0f4a2a1.js"
   ]
 }

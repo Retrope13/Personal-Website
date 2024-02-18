@@ -50,9 +50,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 To add firebase to the project you need to run the command 
 
-  ### `npm install firebase-tools`
+  ### `npm install -g firebase-tools`
 
-Once it is installed you need to initialize it. 
+Once it is installed you need to initialize it (if this is the first time putting firebase into a project). 
 
   ### `firebase init`
   
@@ -61,6 +61,10 @@ Once it is installed you need to initialize it.
 
 If everything goes according to plan then all you have to do now is 
 
-### `firebase deploy`
+### `firebase login` 
+* (To make sure that you're using an account with firebase that has permissions to deploy the website)
 
-and you're done
+### `firebase deploy`
+* (To truly deploy the website)
+
+## and you're done
