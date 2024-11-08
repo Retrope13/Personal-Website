@@ -5,4 +5,4 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-f
     
     
     /*! I might want to change this to an angled drop shadown but idk */box-shadow:inset 0 0 0 0 #ffffff80,0 0 5px 2px #000,10px 10px 10px 0 #0000001a;cursor:pointer;height:80px;overflow:none;top:50px;width:80px;z-index:3;&:active,&:focus{box-shadow:inset 2px 2px 2px 0 #ffffff80,7px 7px 20px 0 #0000001a,4px 4px 5px 0 #0000001a;transform:scale(.95)}}iframe{border:0 solid #ce7052;border-radius:20px;display:block;height:0}#footerImg,iframe{width:0}#contactH2{background-color:#0000;color:#ce7052;font-family:Alba;font-size:60px;text-shadow:3px 3px 0 #dc9954,6px 6px 3px #6f5345;z-index:1}#contactContent,#contactH2{display:flex;justify-content:center;left:0;position:relative;width:100vw}#contactContent{font-size:17px;top:-50px}#contactDiv{align-items:center;display:flex;justify-content:space-evenly;position:relative;width:100vw}#bottomIcons{display:inline-block;height:85px;top:-20px;width:85px}body{background-color:#f3f0d4;overflow-y:auto;width:100vw}}
-/*# sourceMappingURL=main.1a0cfc3a.css.map*/
+/*# sourceMappingURL=main.44ad6d4d.css.map*/
